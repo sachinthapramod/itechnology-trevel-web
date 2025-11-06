@@ -1,11 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import LoadTop from '../Components/LoadTop'
 import HomeOne from './HomeOne'
-import HomeOneSync from './HomeOneSync'
-import HomeCompleteSync from './HomeCompleteSync'
-import HomeTwo from './HomeTwo'
-import HomeThree from './HomeThree'
-import HomeFour from './HomeFour'
 import About from './About'
 import Destination from './Destination'
 import DestinationDetails from './DestinationDetails'
@@ -32,12 +27,6 @@ import Blog from './Blog'
 import BlogDetails from './BlogDetails'
 import Contact from './Contact'
 import SimpleAdminDashboard from './Admin/SimpleAdminDashboard'
-import TestPage from './Admin/TestPage'
-import DebugAdmin from './Admin/DebugAdmin'
-import DataServiceTest from './Admin/DataServiceTest'
-import ManagementTest from './Admin/ManagementTest'
-import SyncTest from './Admin/SyncTest'
-import CompleteSyncTest from './Admin/CompleteSyncTest'
 
 function RouterPage() {
   return (
@@ -46,11 +35,6 @@ function RouterPage() {
         <LoadTop />
         <Routes>
           <Route path="/" element={<HomeOne />}></Route>
-          <Route path="/sync" element={<HomeOneSync />}></Route>
-          <Route path="/complete-sync" element={<HomeCompleteSync />}></Route>
-          <Route path="/home-tour" element={<HomeTwo />}></Route>
-          <Route path="/home-agency" element={<HomeThree />}></Route>
-          <Route path="/home-yacht" element={<HomeFour />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/destination" element={<Destination />}></Route>
           <Route path="/destination/:id" element={<DestinationDetails />} />
@@ -76,14 +60,6 @@ function RouterPage() {
           <Route path="/blog" element={<Blog />}></Route>
           <Route path="/blog/:id" element={<BlogDetails />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
-          
-          {/* Test Routes */}
-          <Route path="/test-admin" element={<TestPage />}></Route>
-          <Route path="/debug-admin" element={<DebugAdmin />}></Route>
-          <Route path="/data-test" element={<DataServiceTest />}></Route>
-          <Route path="/management-test" element={<ManagementTest />}></Route>
-          <Route path="/sync-test" element={<SyncTest />}></Route>
-          <Route path="/complete-sync-test" element={<CompleteSyncTest />}></Route>
           
           {/* Admin Routes */}
           <Route path="/admin/*" element={<SimpleAdminDashboard />}></Route>
