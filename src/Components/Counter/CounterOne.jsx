@@ -44,25 +44,25 @@ const CounterOne = () => {
                     data-top="30%"
                     data-left="-15%"
                 >
-                    <img src="assets/img/shape/shape_1.png" alt="shape" />
+                    <img src="/assets/img/shape/shape_1.png" alt="shape" />
                 </div>
                 <div
                     className="shape-mockup shape2 d-none d-xl-block"
                     style={{top:"45%", left:"-13%"}}
                 >
-                    <img src="assets/img/shape/shape_2.png" alt="shape" />
+                    <img src="/assets/img/shape/shape_2.png" alt="shape" />
                 </div>
                 <div
                     className="shape-mockup shape3 d-none d-xl-block"
                     style={{top:"32%", left:"-7%"}}
                 >
-                    <img src="assets/img/shape/shape_3.png" alt="shape" />
+                    <img src="/assets/img/shape/shape_3.png" alt="shape" />
                 </div>
                 <div
                     className="shape-mockup d-none d-xl-block"
                     style={{bottom:"-24%", left:"-15%"}}
                 >
-                    <img src="assets/img/shape/shape_6.png" alt="shape" />
+                    <img src="/assets/img/shape/shape_6.png" alt="shape" />
                 </div>
                 <div
                     className="shape-mockup jump d-none d-xl-block"
@@ -70,7 +70,7 @@ const CounterOne = () => {
                     data-right="-10%"
                     style={{top:"5%", right:"-10%"}}
                 >
-                    <img src="assets/img/shape/shape_5.png" alt="shape" />
+                    <img src="/assets/img/shape/shape_5.png" alt="shape" />
                 </div>
             </div>
         </div>

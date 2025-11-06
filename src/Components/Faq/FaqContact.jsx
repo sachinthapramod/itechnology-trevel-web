@@ -29,7 +29,7 @@ function FaqContact() {
                                             id="name3"
                                             placeholder="First Name"
                                         />
-                                        <img src="assets/img/icon/user.svg" alt="" />
+                                        <img src="/assets/img/icon/user.svg" alt="" />
                                     </div>
                                     <div className="col-md-6 form-group">
                                         <input
@@ -39,7 +39,7 @@ function FaqContact() {
                                             id="email3"
                                             placeholder="Your Mail"
                                         />
-                                        <img src="assets/img/icon/mail.svg" alt="" />
+                                        <img src="/assets/img/icon/mail.svg" alt="" />
                                     </div>
                                     <div className="form-group col-12">
                                         <select
@@ -71,11 +71,11 @@ function FaqContact() {
                                             placeholder="Your Message"
                                             defaultValue={""}
                                         />
-                                        <img src="assets/img/icon/chat.svg" alt="" />
+                                        <img src="/assets/img/icon/chat.svg" alt="" />
                                     </div>
                                     <div className="form-btn col-12 mt-24">
                                         <button type="submit" className="th-btn style3">
-                                            Send message <img src="assets/img/icon/plane.svg" alt="" />
+                                            Send message <img src="/assets/img/icon/plane.svg" alt="" />
                                         </button>
                                     </div>
                                 </div>

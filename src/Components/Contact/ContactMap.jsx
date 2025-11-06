@@ -11,7 +11,7 @@ function ContactMap() {
                         loading="lazy"
                     />
                     <div className="contact-icon">
-                        <img src="assets/img/icon/location-dot3.svg" alt="" />
+                        <img src="/assets/img/icon/location-dot3.svg" alt="" />
                     </div>
                 </div>
             </div>

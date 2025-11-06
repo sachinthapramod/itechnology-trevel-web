@@ -6,7 +6,7 @@ const Cta = () => {
       className="cta-area"
       data-overlay="title"
       data-opacity={8}
-      style={{ backgroundImage: "url(assets/img/bg/cta_bg_1.png)" }}
+      style={{ backgroundImage: "url(/assets/img/bg/cta_bg_1.png)" }}
     >
       <div className="container">
         <div className="row justify-content-center align-items-center">
@@ -25,7 +25,7 @@ const Cta = () => {
               />
               <button type="submit" className="th-btn style1 btn-fw">
                 Subscribe Now
-                <img src="assets/img/icon/plane2.svg" alt="Subscribe" className="ms-2" />
+                <img src="/assets/img/icon/plane2.svg" alt="Subscribe" className="ms-2" />
               </button>
             </form>
           </div>

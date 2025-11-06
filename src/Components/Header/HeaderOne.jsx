@@ -65,12 +65,6 @@ function HeaderOne() {
                                             <li className="d-none d-md-inline-block">
                                                 <Link to="/contact">Support</Link>
                                             </li>
-                                            <li className="d-none d-md-inline-block">
-                                                <Link to="/admin" style={{color: '#e74c3c', fontWeight: '600'}}>
-                                                    Admin Panel
-                                                    <i className="fas fa-cog" />
-                                                </Link>
-                                            </li>
                                             <li>
                                                 <button
                                                     type="button"

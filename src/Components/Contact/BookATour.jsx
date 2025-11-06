@@ -43,7 +43,7 @@ function BookATour() {
                                             placeholder="First Name"
                                             required
                                         />
-                                        <img src="assets/img/icon/user.svg" alt="" />
+                                        <img src="/assets/img/icon/user.svg" alt="" />
                                     </div>
                                     <div className="col-12 form-group">
                                         <input
@@ -54,7 +54,7 @@ function BookATour() {
                                             placeholder="Your Mail"
                                             required
                                         />
-                                        <img src="assets/img/icon/mail.svg" alt="" />
+                                        <img src="/assets/img/icon/mail.svg" alt="" />
                                     </div>
                                     <div className="form-group col-12">
                                         <NiceSelect options={countryOptions} defaultValue="Select Tour Type" />
@@ -70,12 +70,12 @@ function BookATour() {
                                             placeholder="Your Message"
                                             defaultValue={""}
                                         />
-                                        <img src="assets/img/icon/chat.svg" alt="" />
+                                        <img src="/assets/img/icon/chat.svg" alt="" />
                                     </div>
                                     <div className="form-btn col-12 mt-24">
                                         <button type="submit" className="th-btn style3">
                                             Send message
-                                            <img src="assets/img/icon/plane.svg" alt="" />
+                                            <img src="/assets/img/icon/plane.svg" alt="" />
                                         </button>
                                     </div>
                                 </div>

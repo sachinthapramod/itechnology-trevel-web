@@ -69,42 +69,42 @@ function BlogInner() {
                                 <ul>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="assets/img/theme-img/map.svg" alt="" />
+                                            <img src="/assets/img/theme-img/map.svg" alt="" />
                                             City Tour
                                         </Link>
                                         <span>(8)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="assets/img/theme-img/map.svg" alt="" />
+                                            <img src="/assets/img/theme-img/map.svg" alt="" />
                                             Beach Tours
                                         </Link>
                                         <span>(6)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="assets/img/theme-img/map.svg" alt="" />
+                                            <img src="/assets/img/theme-img/map.svg" alt="" />
                                             Wildlife Tours
                                         </Link>
                                         <span>(2)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="assets/img/theme-img/map.svg" alt="" />
+                                            <img src="/assets/img/theme-img/map.svg" alt="" />
                                             News &amp; Tips
                                         </Link>
                                         <span>(7)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="assets/img/theme-img/map.svg" alt="" />
+                                            <img src="/assets/img/theme-img/map.svg" alt="" />
                                             Adventure Tours
                                         </Link>
                                         <span>(9)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="assets/img/theme-img/map.svg" alt="" />
+                                            <img src="/assets/img/theme-img/map.svg" alt="" />
                                             Mountain Tours
                                         </Link>
                                         <span>(10)</span>
@@ -118,7 +118,7 @@ function BlogInner() {
                                         <div className="media-img">
                                             <Link to="/blog/1">
                                                 <img
-                                                    src="assets/img/blog/recent-post-1-1.jpg"
+                                                    src="/assets/img/blog/recent-post-1-1.jpg"
                                                     alt="Blog Image"
                                                 />
                                             </Link>
@@ -141,7 +141,7 @@ function BlogInner() {
                                         <div className="media-img">
                                             <Link to="/blog/1">
                                                 <img
-                                                    src="assets/img/blog/recent-post-1-2.jpg"
+                                                    src="/assets/img/blog/recent-post-1-2.jpg"
                                                     alt="Blog Image"
                                                 />
                                             </Link>
@@ -164,7 +164,7 @@ function BlogInner() {
                                         <div className="media-img">
                                             <Link to="/blog/1">
                                                 <img
-                                                    src="assets/img/blog/recent-post-1-3.jpg"
+                                                    src="/assets/img/blog/recent-post-1-3.jpg"
                                                     alt="Blog Image"
                                                 />
                                             </Link>

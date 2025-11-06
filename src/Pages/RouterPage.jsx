@@ -26,7 +26,6 @@ import Error from './Error'
 import Blog from './Blog'
 import BlogDetails from './BlogDetails'
 import Contact from './Contact'
-import SimpleAdminDashboard from './Admin/SimpleAdminDashboard'
 
 function RouterPage() {
   return (
@@ -60,9 +59,6 @@ function RouterPage() {
           <Route path="/blog" element={<Blog />}></Route>
           <Route path="/blog/:id" element={<BlogDetails />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
-          
-          {/* Admin Routes */}
-          <Route path="/admin/*" element={<SimpleAdminDashboard />}></Route>
         </Routes>
       </Router>
     </div>
