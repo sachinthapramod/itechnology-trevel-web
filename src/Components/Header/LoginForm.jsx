@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function LoginForm({ isOpen, onClose }) {
     const [activeTab, setActiveTab] = useState("register"); // State to track active tab
@@ -62,7 +63,7 @@ function LoginForm({ isOpen, onClose }) {
                                         </div>
                                     </div>
                                     <div id="forgot_url">
-                                        <a href="/contact">Forgot password?</a>
+                                        <Link to="/contact">Forgot password?</Link>
                                     </div>
                                 </form>
                             </div>
