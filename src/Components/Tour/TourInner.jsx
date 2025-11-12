@@ -1,18 +1,92 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect, useMemo } from 'react'
+import { Link, useSearchParams } from 'react-router-dom'
 import TourCard from './TourCard';
 import posts from '../data/data-tour.json';
 import TourCardTwo from './TourCardTwo';
 
 function TourInner() {
+    const [searchParams] = useSearchParams();
     const [activeTab, setActiveTab] = useState('tab-grid');
     const [currentPage, setCurrentPage] = useState(1);
     const postsPerPage = 8;
 
-    const totalPages = Math.ceil(posts.length / postsPerPage);
+    // Get search parameters from URL
+    const destination = searchParams.get('destination') || '';
+    const adventureType = searchParams.get('type') || '';
+    const duration = searchParams.get('duration') || '';
+    const category = searchParams.get('category') || '';
+
+    // Filter tours based on search criteria
+    const filteredPosts = useMemo(() => {
+        let filtered = [...posts];
+
+        // Filter by destination (check if tour title contains destination name)
+        if (destination) {
+            filtered = filtered.filter(tour => 
+                tour.title.toLowerCase().includes(destination.toLowerCase())
+            );
+        }
+
+        // Filter by adventure type (map types to tour characteristics)
+        if (adventureType) {
+            const typeMap = {
+                'Beach': ['Maldives', 'Bali', 'Beach'],
+                'Group Tour': ['Group', 'Package'],
+                'Couple Tour': ['Couple', 'Romantic'],
+                'Family Tour': ['Family', 'Package']
+            };
+            
+            const keywords = typeMap[adventureType] || [];
+            if (keywords.length > 0) {
+                filtered = filtered.filter(tour => 
+                    keywords.some(keyword => 
+                        tour.title.toLowerCase().includes(keyword.toLowerCase())
+                    )
+                );
+            }
+        }
+
+        // Filter by duration (extract days from duration string)
+        if (duration) {
+            // For now, we'll show tours that could match the duration
+            // In a real app, you'd have duration data in the tour object
+            // For demo purposes, we'll keep all tours but you can add duration field to data
+            // const daysMatch = duration.match(/(\d+)/);
+            // if (daysMatch) {
+            //     const days = parseInt(daysMatch[1]);
+            //     // Filter logic would go here when duration data is available
+            // }
+        }
+
+        // Filter by category (map to price ranges)
+        if (category) {
+            const priceMap = {
+                'Luxury': { min: 800, max: 1000 },
+                'Deluxe': { min: 500, max: 799 },
+                'Economy': { min: 300, max: 499 }
+            };
+            
+            const range = priceMap[category];
+            if (range) {
+                filtered = filtered.filter(tour => {
+                    const price = parseFloat(tour.price.replace('$', '').replace(',', ''));
+                    return price >= range.min && price <= range.max;
+                });
+            }
+        }
+
+        return filtered;
+    }, [destination, adventureType, duration, category]);
+
+    // Reset to page 1 when filters change
+    useEffect(() => {
+        setCurrentPage(1);
+    }, [destination, adventureType, duration, category]);
+
+    const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
-    const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+    const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
 
     const handlePageChange = (page) => {
         setCurrentPage(page);
@@ -21,6 +95,79 @@ function TourInner() {
         <section className="space">
             <div className="container shape-mockup-wrap">
                 <div className="th-sort-bar">
+                    {/* Active Search Filters Display */}
+                    {(destination || adventureType || duration || category) && (
+                        <div className="row mb-3">
+                            <div className="col-12">
+                                <div className="active-filters d-flex flex-wrap align-items-center gap-2">
+                                    <span className="filter-label">Active Filters:</span>
+                                    {destination && (
+                                        <span className="filter-badge">
+                                            Destination: {destination}
+                                            <Link 
+                                                to={`/tour?${new URLSearchParams({
+                                                    ...(adventureType && { type: adventureType }),
+                                                    ...(duration && { duration }),
+                                                    ...(category && { category })
+                                                }).toString()}`}
+                                                className="filter-remove"
+                                            >
+                                                ×
+                                            </Link>
+                                        </span>
+                                    )}
+                                    {adventureType && (
+                                        <span className="filter-badge">
+                                            Type: {adventureType}
+                                            <Link 
+                                                to={`/tour?${new URLSearchParams({
+                                                    ...(destination && { destination }),
+                                                    ...(duration && { duration }),
+                                                    ...(category && { category })
+                                                }).toString()}`}
+                                                className="filter-remove"
+                                            >
+                                                ×
+                                            </Link>
+                                        </span>
+                                    )}
+                                    {duration && (
+                                        <span className="filter-badge">
+                                            Duration: {duration}
+                                            <Link 
+                                                to={`/tour?${new URLSearchParams({
+                                                    ...(destination && { destination }),
+                                                    ...(adventureType && { type: adventureType }),
+                                                    ...(category && { category })
+                                                }).toString()}`}
+                                                className="filter-remove"
+                                            >
+                                                ×
+                                            </Link>
+                                        </span>
+                                    )}
+                                    {category && (
+                                        <span className="filter-badge">
+                                            Category: {category}
+                                            <Link 
+                                                to={`/tour?${new URLSearchParams({
+                                                    ...(destination && { destination }),
+                                                    ...(adventureType && { type: adventureType }),
+                                                    ...(duration && { duration })
+                                                }).toString()}`}
+                                                className="filter-remove"
+                                            >
+                                                ×
+                                            </Link>
+                                        </span>
+                                    )}
+                                    <Link to="/tour" className="clear-all-filters">
+                                        Clear All
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    )}
                     <div className="row justify-content-between align-items-center">
                         <div className="col-md-4">
                             <div className="search-form-area">
@@ -89,57 +236,89 @@ function TourInner() {
                             <div
                                 className={`tab-pane fade ${activeTab === 'tab-grid' ? 'show active' : ''}`} id="tab-grid" role="tabpanel"
                             >
-                                <div className="row gy-24 gx-24">
-                                    {currentPosts.map((data, index) => (
-                                        <div key={index} className="col-md-6">
-                                            <TourCard
-                                                tourID={data.id}
-                                                tourImage={`${data.image}`}
-                                                tourTitle={data.title}
-                                                tourPrice={data.price}
-                                            />
-                                        </div>
-                                    ))}
-                                </div>
+                                {filteredPosts.length > 0 ? (
+                                    <div className="row gy-24 gx-24">
+                                        {currentPosts.map((data, index) => (
+                                            <div key={index} className="col-md-6">
+                                                <TourCard
+                                                    tourID={data.id}
+                                                    tourImage={`${data.image}`}
+                                                    tourTitle={data.title}
+                                                    tourPrice={data.price}
+                                                />
+                                            </div>
+                                        ))}
+                                    </div>
+                                ) : (
+                                    <div className="text-center py-5">
+                                        <h4>No tours found</h4>
+                                        <p className="text-muted">Try adjusting your search criteria.</p>
+                                        <Link to="/tour" className="th-btn mt-3">
+                                            View All Tours
+                                        </Link>
+                                    </div>
+                                )}
                             </div>
                             <div
                                 className={`tab-pane fade ${activeTab === 'tab-list' ? 'show active' : ''}`} id="tab-list" role="tabpanel"
                             >
-                                <div className="row gy-30">
-                                    {currentPosts.map((data, index) => (
-                                        <div key={index} className="col-12">
-                                            <TourCardTwo
-                                                tourID={data.id}
-                                                tourImage={`${data.image}`}
-                                                tourTitle={data.title}
-                                                tourPrice={data.price}
-                                            />
-                                        </div>
-                                    ))}
+                                {filteredPosts.length > 0 ? (
+                                    <div className="row gy-30">
+                                        {currentPosts.map((data, index) => (
+                                            <div key={index} className="col-12">
+                                                <TourCardTwo
+                                                    tourID={data.id}
+                                                    tourImage={`${data.image}`}
+                                                    tourTitle={data.title}
+                                                    tourPrice={data.price}
+                                                />
+                                            </div>
+                                        ))}
+                                    </div>
+                                ) : (
+                                    <div className="text-center py-5">
+                                        <h4>No tours found</h4>
+                                        <p className="text-muted">Try adjusting your search criteria.</p>
+                                        <Link to="/tour" className="th-btn mt-3">
+                                            View All Tours
+                                        </Link>
+                                    </div>
+                                )}
+                            </div>
+                            {filteredPosts.length > 0 && (
+                                <div className="th-pagination text-center mt-60">
+                                    <ul>
+                                        {Array.from({ length: totalPages }, (_, i) => (
+                                            <li key={i}>
+                                                <Link
+                                                    className={currentPage === i + 1 ? 'active' : ''}
+                                                    to="#"
+                                                    onClick={(e) => {
+                                                        e.preventDefault();
+                                                        handlePageChange(i + 1);
+                                                    }}
+                                                >
+                                                    {i + 1}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                        {currentPage < totalPages && (
+                                            <li>
+                                                <Link 
+                                                    className="next-page" 
+                                                    to="#" 
+                                                    onClick={(e) => {
+                                                        e.preventDefault();
+                                                        handlePageChange(currentPage + 1);
+                                                    }}
+                                                >
+                                                    Next <img src="/assets/img/icon/arrow-right4.svg" alt="" />
+                                                </Link>
+                                            </li>
+                                        )}
+                                    </ul>
                                 </div>
-                            </div>
-                            <div className="th-pagination text-center mt-60">
-                                <ul>
-                                    {Array.from({ length: totalPages }, (_, i) => (
-                                        <li key={i}>
-                                            <Link
-                                                className={currentPage === i + 1 ? 'active' : ''}
-                                                to="#"
-                                                onClick={() => handlePageChange(i + 1)}
-                                            >
-                                                {i + 1}
-                                            </Link>
-                                        </li>
-                                    ))}
-                                    {currentPage < totalPages && (
-                                        <li>
-                                            <Link className="next-page" to="#" onClick={() => handlePageChange(currentPage + 1)}>
-                                                Next <img src="/assets/img/icon/arrow-right4.svg" alt="" />
-                                            </Link>
-                                        </li>
-                                    )}
-                                </ul>
-                            </div>
+                            )}
                         </div>
                     </div>
                     <div className="col-xxl-4 col-lg-5">

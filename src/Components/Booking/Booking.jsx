@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import NiceSelect from "../Header/NiceSelect";
 
 function Booking() {
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         destination: "",
         adventureType: "",
@@ -46,16 +48,29 @@ function Booking() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-
-        if (!formData.destination || !formData.adventureType || !formData.duration || !formData.category) {
-            setFormMessage({ text: "Please fill in all fields before searching.", type: "error" });
-           
-            return;
+        // Build search parameters
+        const searchParams = new URLSearchParams();
+        
+        if (formData.destination) {
+            searchParams.set('destination', formData.destination);
+        }
+        if (formData.adventureType) {
+            searchParams.set('type', formData.adventureType);
+        }
+        if (formData.duration) {
+            searchParams.set('duration', formData.duration);
+        }
+        if (formData.category) {
+            searchParams.set('category', formData.category);
         }
 
-        setFormMessage({ text: "Search submitted successfully!", type: "success" });
-
-        setFormData({ destination: "", adventureType: "", duration: "", category: "" });
+        // Navigate to tour page with search parameters
+        if (searchParams.toString()) {
+            navigate(`/tour?${searchParams.toString()}`);
+        } else {
+            setFormMessage({ text: "Please select at least one search criteria.", type: "error" });
+            setTimeout(() => setFormMessage({ text: "", type: "" }), 3000);
+        }
     };
 
     return (

@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 
-const NiceSelect = ({ options, defaultValue }) => {
-  const [selected, setSelected] = useState(defaultValue || options[0].label);
+const NiceSelect = ({ options, defaultValue, onChange }) => {
+  const [selected, setSelected] = useState(defaultValue || (options && options[0] ? options[0].label : ''));
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -16,13 +16,22 @@ const NiceSelect = ({ options, defaultValue }) => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  const handleSelect = (option) => {
+    setSelected(option.label);
+    setIsOpen(false);
+    // Call onChange with the value if provided, otherwise use label
+    if (onChange) {
+      onChange(option.value || option.label);
+    }
+  };
+
   return (
     <div className="nice-select-wrapper">
       <div className={`nice-select ${isOpen ? "open" : ""}`} ref={dropdownRef} onClick={() => setIsOpen(!isOpen)}>
         <span className="current">{selected}</span>
         <ul className="list">
-          {options.map((option, index) => (
-            <li key={index} className="option" onClick={() => { setSelected(option.label); setIsOpen(false); }}>
+          {options && options.map((option, index) => (
+            <li key={index} className="option" onClick={() => handleSelect(option)}>
               {option.label}
             </li>
           ))}
