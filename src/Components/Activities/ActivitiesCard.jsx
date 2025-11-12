@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 function ActivitiesCard(props) {
-    const { activitiesID, activitiesImage, activitiesTitle, activitiesPrice } = props;
+    const { activitiesImage, activitiesTitle, activitiesPrice } = props;
     return (
         <>
             <div className="tour-box th-ani">

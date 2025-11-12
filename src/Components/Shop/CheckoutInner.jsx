@@ -282,7 +282,7 @@ function CheckoutInner() {
                                             width={91}
                                             height={91}
                                             src="/assets/img/product/product_1_1.png"
-                                            alt="Image"
+                                            alt="Product"
                                         />
                                     </Link>
                                 </td>

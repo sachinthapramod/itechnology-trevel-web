@@ -16,7 +16,7 @@ function BlogDetailsMain() {
                     <div className="col-xxl-8 col-lg-7">
                         <div className="th-blog blog-single">
                             <div className="blog-img">
-                                <img src={`/assets/img/blog/${blogPost.bannerImg}`} alt="Blog Image" />
+                                <img src={`/assets/img/blog/${blogPost.bannerImg}`} alt="Blog" />
                             </div>
                             <div className="blog-content">
                                 <div className="blog-meta">
@@ -93,7 +93,7 @@ function BlogDetailsMain() {
                                             <img
                                                 className="w-100"
                                                 src="/assets/img/blog/blog_inner_1.jpg"
-                                                alt="Blog Image"
+                                                alt="Blog"
                                             />
                                         </div>
                                     </div>
@@ -367,7 +367,7 @@ function BlogDetailsMain() {
                                             <Link to="#">
                                                 <img
                                                     src="/assets/img/blog/recent-post-1-1.jpg"
-                                                    alt="Blog Image"
+                                                    alt="Blog"
                                                 />
                                             </Link>
                                         </div>
@@ -390,7 +390,7 @@ function BlogDetailsMain() {
                                             <Link to="#">
                                                 <img
                                                     src="/assets/img/blog/recent-post-1-2.jpg"
-                                                    alt="Blog Image"
+                                                    alt="Blog"
                                                 />
                                             </Link>
                                         </div>
@@ -413,7 +413,7 @@ function BlogDetailsMain() {
                                             <Link to="#">
                                                 <img
                                                     src="/assets/img/blog/recent-post-1-3.jpg"
-                                                    alt="Blog Image"
+                                                    alt="Blog"
                                                 />
                                             </Link>
                                         </div>

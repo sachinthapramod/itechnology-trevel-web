@@ -3,7 +3,7 @@ import TourguideCard from './TourguideCard';
 import posts from '../data/data-guide.json';
 
 function TourGuideInner() {
-    const [currentPage, setCurrentPage] = useState(1);
+    const [currentPage] = useState(1);
     const postsPerPage = 6;
 
     // Get current posts
