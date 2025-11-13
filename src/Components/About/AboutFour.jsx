@@ -21,24 +21,17 @@ function AboutFour() {
                <div className="col-xl-5">
                   <div className="ps-xl-4">
                      <div className="title-area mb-20">
-                        <span className="sub-title style1 ">Welcome To Tourm</span>
+                        <span className="sub-title style1 ">Welcome To Tasmania Travel</span>
                         <h2 className="sec-title mb-20 pe-xl-5 me-xl-5 heading">
-                           We are world reputeted travel agency
+                           Your Premier Tasmania Travel Agency
                         </h2>
                      </div>
                      <p className="pe-xl-5">
-                        There are many variations of passages of available but the majority
-                        have suffered alteration in some form, by injected hum randomised
-                        words.
+                        Based in Tasmania, Australia, we are passionate about showcasing the natural beauty, rich history, and unique experiences our island state has to offer. From the rugged wilderness of Cradle Mountain to the historic Port Arthur, we create memorable journeys for every traveler.
                      </p>
                      <p className="mb-30 pe-xl-5">
                         {" "}
-                        Leiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt.
+                        Whether you're seeking a group tour to meet fellow travelers or a private tour tailored to your interests, our experienced team ensures you discover the best of Tasmania. We offer tours covering wildlife encounters, adventure activities, historical sites, and breathtaking natural landscapes that make Tasmania one of Australia's most captivating destinations.
                      </p>
                      <div className="about-item-wrap">
                         <div className="about-item style2">
@@ -46,10 +39,9 @@ function AboutFour() {
                               <img src="/assets/img/icon/about_1_1.svg" alt="" />
                            </div>
                            <div className="about-item_centent">
-                              <h5 className="box-title">Exclusive Trip</h5>
+                              <h5 className="box-title">Group & Private Tours</h5>
                               <p className="about-item_text">
-                                 There are many variations of passages of available but the
-                                 majority.
+                                 Choose from our diverse range of group tours or customize a private Tasmania adventure designed just for you.
                               </p>
                            </div>
                         </div>
@@ -60,8 +52,7 @@ function AboutFour() {
                            <div className="about-item_centent">
                               <h5 className="box-title">Safety First Always</h5>
                               <p className="about-item_text">
-                                 There are many variations of passages of available but the
-                                 majority.
+                                 Your safety is our priority. All tours follow strict safety protocols and are led by certified guides.
                               </p>
                            </div>
                         </div>
@@ -70,10 +61,9 @@ function AboutFour() {
                               <img src="/assets/img/icon/about_1_3.svg" alt="" />
                            </div>
                            <div className="about-item_centent">
-                              <h5 className="box-title">Professional Guide</h5>
+                              <h5 className="box-title">Local Expert Guides</h5>
                               <p className="about-item_text">
-                                 There are many variations of passages of available but the
-                                 majority.
+                                 Our Tasmanian guides bring deep local knowledge and passion for sharing the island's stories and secrets.
                               </p>
                            </div>
                         </div>

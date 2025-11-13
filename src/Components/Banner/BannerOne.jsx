@@ -78,14 +78,14 @@ function BannerOne() {
                                         data-ani="slideinup"
                                         data-ani-delay="0.2s"
                                     >
-                                        Get unforgetable pleasure with us
+                                        Discover the natural wonders of Tasmania
                                     </span>
                                     <h1
                                         className="hero-title"
                                         data-ani="slideinup"
                                         data-ani-delay="0.4s"
                                     >
-                                        Natural Wonder of the world{" "}
+                                        Explore Tasmania's Pristine Wilderness{" "}
                                     </h1>
                                     <div
                                         className="btn-group"
@@ -120,14 +120,14 @@ function BannerOne() {
                                         data-ani="slideinup"
                                         data-ani-delay="0.2s"
                                     >
-                                        Get unforgetable pleasure with us
+                                        Your gateway to Tasmania's hidden gems
                                     </span>
                                     <h1
                                         className="hero-title"
                                         data-ani="slideinup"
                                         data-ani-delay="0.4s"
                                     >
-                                        Let’s make your best trip with us{" "}
+                                        Group & Private Tours Across Tasmania{" "}
                                     </h1>
                                     <div
                                         className="btn-group"
@@ -162,14 +162,14 @@ function BannerOne() {
                                         data-ani="slideinup"
                                         data-ani-delay="0.2s"
                                     >
-                                        Get unforgetable pleasure with us
+                                        Experience Australia's island state
                                     </span>
                                     <h1
                                         className="hero-title"
                                         data-ani="slideinup"
                                         data-ani-delay="0.4s"
                                     >
-                                        Explore beauty of the whole world{" "}
+                                        Unforgettable Adventures in Tasmania{" "}
                                     </h1>
                                     <div
                                         className="btn-group"

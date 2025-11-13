@@ -14,18 +14,21 @@ function Booking() {
     const [formMessage, setFormMessage] = useState({ text: "", type: "" });
 
     const destinationOptions = [
-        { value: "Australia", label: "Australia" },
-        { value: "Dubai", label: "Dubai" },
-        { value: "England", label: "England" },
-        { value: "Sweden", label: "Sweden" },
-        { value: "Thailand", label: "Thailand" },
-        { value: "Switzerland", label: "Switzerland" },
+        { value: "Hobart", label: "Hobart" },
+        { value: "Launceston", label: "Launceston" },
+        { value: "Cradle Mountain", label: "Cradle Mountain" },
+        { value: "Freycinet", label: "Freycinet" },
+        { value: "Port Arthur", label: "Port Arthur" },
+        { value: "Bruny Island", label: "Bruny Island" },
+        { value: "Wineglass Bay", label: "Wineglass Bay" },
+        { value: "Strahan", label: "Strahan" },
     ];
     const adventureOptions = [
-        { value: "Beach", label: "Beach" },
         { value: "Group Tour", label: "Group Tour" },
-        { value: "Couple Tour", label: "Couple Tour" },
-        { value: "Family Tour", label: "Family Tour" },
+        { value: "Private Tour", label: "Private Tour" },
+        { value: "Wildlife", label: "Wildlife" },
+        { value: "Adventure", label: "Adventure" },
+        { value: "History & Culture", label: "History & Culture" },
     ];
     const durationOptions = [
         { value: "1 days", label: "1 days" },

@@ -25,14 +25,12 @@ function AboutOne() {
                     <div className="col-xl-6">
                         <div className="ps-xl-4 ms-xl-2">
                             <div className="title-area mb-20 pe-xl-5 me-xl-5">
-                                <span className="sub-title style1 ">Let’s Go Together</span>
+                                <span className="sub-title style1 ">Welcome to Tasmania</span>
                                 <h2 className="sec-title mb-20 pe-xl-5 me-xl-5 heading">
-                                    Plan Your Trip With us
+                                    Your Trusted Tasmania Travel Experts
                                 </h2>
                                 <p className="sec-text mb-30">
-                                    There are many variations of passages of available but the
-                                    majority have suffered alteration in some form, by injected hum
-                                    randomised words which don't look even slightly.
+                                    Based in Tasmania, Australia, we specialize in creating unforgettable travel experiences across our beautiful island state. Whether you prefer group tours or private adventures, we offer carefully curated journeys showcasing Tasmania's stunning landscapes, rich history, and unique wildlife.
                                 </p>
                             </div>
                             <div className="about-item-wrap">
@@ -41,10 +39,9 @@ function AboutOne() {
                                         <img src="/assets/img/icon/map3.svg" alt="" />
                                     </div>
                                     <div className="about-item_centent">
-                                        <h5 className="box-title">Exclusive Trip</h5>
+                                        <h5 className="box-title">Group & Private Tours</h5>
                                         <p className="about-item_text">
-                                            There are many variations of passages of available but the
-                                            majority.
+                                            Choose from our range of group tours or customize your own private Tasmania adventure tailored to your preferences.
                                         </p>
                                     </div>
                                 </div>
@@ -53,10 +50,9 @@ function AboutOne() {
                                         <img src="/assets/img/icon/guide.svg" alt="" />
                                     </div>
                                     <div className="about-item_centent">
-                                        <h5 className="box-title">Professional Guide</h5>
+                                        <h5 className="box-title">Local Expert Guides</h5>
                                         <p className="about-item_text">
-                                            There are many variations of passages of available but the
-                                            majority.
+                                            Our knowledgeable Tasmanian guides share insider knowledge about the island's history, culture, and natural wonders.
                                         </p>
                                     </div>
                                 </div>

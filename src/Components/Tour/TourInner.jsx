@@ -30,10 +30,11 @@ function TourInner() {
         // Filter by adventure type (map types to tour characteristics)
         if (adventureType) {
             const typeMap = {
-                'Beach': ['Maldives', 'Bali', 'Beach'],
-                'Group Tour': ['Group', 'Package'],
-                'Couple Tour': ['Couple', 'Romantic'],
-                'Family Tour': ['Family', 'Package']
+                'Group Tour': ['Group', 'Package', 'Tour'],
+                'Private Tour': ['Private', 'Exclusive', 'Custom'],
+                'Wildlife': ['Wildlife', 'Nature', 'Animal'],
+                'Adventure': ['Adventure', 'Hiking', 'Outdoor'],
+                'History & Culture': ['History', 'Heritage', 'Culture', 'Port Arthur']
             };
             
             const keywords = typeMap[adventureType] || [];

@@ -6,16 +6,16 @@ import "swiper/css/effect-coverflow";
 import { Link } from "react-router-dom";
 
 const destinations = [
-  { id: 1, name: "Maldives", listings: 15, image: "/assets/img/destination/destination_1_1.jpg" },
-  { id: 2, name: "Thailand", listings: 22, image: "/assets/img/destination/destination_1_2.jpg" },
-  { id: 3, name: "Belgium", listings: 25, image: "/assets/img/destination/destination_1_3.jpg" },
-  { id: 4, name: "Island", listings: 28, image: "/assets/img/destination/destination_1_4.jpg" },
-  { id: 5, name: "Maldives", listings: 30, image: "/assets/img/destination/destination_1_5.jpg" },
-  { id: 6, name: "Maldives", listings: 15, image: "/assets/img/destination/destination_1_1.jpg" },
-  { id: 7, name: "Thailand", listings: 22, image: "/assets/img/destination/destination_1_2.jpg" },
-  { id: 8, name: "Belgium", listings: 25, image: "/assets/img/destination/destination_1_3.jpg" },
-  { id: 9, name: "Island", listings: 28, image: "/assets/img/destination/destination_1_4.jpg" },
-  { id: 10, name: "Maldives", listings: 30, image: "/assets/img/destination/destination_1_5.jpg" },
+  { id: 1, name: "Hobart", listings: 12, image: "/assets/img/destination/destination_1_1.jpg" },
+  { id: 2, name: "Cradle Mountain", listings: 8, image: "/assets/img/destination/destination_1_2.jpg" },
+  { id: 3, name: "Freycinet", listings: 10, image: "/assets/img/destination/destination_1_3.jpg" },
+  { id: 4, name: "Port Arthur", listings: 6, image: "/assets/img/destination/destination_1_4.jpg" },
+  { id: 5, name: "Bruny Island", listings: 9, image: "/assets/img/destination/destination_1_5.jpg" },
+  { id: 6, name: "Launceston", listings: 11, image: "/assets/img/destination/destination_1_1.jpg" },
+  { id: 7, name: "Wineglass Bay", listings: 7, image: "/assets/img/destination/destination_1_2.jpg" },
+  { id: 8, name: "Strahan", listings: 5, image: "/assets/img/destination/destination_1_3.jpg" },
+  { id: 9, name: "Mount Field", listings: 8, image: "/assets/img/destination/destination_1_4.jpg" },
+  { id: 10, name: "Bay of Fires", listings: 9, image: "/assets/img/destination/destination_1_5.jpg" },
 ];
 
 const sliderOptions = {
@@ -81,8 +81,8 @@ function DestinationOne() {
     <div className="position-relative overflow-hidden">
       <div className="container">
         <div className="title-area text-center">
-          <span className="sub-title">Top Destination</span>
-          <h2 className="sec-title">Popular Destination</h2>
+          <span className="sub-title">Explore Tasmania</span>
+          <h2 className="sec-title">Popular Tasmania Destinations</h2>
         </div>
 
         <div className={`slider-drag-wrap ${cursorActive ? 'active' : ''}`}>

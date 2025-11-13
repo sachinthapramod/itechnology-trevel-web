@@ -16,10 +16,10 @@ function TourOne() {
         <div className="row">
           <div className="col-lg-6 offset-lg-3">
             <div className="title-area text-center">
-              <span className="sub-title">Best Place For You</span>
-              <h2 className="sec-title">Most Popular Tour</h2>
+              <span className="sub-title">Discover Tasmania</span>
+              <h2 className="sec-title">Popular Tasmania Tours</h2>
               <p className="sec-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Explore our carefully curated selection of group and private tours showcasing the best of Tasmania's natural beauty, wildlife, and rich history.
               </p>
             </div>
           </div>
