@@ -116,10 +116,10 @@ function TourGuiderDetailsMain() {
                                 <div className="about-contact-details">
                                     <h6 className="box-title">Our Address</h6>
                                     <p className="about-contact-details-text">
-                                        2690 Hiltona Street Victoria
+                                        6/14 Cessna Way
                                     </p>
                                     <p className="about-contact-details-text">
-                                        Road, New York, Canada
+                                        Cambridge TAS 7170, Australia
                                     </p>
                                 </div>
                             </div>
@@ -148,10 +148,7 @@ function TourGuiderDetailsMain() {
                                 <div className="about-contact-details">
                                     <h6 className="box-title">Email Address</h6>
                                     <p className="about-contact-details-text">
-                                        <Link to="mailto:mailinfo00@tourm.com">mailinfo00@tourm.com</Link>
-                                    </p>
-                                    <p className="about-contact-details-text">
-                                        <Link to="mailto:support24@tourm.com">support24@tourm.com</Link>
+                                        <Link to="mailto:Info@safetravelandtourservices.com.au">Info@safetravelandtourservices.com.au</Link>
                                     </p>
                                 </div>
                             </div>

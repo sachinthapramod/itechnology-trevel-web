@@ -115,18 +115,10 @@ function FooterOne() {
                                         <div className="details">
                                             <p>
                                                 <Link
-                                                    to="mailto:mailinfo00@tourm.com"
+                                                    to="mailto:Info@safetravelandtourservices.com.au"
                                                     className="info-box_link"
                                                 >
-                                                    mailinfo00@tourm.com
-                                                </Link>
-                                            </p>
-                                            <p>
-                                                <Link
-                                                    to="mailto:support24@tourm.com"
-                                                    className="info-box_link"
-                                                >
-                                                    support24@tourm.com
+                                                    Info@safetravelandtourservices.com.au
                                                 </Link>
                                             </p>
                                         </div>
@@ -136,7 +128,7 @@ function FooterOne() {
                                             <img src="/assets/img/icon/location-dot.svg" alt="img" />
                                         </div>
                                         <div className="details">
-                                            <p>789 Inner Lane, Holy park, California, USA</p>
+                                            <p>6/14 Cessna Way, Cambridge TAS 7170, Australia</p>
                                         </div>
                                     </div>
                                 </div>

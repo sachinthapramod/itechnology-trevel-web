@@ -42,7 +42,7 @@ function HeaderOne() {
                                     <ul>
                                         <li className="d-none d-xl-inline-block">
                                             <i className="fa-sharp fa-regular  fa-location-dot" />
-                                            <span>45 New Eskaton Road, Austria</span>
+                                            <span>6/14 Cessna Way, Cambridge TAS 7170</span>
                                         </li>
                                         <li className="d-none d-xl-inline-block">
                                             <i className="fa-regular fa-clock" />

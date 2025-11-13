@@ -113,13 +113,8 @@ function SideMenu({ isOpen, onClose }) {
                                 </div>
                                 <div className="details">
                                     <p>
-                                        <Link to="mailto:mailinfo00@tourm.com" className="info-box_link">
-                                            mailinfo00@tourm.com
-                                        </Link>
-                                    </p>
-                                    <p>
-                                        <Link to="mailto:support24@tourm.com" className="info-box_link">
-                                            support24@tourm.com
+                                        <Link to="mailto:Info@safetravelandtourservices.com.au" className="info-box_link">
+                                            Info@safetravelandtourservices.com.au
                                         </Link>
                                     </p>
                                 </div>
@@ -129,7 +124,7 @@ function SideMenu({ isOpen, onClose }) {
                                     <img src="/assets/img/icon/location-dot.svg" alt="img" />
                                 </div>
                                 <div className="details">
-                                    <p>789 Inner Lane, Holy park, California, USA</p>
+                                    <p>6/14 Cessna Way, Cambridge TAS 7170, Australia</p>
                                 </div>
                             </div>
                         </div>
