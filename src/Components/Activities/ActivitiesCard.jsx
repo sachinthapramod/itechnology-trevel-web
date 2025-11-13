@@ -7,7 +7,7 @@ function ActivitiesCard(props) {
         <>
             <div className="tour-box th-ani">
                 <div className="tour-box_img global-img">
-                    <img src={`/assets/img/tour/${activitiesImage}`} alt="" />
+                    <img src={`/assets/img/tour/${activitiesImage}`} alt="" loading="lazy" />
                 </div>
                 <div className="tour-content">
                     <h3 className="box-title">

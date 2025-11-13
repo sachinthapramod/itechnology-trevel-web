@@ -91,7 +91,7 @@ function DestinationOne() {
               <SwiperSlide key={dest.id}>
                 <div className="destination-box gsap-cursor">
                   <div className="destination-img">
-                    <img src={dest.image} alt={dest.name} />
+                    <img src={dest.image} alt={dest.name} loading="lazy" />
                     <div className="destination-content">
                       <div className="media-left">
                         <h4 className="box-title">

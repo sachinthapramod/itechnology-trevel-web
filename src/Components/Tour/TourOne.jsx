@@ -41,7 +41,7 @@ function TourOne() {
             <SwiperSlide key="tour1">
               <div className="tour-box th-ani gsap-cursor">
                 <div className="tour-box_img global-img">
-                  <img src="/assets/img/tour/tour_box_1.jpg" alt="Greece Tour Package" />
+                  <img src="/assets/img/tour/tour_box_1.jpg" alt="Greece Tour Package" loading="lazy" />
                 </div>
                 <div className="tour-content">
                   <h3 className="box-title">
@@ -75,7 +75,7 @@ function TourOne() {
             <SwiperSlide key="tour2">
               <div className="tour-box th-ani gsap-cursor">
                 <div className="tour-box_img global-img">
-                  <img src="/assets/img/tour/tour_box_2.jpg" alt="Italy Tour Package" />
+                  <img src="/assets/img/tour/tour_box_2.jpg" alt="Italy Tour Package" loading="lazy" />
                 </div>
                 <div className="tour-content">
                   <h3 className="box-title">
@@ -109,7 +109,7 @@ function TourOne() {
             <SwiperSlide key="tour3">
               <div className="tour-box th-ani gsap-cursor">
                 <div className="tour-box_img global-img">
-                  <img src="/assets/img/tour/tour_box_3.jpg" alt="Dubai Tour Package" />
+                  <img src="/assets/img/tour/tour_box_3.jpg" alt="Dubai Tour Package" loading="lazy" />
                 </div>
                 <div className="tour-content">
                   <h3 className="box-title">
@@ -143,7 +143,7 @@ function TourOne() {
             <SwiperSlide key="tour4">
               <div className="tour-box th-ani gsap-cursor">
                 <div className="tour-box_img global-img">
-                  <img src="/assets/img/tour/tour_box_4.jpg" alt="Switzerland Tour" />
+                  <img src="/assets/img/tour/tour_box_4.jpg" alt="Switzerland Tour" loading="lazy" />
                 </div>
                 <div className="tour-content">
                   <h3 className="box-title">
@@ -177,7 +177,7 @@ function TourOne() {
             <SwiperSlide key="tour5">
               <div className="tour-box th-ani gsap-cursor">
                 <div className="tour-box_img global-img">
-                  <img src="/assets/img/tour/tour_box_1.jpg" alt="Greece Tour Package" />
+                  <img src="/assets/img/tour/tour_box_1.jpg" alt="Greece Tour Package" loading="lazy" />
                 </div>
                 <div className="tour-content">
                   <h3 className="box-title">
@@ -211,7 +211,7 @@ function TourOne() {
             <SwiperSlide key="tour6">
               <div className="tour-box th-ani gsap-cursor">
                 <div className="tour-box_img global-img">
-                  <img src="/assets/img/tour/tour_box_2.jpg" alt="Italy Tour Package" />
+                  <img src="/assets/img/tour/tour_box_2.jpg" alt="Italy Tour Package" loading="lazy" />
                 </div>
                 <div className="tour-content">
                   <h3 className="box-title">
@@ -245,7 +245,7 @@ function TourOne() {
             <SwiperSlide key="tour7">
               <div className="tour-box th-ani gsap-cursor">
                 <div className="tour-box_img global-img">
-                  <img src="/assets/img/tour/tour_box_3.jpg" alt="Dubai Tour Package" />
+                  <img src="/assets/img/tour/tour_box_3.jpg" alt="Dubai Tour Package" loading="lazy" />
                 </div>
                 <div className="tour-content">
                   <h3 className="box-title">
@@ -279,7 +279,7 @@ function TourOne() {
             <SwiperSlide key="tour8">
               <div className="tour-box th-ani gsap-cursor">
                 <div className="tour-box_img global-img">
-                  <img src="/assets/img/tour/tour_box_4.jpg" alt="Switzerland Tour" />
+                  <img src="/assets/img/tour/tour_box_4.jpg" alt="Switzerland Tour" loading="lazy" />
                 </div>
                 <div className="tour-content">
                   <h3 className="box-title">

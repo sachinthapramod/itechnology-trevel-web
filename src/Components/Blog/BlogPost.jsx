@@ -14,7 +14,7 @@ function BlogPost(props) {
             <div className="th-blog blog-single has-post-thumbnail">
                 <div className="blog-img">
                     <Link to={`/blog/${blogID}`}>
-                        <img src={`/assets/img/blog/${blogImage}`} alt="Blog" />
+                        <img src={`/assets/img/blog/${blogImage}`} alt="Blog" loading="lazy" />
                     </Link>
                 </div>
                 <div className="blog-content">
