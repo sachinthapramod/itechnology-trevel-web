@@ -28,7 +28,7 @@ const TourItem = ({ image, title, link, rating, price, duration, bookLink }) => 
             </h4>
             <div className="tour-action">
                 <span>
-                    <i className="fa-light fa-clock" /> {duration} Days
+                    <i className="fa-light fa-clock" /> {duration} {duration === 1 ? 'Day' : 'Days'}
                 </span>
                 <Link to={bookLink} className="th-btn style4 th-icon">
                     Book Now
@@ -114,92 +114,47 @@ function TourTwo() {
                                 <SwiperSlide>
                                     <TourItem
                                         image="/assets/img/tour/tour_box_1.jpg"
-                                        title="Greece Tour Package"
+                                        title="Bruny Island Group Tour Package"
                                         link="/tour-details"
                                         rating={5.0}
                                         price={980}
-                                        duration={7}
+                                        duration={1}
                                         bookLink="/contact"
                                     />
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <TourItem
                                         image="/assets/img/tour/tour_box_2.jpg"
-                                        title="Italy Tour Package"
+                                        title="Bruny Island Private Tour Package"
                                         link="/tour-details"
                                         rating={5.0}
                                         price={980}
-                                        duration={7}
+                                        duration={1}
                                         bookLink="/contact"
                                     />
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <TourItem
                                         image="/assets/img/tour/tour_box_3.jpg"
-                                        title="Dubai Tour Package"
+                                        title="Mount Wellington Group Tour"
                                         link="/tour-details"
                                         rating={5.0}
                                         price={980}
-                                        duration={7}
+                                        duration={1}
                                         bookLink="/contact"
                                     />
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <TourItem
                                         image="/assets/img/tour/tour_box_4.jpg"
-                                        title="Paris Tour Package"
+                                        title="Mount Wellington Private Tour"
                                         link="/tour-details"
                                         rating={5.0}
                                         price={980}
-                                        duration={7}
+                                        duration={1}
                                         bookLink="/contact"
                                     />
                                 </SwiperSlide>
-                                <SwiperSlide>
-                                    <TourItem
-                                        image="/assets/img/tour/tour_box_1.jpg"
-                                        title="Greece Tour Package"
-                                        link="/tour-details"
-                                        rating={5.0}
-                                        price={980}
-                                        duration={7}
-                                        bookLink="/contact"
-                                    />
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <TourItem
-                                        image="/assets/img/tour/tour_box_2.jpg"
-                                        title="Italy Tour Package"
-                                        link="/tour-details"
-                                        rating={5.0}
-                                        price={980}
-                                        duration={7}
-                                        bookLink="/contact"
-                                    />
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <TourItem
-                                        image="/assets/img/tour/tour_box_3.jpg"
-                                        title="Dubai Tour Package"
-                                        link="/tour-details"
-                                        rating={5.0}
-                                        price={980}
-                                        duration={7}
-                                        bookLink="/contact"
-                                    />
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <TourItem
-                                        image="/assets/img/tour/tour_box_4.jpg"
-                                        title="Paris Tour Package"
-                                        link="/tour-details"
-                                        rating={5.0}
-                                        price={980}
-                                        duration={7}
-                                        bookLink="/contact"
-                                    />
-                                </SwiperSlide>
-                                {/* Add more SwiperSlide items here */}
                             </Swiper>
                         </div>
                     </div>

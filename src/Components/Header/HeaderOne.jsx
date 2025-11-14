@@ -234,8 +234,8 @@ function HeaderOne() {
                         </div>
                         <div className="logo-bg bg-mask"
                             style={{
-                                WebkitMaskImage: "url(/assets/img/logo_bg_mask.png)",
-                                maskImage: "url(/assets/img/logo_bg_mask.png)"
+                                WebkitMaskImage: "url(/assets/img/logo_bg_mask.png?v=2)",
+                                maskImage: "url(/assets/img/logo_bg_mask.png?v=2)"
                             }} />
                     </div>
                 </div>
