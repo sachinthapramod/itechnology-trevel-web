@@ -25,12 +25,18 @@ function AboutOne() {
                     <div className="col-xl-6">
                         <div className="ps-xl-4 ms-xl-2">
                             <div className="title-area mb-20 pe-xl-5 me-xl-5">
-                                <span className="sub-title style1 ">Welcome to Tasmania</span>
+                                <span className="sub-title style1 ">About Us</span>
                                 <h2 className="sec-title mb-20 pe-xl-5 me-xl-5 heading">
-                                    Your Trusted Tasmania Travel Experts
+                                    Safe Travel and Tour Services
                                 </h2>
                                 <p className="sec-text mb-30">
-                                    Based in Tasmania, Australia, we specialize in creating unforgettable travel experiences across our beautiful island state. Whether you prefer group tours or private adventures, we offer carefully curated journeys showcasing Tasmania's stunning landscapes, rich history, and unique wildlife.
+                                    Safe Travel and Tour Services is a proudly Australian-owned and family-operated tour company based in Hobart. We specialise in one-day tours, private charters, and group adventures, offering travellers safe, comfortable, and memorable journeys.
+                                </p>
+                                <p className="sec-text mb-30">
+                                    Starting our journey in Tasmania, we are expanding our services across Australia — sharing the beauty, culture, and hidden gems of this incredible country with visitors from around the world.
+                                </p>
+                                <p className="sec-text mb-30">
+                                    Our goal is simple: to make every trip enjoyable, informative, and stress-free, with genuine care and personalised service at every step.
                                 </p>
                             </div>
                             <div className="about-item-wrap">
@@ -39,9 +45,9 @@ function AboutOne() {
                                         <img src="/assets/img/icon/map3.svg" alt="" />
                                     </div>
                                     <div className="about-item_centent">
-                                        <h5 className="box-title">Group & Private Tours</h5>
+                                        <h5 className="box-title">One-Day Tours & Private Charters</h5>
                                         <p className="about-item_text">
-                                            Choose from our range of group tours or customize your own private Tasmania adventure tailored to your preferences.
+                                            We specialise in one-day tours, private charters, and group adventures, offering safe, comfortable, and memorable journeys throughout Tasmania and Australia.
                                         </p>
                                     </div>
                                 </div>
@@ -50,9 +56,9 @@ function AboutOne() {
                                         <img src="/assets/img/icon/guide.svg" alt="" />
                                     </div>
                                     <div className="about-item_centent">
-                                        <h5 className="box-title">Local Expert Guides</h5>
+                                        <h5 className="box-title">Genuine Care & Personalised Service</h5>
                                         <p className="about-item_text">
-                                            Our knowledgeable Tasmanian guides share insider knowledge about the island's history, culture, and natural wonders.
+                                            As a family-operated business, we provide genuine care and personalised service at every step, making every trip enjoyable, informative, and stress-free.
                                         </p>
                                     </div>
                                 </div>

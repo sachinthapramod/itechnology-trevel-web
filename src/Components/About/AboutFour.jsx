@@ -21,27 +21,39 @@ function AboutFour() {
                <div className="col-xl-5">
                   <div className="ps-xl-4">
                      <div className="title-area mb-20">
-                        <span className="sub-title style1 ">Welcome To Tasmania Travel</span>
+                        <span className="sub-title style1 ">About Us</span>
                         <h2 className="sec-title mb-20 pe-xl-5 me-xl-5 heading">
-                           Your Premier Tasmania Travel Agency
+                           Safe Travel and Tour Services
                         </h2>
                      </div>
                      <p className="pe-xl-5">
-                        Based in Tasmania, Australia, we are passionate about showcasing the natural beauty, rich history, and unique experiences our island state has to offer. From the rugged wilderness of Cradle Mountain to the historic Port Arthur, we create memorable journeys for every traveler.
+                        Safe Travel and Tour Services is a proudly Australian-owned and family-operated tour company based in Hobart. We specialise in one-day tours, private charters, and group adventures, offering travellers safe, comfortable, and memorable journeys.
+                     </p>
+                     <p className="pe-xl-5">
+                        Starting our journey in Tasmania, we are expanding our services across Australia — sharing the beauty, culture, and hidden gems of this incredible country with visitors from around the world.
                      </p>
                      <p className="mb-30 pe-xl-5">
-                        {" "}
-                        Whether you're seeking a group tour to meet fellow travelers or a private tour tailored to your interests, our experienced team ensures you discover the best of Tasmania. We offer tours covering wildlife encounters, adventure activities, historical sites, and breathtaking natural landscapes that make Tasmania one of Australia's most captivating destinations.
+                        Our goal is simple: to make every trip enjoyable, informative, and stress-free, with genuine care and personalised service at every step.
                      </p>
+                     <div className="mb-40 pe-xl-5">
+                        <h3 className="sec-title mb-15" style={{ fontSize: '24px' }}>Vision Statement</h3>
+                        <p className="mb-30">
+                           To become one of Australia's most trusted and loved tour operators, recognised for delivering safe, authentic, and unforgettable travel experiences that connect people with the heart and beauty of Australia.
+                        </p>
+                        <h3 className="sec-title mb-15" style={{ fontSize: '24px' }}>Mission Statement</h3>
+                        <p className="mb-30">
+                           Our mission is to provide exceptional tour experiences through safety, comfort, and genuine hospitality. We aim to create meaningful travel moments for every guest — showcasing Australia's stunning landscapes, diverse culture, and friendly spirit, all while maintaining the warmth and reliability of a family business.
+                        </p>
+                     </div>
                      <div className="about-item-wrap">
                         <div className="about-item style2">
                            <div className="about-item_img">
                               <img src="/assets/img/icon/about_1_1.svg" alt="" />
                            </div>
                            <div className="about-item_centent">
-                              <h5 className="box-title">Group & Private Tours</h5>
+                              <h5 className="box-title">One-Day Tours & Private Charters</h5>
                               <p className="about-item_text">
-                                 Choose from our diverse range of group tours or customize a private Tasmania adventure designed just for you.
+                                 We specialise in one-day tours, private charters, and group adventures, offering safe, comfortable, and memorable journeys.
                               </p>
                            </div>
                         </div>
@@ -50,9 +62,9 @@ function AboutFour() {
                               <img src="/assets/img/icon/about_1_2.svg" alt="" />
                            </div>
                            <div className="about-item_centent">
-                              <h5 className="box-title">Safety First Always</h5>
+                              <h5 className="box-title">Safety & Comfort</h5>
                               <p className="about-item_text">
-                                 Your safety is our priority. All tours follow strict safety protocols and are led by certified guides.
+                                 We provide exceptional tour experiences through safety, comfort, and genuine hospitality, ensuring every journey is safe and memorable.
                               </p>
                            </div>
                         </div>
@@ -61,9 +73,9 @@ function AboutFour() {
                               <img src="/assets/img/icon/about_1_3.svg" alt="" />
                            </div>
                            <div className="about-item_centent">
-                              <h5 className="box-title">Local Expert Guides</h5>
+                              <h5 className="box-title">Family Business Values</h5>
                               <p className="about-item_text">
-                                 Our Tasmanian guides bring deep local knowledge and passion for sharing the island's stories and secrets.
+                                 As a family-operated business, we maintain the warmth and reliability that comes with genuine care and personalised service at every step.
                               </p>
                            </div>
                         </div>
