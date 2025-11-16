@@ -8,13 +8,8 @@ function TourDetailsMain() {
     const [activeTab, setActiveTab] = useState("day-tab1");
 
     const days = [
-        { id: "day-tab1", label: "Day 01" },
-        { id: "day-tab2", label: "Day 02" },
-        { id: "day-tab3", label: "Day 03" },
-        { id: "day-tab4", label: "Day 04" },
-        { id: "day-tab5", label: "Day 05" },
-        { id: "day-tab6", label: "Day 06" },
-        { id: "day-tab7", label: "Day 07" },
+        { id: "day-tab1", label: "Mount Wellington Tour" },
+        { id: "day-tab2", label: "Bruny Island Tour" },
     ];
 
     const images = [
@@ -27,53 +22,34 @@ function TourDetailsMain() {
     ];
     const tabContent = {
         "day-tab1": [
-            "As the Eiffel Tower is to Paris, the silhouette of the",
-            "Curabitur pellentesque nibh nibh, at maximus ante",
-            "United commitment to our excellence patent protection.",
-            "As the Eiffel Tower is to Paris, the silhouette of the",
-            "Maecenas vitae mattis tellus. Nullam quis imperdiet",
+            "Morning departure from Brooke Street Pier, Hobart (or hotel pick-up in Hobart CBD)",
+            "Scenic drive to Mount Wellington summit (Kunanyi) - 1,271 metres above sea level",
+            "Photo stops and enjoy sweeping views over Hobart, the Derwent River, and the Tasman Peninsula",
+            "Experience crisp mountain air and panoramic vistas",
+            "Drive down to Richmond Historic Village",
+            "Explore cobblestone streets lined with Georgian architecture",
+            "Visit the iconic Richmond Bridge (Australia's oldest bridge)",
+            "Stop at Richmond Gaol to learn about convict-era history",
+            "Free time for shopping, browsing boutique shops, and sampling local treats at cafes and bakeries",
+            "Lunch at your own expense in Richmond",
+            "Return journey to Hobart with your friendly local guide sharing insights into Tasmania's natural beauty and history",
+            "Approximately 5:00 PM return to departure point",
         ],
         "day-tab2": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "Pellentesque accumsan malesuada mi at vehicula.",
-            "Suspendisse potenti. Praesent bibendum turpis ut justo.",
-            "Vivamus scelerisque sem non nisi feugiat, ut efficitur dui.",
-            "Sed at erat sagittis, bibendum turpis et, fermentum nisl.",
-        ],
-        "day-tab3": [
-            "Fusce sed arcu nec arcu elementum consectetur.",
-            "Nullam non libero ut lacus varius venenatis.",
-            "Donec at sapien vitae lectus luctus tincidunt.",
-            "Cras dapibus libero eget orci feugiat venenatis.",
-            "Aliquam erat volutpat. Vivamus at lacus id est aliquet posuere.",
-        ],
-        "day-tab4": [
-            "Duis et risus eget urna tincidunt fringilla.",
-            "Integer ac ex a purus bibendum consequat.",
-            "Vestibulum auctor orci at felis ultricies bibendum.",
-            "Maecenas volutpat est nec nisi dignissim, non congue magna.",
-            "Nunc vulputate nisi non sapien gravida, nec tempus justo cursus.",
-        ],
-        "day-tab5": [
-            "Sed cursus turpis vel nulla egestas, id posuere urna hendrerit.",
-            "Quisque laoreet tortor sed eros tincidunt tristique.",
-            "Morbi vulputate mi nec neque posuere, a consectetur tortor.",
-            "Curabitur eget libero nec ipsum sollicitudin scelerisque.",
-            "Etiam laoreet orci sed lectus efficitur, ut posuere libero euismod.",
-        ],
-        "day-tab6": [
-            "Vestibulum eget turpis sed orci bibendum sodales.",
-            "Duis auctor eros sit amet turpis suscipit, nec dignissim turpis.",
-            "Mauris non dolor sit amet lectus ultricies malesuada.",
-            "Integer consectetur lorem ut sem malesuada aliquet.",
-            "Sed elementum eros nec dolor vestibulum faucibus.",
-        ],
-        "day-tab7": [
-            "Ut quis sapien nec felis consequat egestas.",
-            "Morbi et magna a justo facilisis lacinia.",
-            "Praesent aliquet metus ac nisi dapibus, vel scelerisque purus.",
-            "Phasellus a turpis non sapien dapibus feugiat.",
-            "Donec eu mi vel felis vehicula dapibus.",
+            "7:30 AM departure from Hobart (hotel pick-up in Hobart CBD or meet at Brooke Street Pier)",
+            "Drive to Kettering for the ferry crossing",
+            "Scenic ferry ride across the D'Entrecasteaux Channel to Bruny Island",
+            "Climb The Neck Lookout for spectacular 360° views of both North and South Bruny Island",
+            "Visit Adventure Bay and explore pristine beaches",
+            "Wildlife spotting opportunities - look for white wallabies, sea eagles, and other native wildlife",
+            "Local gourmet tastings: sample award-winning cheese, fresh oysters, artisan chocolate, and local honey",
+            "Explore the island's stunning landscapes and dramatic coastlines",
+            "Free time for additional exploration and photography",
+            "Lunch at your own expense (opportunities available on the island)",
+            "Continue exploring Bruny Island's natural beauty and wildlife",
+            "Ferry ride back to the mainland",
+            "Return journey to Hobart with your expert local guide",
+            "Approximately 5:00 PM return to departure point",
         ],
     };
     return (
@@ -145,103 +121,106 @@ function TourDetailsMain() {
                                     </span>
                                 </div>
                                 <h2 className="box-title">
-                                    Explore the Beauty of Maldives and enjoy
+                                    Experience the Highlights of Southern Tasmania
                                 </h2>
                                 <h4 className="tour-price">
-                                    <span className="currency">$189,25</span>/Person
+                                    <span className="currency">From AUD $120.00</span>/Person
                                 </h4>
                                 <p className="box-text mb-30">
-                                    voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                                    beatae vitae dicta sunt explicabo. Dolorem ipsum quia dolor sit
-                                    amet, consectetur, adipisci velit, sed quia non numquam eius modi
-                                    tempora incidunt ut labore et dolore magnam aliquam quaerat
-                                    voluptatem. Quis autem vel eum iure reprehenderit qui in ea
-                                    voluptate velit esse quam nihil molestiae consequatur, vel illum
-                                    qui dolorem eum fugiat quo voluptas nulla pariatur
+                                    Experience the highlights of Southern Tasmania on this full-day guided tour. Begin your adventure with a scenic drive to the summit of Mount Wellington, standing 1,271 metres above sea level. Take in sweeping views over Hobart, the Derwent River, and the Tasman Peninsula. Enjoy photo stops and crisp mountain air before heading down to explore one of Tasmania's most picturesque heritage towns.
                                 </p>
                                 <p className="box-text mb-50">
-                                    {" "}
-                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                                    corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-                                    consequatur? Quis autem vel eum iure reprehenderit qui in ea
-                                    voluptate velit esse quam nihil molestiae consequatur, vel illum
-                                    qui dolorem eum fugiat quo voluptas nulla pariatur
+                                    At Richmond Village, wander through cobblestone streets lined with Georgian architecture, visit the iconic Richmond Bridge (Australia's oldest), browse boutique shops, and sample local treats at cafes and bakeries. Your friendly local guide shares insights into Tasmania's natural beauty and convict-era history, making this a memorable and relaxed day out.
                                 </p>
-                                <h2 className="box-title">Highlights</h2>
+                                <h2 className="box-title">Tour Highlights</h2>
                                 <p className="box-text mb-30">
-                                    voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                                    beatae vitae dicta sunt explicabo. Dolorem ipsum quia dolor sit
-                                    amet, consectetur, adipisci.
+                                    Discover the best of Southern Tasmania with our carefully curated tour highlights:
                                 </p>
                                 <div className="checklist mb-50">
                                     <ul>
-                                        <li>Visit most popular location of Maldives</li>
-                                        <li>Buffet Breakfast for all traveler with good quality.</li>
-                                        <li>Expert guide always guide you and give informations.</li>
-                                        <li>Best Hotel for all also great food.</li>
-                                        <li>Helping all traveler for Money Exchange.</li>
-                                        <li>Buffet Breakfast for all traveler with good quality..</li>
-                                        <li>Buffet Breakfast for all traveler with good quality.</li>
+                                        <li>Visit Mount Wellington summit (Kunanyi) - 1,271 metres above sea level</li>
+                                        <li>Explore Richmond Historic Village with Georgian architecture</li>
+                                        <li>Stop at Richmond Bridge and Richmond Gaol</li>
+                                        <li>Free time for shopping and lunch (own expense)</li>
+                                        <li>Small group experience with local guide</li>
+                                        <li>Air-conditioned transport</li>
+                                        <li>Scenic ferry ride across the D'Entrecasteaux Channel (Bruny Island tours)</li>
+                                        <li>Climb The Neck Lookout for 360° views (Bruny Island tours)</li>
+                                        <li>Visit Adventure Bay and pristine beaches (Bruny Island tours)</li>
+                                        <li>Spot wildlife like white wallabies and sea eagles (Bruny Island tours)</li>
+                                        <li>Local gourmet tastings: cheese, oysters, chocolate, honey (Bruny Island tours)</li>
                                     </ul>
                                 </div>
                                 <h2 className="box-title">Basic Information</h2>
                                 <p className="blog-text mb-35">
-                                    voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                                    beatae vitae dicta sunt explicabo. Dolorem ipsum quia dolor sit
-                                    amet, consectetur, adipisci.
+                                    Essential information for your tour booking and preparation:
                                 </p>
                                 <div className="destination-checklist mb-50">
                                     <div className="checklist style2">
                                         <ul>
-                                            <li>Destination</li>
-                                            <li>Departure</li>
+                                            <li>Duration</li>
+                                            <li>Departure Location</li>
+                                            <li>Return Location</li>
+                                            <li>Departure Time</li>
+                                            <li>Return Time</li>
+                                            <li>Days of Operation</li>
                                             <li>Language</li>
-                                            <li>Reture Date</li>
-                                            <li>Departure Date</li>
-                                            <li>No. of Guide</li>
                                         </ul>
                                     </div>
                                     <div className="checklist style2">
                                         <ul>
-                                            <li>Netherland</li>
-                                            <li>Singapore Airport, Singapore</li>
+                                            <li>9 Hours (approx.)</li>
+                                            <li>Brooke Street Pier, Hobart</li>
+                                            <li>Same as departure point</li>
+                                            <li>7:30 AM (Bruny Island) / Morning (Mount Wellington)</li>
+                                            <li>Approximately 5:00 PM</li>
+                                            <li>Daily</li>
                                             <li>English</li>
-                                            <li>August 12, 2024</li>
-                                            <li>Netherland</li>
-                                            <li>25 Tour Places</li>
-                                            <li>2 Person</li>
                                         </ul>
                                     </div>
                                 </div>
+                                <h3 className="box-title">What to Bring</h3>
+                                <div className="checklist mb-50">
+                                    <ul>
+                                        <li>Comfortable walking shoes</li>
+                                        <li>Warm clothing (Mount Wellington can be cold even in summer!)</li>
+                                        <li>Camera</li>
+                                        <li>Water bottle</li>
+                                    </ul>
+                                </div>
+                                <h3 className="box-title">Important Information</h3>
+                                <div className="checklist mb-50">
+                                    <ul>
+                                        <li>Tour may be altered or cancelled due to adverse weather on Mount Wellington</li>
+                                        <li>Minimum numbers may apply</li>
+                                        <li>Complimentary hotel pick-up available on request (Hobart CBD only)</li>
+                                        <li>Be ready 10 minutes before departure</li>
+                                        <li>Pickup confirmation sent by email the day before</li>
+                                    </ul>
+                                </div>
                                 <h2 className="box-title">Included and Excluded</h2>
                                 <p className="blog-text mb-35">
-                                    voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                                    beatae vitae dicta sunt explicabo. Dolorem ipsum quia dolor sit
-                                    amet, consectetur, adipisci.
+                                    Here's what's included in your tour and what you'll need to arrange separately:
                                 </p>
                                 <div className="destination-checklist">
                                     <div className="checklist style2 style4">
                                         <ul>
-                                            <li>Hotel Fair</li>
-                                            <li>Transportation</li>
-                                            <li>Breakfast</li>
-                                            <li>Sightseeing</li>
-                                            <li>Travel Tax</li>
-                                            <li>Seasonal Food</li>
+                                            <li>Hotel pickup and drop-off (Hobart CBD)</li>
+                                            <li>Ferry transfers to and from Bruny Island (Bruny Island tours)</li>
+                                            <li>Transport in comfortable air-conditioned vehicle</li>
+                                            <li>National Park entry fees</li>
+                                            <li>Cheese, oyster, and chocolate tastings (Bruny Island tours)</li>
+                                            <li>Bottled water</li>
+                                            <li>Expert local guide</li>
                                         </ul>
                                     </div>
                                     <div className="checklist style5">
                                         <ul>
-                                            <li>WIFI</li>
-                                            <li>Swimming Pool</li>
-                                            <li>GYM</li>
-                                            <li>Travel Insurance</li>
-                                            <li>Family Expenses</li>
-                                            <li>Family Expenses</li>
+                                            <li>Personal purchases</li>
+                                            <li>Additional drinks</li>
+                                            <li>Lunch (own expense)</li>
+                                            <li>Travel insurance</li>
+                                            <li>Gratuities (optional)</li>
                                         </ul>
                                     </div>
                                 </div>

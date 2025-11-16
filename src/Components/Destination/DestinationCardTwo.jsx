@@ -38,7 +38,7 @@ function DestinationCardTwo(props) {
                 </h4>
                 <div className="tour-action">
                     <span>
-                        <i className="fa-light fa-clock" />7 Days
+                        <i className="fa-light fa-clock" />1 Day
                     </span>
                     <Link to="/contact" className="th-btn style4 th-icon">
                         Book Now

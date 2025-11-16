@@ -40,93 +40,59 @@ function DestinationDetailsMain() {
                                     </span>
                                 </div>
                                 <h2 className="box-title">
-                                    Explore the Beauty of Maldives and enjoy
+                                    Explore the Beauty of Bruny Island & Mount Wellington, Tasmania
                                 </h2>
                                 <p className="blog-text mb-30">
-                                    voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                                    beatae vitae dicta sunt explicabo. Dolorem ipsum quia dolor sit
-                                    amet, consectetur, adipisci velit, sed quia non numquam eius modi
-                                    tempora incidunt ut labore et dolore magnam aliquam quaerat
-                                    voluptatem. Quis autem vel eum iure reprehenderit qui in ea
-                                    voluptate velit esse quam nihil molestiae consequatur, vel illum
-                                    qui dolorem eum fugiat quo voluptas nulla pariatur Quis autem vel
-                                    eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-                                    molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                                    voluptas nulla pariatur
+                                    Discover the stunning natural beauty of Tasmania with our one-day tours to Bruny Island and Mount Wellington. These iconic destinations showcase the best of Tasmania's landscapes, wildlife, and scenic views. Whether you choose a group tour or a private charter, experience breathtaking coastlines, pristine beaches, abundant wildlife, and panoramic mountain vistas in a single unforgettable day.
                                 </p>
                                 <p className="blog-text mb-35">
-                                    {" "}
-                                    ‍Whether you work from home or commute to a nearby office, the
-                                    energy-efficient features of your home contribute to a productive
-                                    and eco-conscious workday. Smart home systems allow you to monitor
-                                    and control energy usage, ensuring that your environmental impact
-                                    remains minimal.
+                                    Our carefully crafted tours from Hobart offer the perfect introduction to Tasmania's most spectacular destinations. Bruny Island features dramatic coastlines, secluded beaches, and unique wildlife encounters, while Mount Wellington provides stunning 360-degree views of Hobart and the surrounding region. Both destinations are easily accessible from Hobart and perfect for one-day adventures.
                                 </p>
                                 <h2 className="box-title">Basic Information</h2>
                                 <p className="blog-text mb-35">
-                                    voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                                    beatae vitae dicta sunt explicabo. Dolorem ipsum quia dolor sit
-                                    amet, consectetur, adipisci.
+                                    Our one-day tours to Bruny Island and Mount Wellington are designed to showcase the best of Tasmania's natural beauty. Here's essential information about these destinations:
                                 </p>
                                 <div className="destination-checklist">
                                     <div className="checklist style2">
                                         <ul>
                                             <li>Destination</li>
-                                            <li>Visa Requirements</li>
-                                            <li>Language</li>
-                                            <li>Currency Used</li>
-                                            <li>Area (km2)</li>
-                                            <li>Destination</li>
-                                            <li>Per Person</li>
+                                            <li>Tour Duration</li>
+                                            <li>Tour Type</li>
+                                            <li>Pick-up Location</li>
+                                            <li>Best Time to Visit</li>
+                                            <li>Activities</li>
+                                            <li>Price Per Person</li>
                                         </ul>
                                     </div>
                                     <div className="checklist style2">
                                         <ul>
-                                            <li>Netherlands</li>
-                                            <li>On Arrival Visa</li>
-                                            <li>English</li>
-                                            <li>Euro</li>
-                                            <li>25,859km2</li>
-                                            <li>25 Tour Places</li>
+                                            <li>Bruny Island & Mount Wellington</li>
+                                            <li>1 Day (8-10 hours)</li>
+                                            <li>Group & Private Tours</li>
+                                            <li>Hobart, Tasmania</li>
+                                            <li>Year Round</li>
+                                            <li>Sightseeing, Adventure, Wildlife</li>
                                             <li>{destinationPost.price}</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <blockquote>
                                     <p>
-                                        Join your neighbors for an eco-friendly social gathering as the
-                                        day comes to a conclusion. Savor refreshments made with
-                                        sustainable ingredients and have discussions on sustainable
-                                        life. By fostering a sense of community.
+                                        Our one-day tours to Bruny Island and Mount Wellington offer an unforgettable experience of Tasmania's natural beauty. From the dramatic coastlines and wildlife of Bruny Island to the panoramic mountain views from Mount Wellington, every moment is designed to create lasting memories.
                                     </p>
-                                    <cite>Michel Clarck</cite>
+                                    <cite>Safe Travel and Tour Services</cite>
                                 </blockquote>
                                 <p className="blog-text mb-35">
-                                    Dinning: Prepare a dinner using fresh ingredients from your own
-                                    garden or the local CSA program. The energy-efficient appliances
-                                    in your kitchen make cooking a breeze while minimizing your
-                                    overall energy consumption. Share a meal with neighbors, The quiet
-                                    night offers a peaceful ambiance, reinforcing the community's
-                                    commitment to a sustainable, low-impact lifestyle.
+                                    Bruny Island Tours: Experience pristine beaches, dramatic sea cliffs, and abundant wildlife including seals, dolphins, and native birds. Our tours include visits to the Neck Lookout, Adventure Bay, and opportunities to spot white wallabies. The island's unique geography and diverse ecosystems make it a photographer's paradise and nature lover's dream.
                                 </p>
                                 <p className="blog-text mb-35">
-                                    Living sustainably at Realar Residence is more than a choice; it's
-                                    an immersive experience that shapes every moment of your day. From
-                                    the moment you wake up in your solar-powered home to the evening
-                                    gatherings with like-minded neighbors
+                                    Mount Wellington Tours: Ascend to the summit of kunanyi/Mount Wellington for breathtaking 360-degree views of Hobart, the Derwent River, and surrounding landscapes. At 1,271 meters above sea level, the summit offers spectacular vistas in all directions. Our tours include stops at various lookouts, walking opportunities, and expert commentary about the mountain's geology, history, and significance to the local Aboriginal people.
                                 </p>
                                 <h3 className="">
-                                    The sustainable traveller These 6 hotels epitomise ethical luxury
+                                    What Makes Our Tours Special
                                 </h3>
                                 <p className="mb-35">
-                                    {" "}
-                                    ‍Whether you work from home or commute to a nearby office, the
-                                    energy-efficient features of your home contribute to a productive
-                                    and eco-conscious workday. Smart home systems allow you to monitor
-                                    and control energy usage, ensuring that your environmental impact
-                                    remains minimal.
+                                    Our one-day tours are carefully designed to showcase the best of Tasmania while ensuring comfort, safety, and genuine hospitality. Whether you choose a group tour to meet fellow travelers or a private charter for a personalized experience, our expert local guides share their deep knowledge of Tasmania's history, culture, and natural environment. All tours include comfortable transportation, Hobart pick-up and drop-off, and are suitable for all fitness levels.
                                 </p>
                                 <div className="service-inner-img mb-40">
                                     <img
@@ -137,13 +103,13 @@ function DestinationDetailsMain() {
                                 <h2 className="box-title">Highlights</h2>
                                 <div className="checklist">
                                     <ul>
-                                        <li>Visit most popular location of Maldives</li>
-                                        <li>Buffet Breakfast for all traveler with good quality.</li>
-                                        <li>Expert guide always guide you and give informations.</li>
-                                        <li>Best Hotel for all also great food.</li>
-                                        <li>Helping all traveler for Money Exchange.</li>
-                                        <li>Buffet Breakfast for all traveler with good quality..</li>
-                                        <li>Buffet Breakfast for all traveler with good quality.</li>
+                                        <li>Explore Bruny Island's pristine beaches and dramatic coastlines</li>
+                                        <li>Experience panoramic 360-degree views from Mount Wellington summit</li>
+                                        <li>Expert local guides sharing Tasmania's history and culture</li>
+                                        <li>Wildlife encounters including seals, dolphins, and native birds</li>
+                                        <li>Visit iconic locations like The Neck Lookout and Adventure Bay</li>
+                                        <li>Small group sizes for personalised attention (group tours)</li>
+                                        <li>Flexible private tour options with customised itineraries</li>
                                     </ul>
                                 </div>
                             </div>
@@ -249,9 +215,7 @@ function DestinationDetailsMain() {
                                                     </span>
                                                 </div>
                                                 <p className="text">
-                                                    Credibly pontificate transparent quality vectors with
-                                                    quality mindshare. Efficiently architect worldwide
-                                                    strategic theme areas after user.
+                                                    Amazing one-day tour to Bruny Island! The coastline views were breathtaking and we spotted seals and dolphins. Our guide was knowledgeable and made the experience unforgettable. Highly recommend!
                                                 </p>
                                                 <div className="reply_and_edit">
                                                     <i className="fa-solid fa-thumbs-up" />
@@ -283,8 +247,7 @@ function DestinationDetailsMain() {
                                                             </div>
                                                         </div>
                                                         <p className="text">
-                                                            It is different from airport transfer or port
-                                                            transfer, which are services that pick you up
+                                                            Mount Wellington tour was spectacular! The panoramic views from the summit were incredible. Great for photography and the guide shared fascinating stories about the mountain's history.
                                                         </p>
                                                         <div className="reply_and_edit">
                                                             <i className="fa-solid fa-thumbs-up" />
@@ -318,9 +281,7 @@ function DestinationDetailsMain() {
                                                     </div>
                                                 </div>
                                                 <p className="text">
-                                                    Credibly pontificate transparent quality vectors with
-                                                    quality mindshare. Efficiently architect worldwide
-                                                    strategic theme areas after user.
+                                                    Amazing one-day tour to Bruny Island! The coastline views were breathtaking and we spotted seals and dolphins. Our guide was knowledgeable and made the experience unforgettable. Highly recommend!
                                                 </p>
                                                 <div className="reply_and_edit">
                                                     <i className="fa-solid fa-thumbs-up" />
@@ -406,16 +367,30 @@ function DestinationDetailsMain() {
                                     <li>
                                         <Link to="/blog">
                                             <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            City Tour
+                                            Bruny Island Tours
                                         </Link>
-                                        <span>(8)</span>
+                                        <span>(2)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
                                             <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            Beach Tours
+                                            Mount Wellington Tours
                                         </Link>
-                                        <span>(6)</span>
+                                        <span>(2)</span>
+                                    </li>
+                                    <li>
+                                        <Link to="/blog">
+                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            Sightseeing Tours
+                                        </Link>
+                                        <span>(4)</span>
+                                    </li>
+                                    <li>
+                                        <Link to="/blog">
+                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            Adventure Tours
+                                        </Link>
+                                        <span>(4)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
@@ -427,23 +402,9 @@ function DestinationDetailsMain() {
                                     <li>
                                         <Link to="/blog">
                                             <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            News &amp; Tips
+                                            Scenic Tours
                                         </Link>
-                                        <span>(7)</span>
-                                    </li>
-                                    <li>
-                                        <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            Adventure Tours
-                                        </Link>
-                                        <span>(9)</span>
-                                    </li>
-                                    <li>
-                                        <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            Mountain Tours
-                                        </Link>
-                                        <span>(10)</span>
+                                        <span>(4)</span>
                                     </li>
                                 </ul>
                             </div>
@@ -462,7 +423,7 @@ function DestinationDetailsMain() {
                                         <div className="media-body">
                                             <h4 className="post-title">
                                                 <Link className="text-inherit" to="/blog/1">
-                                                    Exploring The Green Spaces Of the island maldives
+                                                    Exploring Bruny Island's Stunning Coastlines and Wildlife
                                                 </Link>
                                             </h4>
                                             <div className="recent-post-meta">
@@ -485,7 +446,7 @@ function DestinationDetailsMain() {
                                         <div className="media-body">
                                             <h4 className="post-title">
                                                 <Link className="text-inherit" to="/blog/1">
-                                                    Harmony With Nature Of Belgium Tour and travle
+                                                    Mount Wellington: Panoramic Views of Hobart and Beyond
                                                 </Link>
                                             </h4>
                                             <div className="recent-post-meta">
@@ -508,7 +469,7 @@ function DestinationDetailsMain() {
                                         <div className="media-body">
                                             <h4 className="post-title">
                                                 <Link className="text-inherit" to="/blog/1">
-                                                    Exploring The Green Spaces Of Realar Residence
+                                                    One-Day Tours from Hobart: The Best of Tasmania
                                                 </Link>
                                             </h4>
                                             <div className="recent-post-meta">
@@ -524,14 +485,14 @@ function DestinationDetailsMain() {
                             <div className="widget widget_tag_cloud  ">
                                 <h3 className="widget_title">Popular Tags</h3>
                                 <div className="tagcloud">
-                                    <Link to="/blog">Tour</Link>
+                                    <Link to="/blog">Bruny Island</Link>
+                                    <Link to="/blog">Mount Wellington</Link>
+                                    <Link to="/blog">Sightseeing</Link>
                                     <Link to="/blog">Adventure</Link>
-                                    <Link to="/blog">Rent</Link>
-                                    <Link to="/blog">Innovate</Link>
-                                    <Link to="/blog">Hotel</Link>
-                                    <Link to="/blog">Modern</Link>
-                                    <Link to="/blog">Luxury</Link>
-                                    <Link to="/blog">Travel</Link>
+                                    <Link to="/blog">Wildlife</Link>
+                                    <Link to="/blog">Scenic</Link>
+                                    <Link to="/blog">Hobart</Link>
+                                    <Link to="/blog">Tasmania</Link>
                                 </div>
                             </div>
                             <div

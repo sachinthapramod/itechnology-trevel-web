@@ -106,20 +106,12 @@ function MobileMenu({ isOpen, onClose }) {
                                 className="th-submenu"
                                 style={{ height: "0px", overflow: "hidden", transition: "height 0.3s ease-in-out" }}
                             >
-                                <li><Link to="/shop">Shop</Link></li>
-                                <li><Link to="/shop-details">Shop Details</Link></li>
-                                <li><Link to="/cart">Cart Page</Link></li>
-                                <li><Link to="/checkout">Checkout</Link></li>
-                                <li><Link to="/wishlist">Wishlist</Link></li>
                                 <li><Link to="/gallery">Gallery</Link></li>
                                 <li><Link to="/tour">Our Tour</Link></li>
                                 <li><Link to="/tour-details">Tour Details</Link></li>
-                                <li><Link to="/resort">Resort Page</Link></li>
-                                <li><Link to="/resot/1">Resort Details</Link></li>
                                 <li><Link to="/tour-guide">Tour Guide</Link></li>
                                 <li><Link to="/tour-guide/1">Tour Guider Details</Link></li>
                                 <li><Link to="/faq">Faq Page</Link></li>
-                                <li><Link to="/price">Price Page</Link></li>
                                 <li><Link to="/error">Error Page</Link></li>
                             </ul>
                         </li>

@@ -78,44 +78,44 @@ function ActivitiesInner() {
                                     <li>
                                         <Link to="/blog">
                                             <i className="fa-light fa-square-check" />
-                                            Food and drink
+                                            Sightseeing
                                         </Link>
-                                        <span>(10)</span>
+                                        <span>(4)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
                                             <i className="fa-light fa-square-check" />
-                                            Entertainment
+                                            Adventure
                                         </Link>
-                                        <span>(6)</span>
+                                        <span>(4)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
                                             <i className="fa-light fa-square-check" />
-                                            Sports
+                                            Wildlife Viewing
                                         </Link>
                                         <span>(2)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
                                             <i className="fa-light fa-square-check" />
-                                            Nature and outdoors
+                                            Nature and Outdoors
                                         </Link>
-                                        <span>(7)</span>
+                                        <span>(4)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
                                             <i className="fa-light fa-square-check" />
-                                            Culture and events
+                                            Photography
                                         </Link>
-                                        <span>(9)</span>
+                                        <span>(4)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
                                             <i className="fa-light fa-square-check" />
-                                            Mountain Campaigning
+                                            Scenic Views
                                         </Link>
-                                        <span>(10)</span>
+                                        <span>(4)</span>
                                     </li>
                                 </ul>
                             </div>
@@ -165,47 +165,35 @@ function ActivitiesInner() {
                                     <li>
                                         <Link to="/blog">
                                             <i className="fa-light fa-square-check" />
-                                            Up to 2 hour
+                                            1 Day Tour
                                         </Link>
-                                        <span>(20)</span>
+                                        <span>(4)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <i className="fa-light fa-square-check" />1 to 4 hour
+                                            <i className="fa-light fa-square-check" />
+                                            Full Day (8-10 hours)
                                         </Link>
-                                        <span>(24)</span>
-                                    </li>
-                                    <li>
-                                        <Link to="/blog">
-                                            <i className="fa-light fa-square-check" />4 hour to 1 day
-                                        </Link>
-                                        <span>(25)</span>
+                                        <span>(4)</span>
                                     </li>
                                 </ul>
                             </div>
                             <div className="widget widget_categories  ">
-                                <h3 className="widget_title">Duration</h3>
+                                <h3 className="widget_title">Tour Type</h3>
                                 <ul>
                                     <li>
                                         <Link to="/blog">
                                             <i className="fa-light fa-square-check" />
-                                            Gozayan Tour, BD
+                                            Group Tour
                                         </Link>
-                                        <span>(26)</span>
+                                        <span>(2)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
                                             <i className="fa-light fa-square-check" />
-                                            Tourope UK
+                                            Private Tour
                                         </Link>
-                                        <span>(27)</span>
-                                    </li>
-                                    <li>
-                                        <Link to="/blog">
-                                            <i className="fa-light fa-square-check" />
-                                            European Tours Limited
-                                        </Link>
-                                        <span>(29)</span>
+                                        <span>(2)</span>
                                     </li>
                                 </ul>
                             </div>

@@ -148,16 +148,30 @@ function DestinationInner() {
                                     <li>
                                         <Link to="/blog">
                                             <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            City Tour
+                                            Bruny Island Tours
                                         </Link>
-                                        <span>(8)</span>
+                                        <span>(2)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
                                             <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            Beach Tours
+                                            Mount Wellington Tours
                                         </Link>
-                                        <span>(6)</span>
+                                        <span>(2)</span>
+                                    </li>
+                                    <li>
+                                        <Link to="/blog">
+                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            Sightseeing Tours
+                                        </Link>
+                                        <span>(4)</span>
+                                    </li>
+                                    <li>
+                                        <Link to="/blog">
+                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            Adventure Tours
+                                        </Link>
+                                        <span>(4)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
@@ -169,23 +183,9 @@ function DestinationInner() {
                                     <li>
                                         <Link to="/blog">
                                             <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            News &amp; Tips
+                                            Scenic Tours
                                         </Link>
-                                        <span>(7)</span>
-                                    </li>
-                                    <li>
-                                        <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            Adventure Tours
-                                        </Link>
-                                        <span>(9)</span>
-                                    </li>
-                                    <li>
-                                        <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            Mountain Tours
-                                        </Link>
-                                        <span>(10)</span>
+                                        <span>(4)</span>
                                     </li>
                                 </ul>
                             </div>
@@ -204,7 +204,7 @@ function DestinationInner() {
                                         <div className="media-body">
                                             <h4 className="post-title">
                                                 <Link className="text-inherit" to="/blog/1">
-                                                    Exploring The Green Spaces Of the island maldives
+                                                    Exploring Bruny Island's Stunning Coastlines and Wildlife
                                                 </Link>
                                             </h4>
                                             <div className="recent-post-meta">
@@ -227,7 +227,7 @@ function DestinationInner() {
                                         <div className="media-body">
                                             <h4 className="post-title">
                                                 <Link className="text-inherit" to="/blog/1">
-                                                    Harmony With Nature Of Belgium Tour and travle
+                                                    Mount Wellington: Panoramic Views of Hobart and Beyond
                                                 </Link>
                                             </h4>
                                             <div className="recent-post-meta">
@@ -250,7 +250,7 @@ function DestinationInner() {
                                         <div className="media-body">
                                             <h4 className="post-title">
                                                 <Link className="text-inherit" to="/blog/1">
-                                                    Exploring The Green Spaces Of Realar Residence
+                                                    One-Day Tours from Hobart: The Best of Tasmania
                                                 </Link>
                                             </h4>
                                             <div className="recent-post-meta">
@@ -266,14 +266,14 @@ function DestinationInner() {
                             <div className="widget widget_tag_cloud  ">
                                 <h3 className="widget_title">Popular Tags</h3>
                                 <div className="tagcloud">
-                                    <Link to="/blog">Tour</Link>
+                                    <Link to="/blog">Bruny Island</Link>
+                                    <Link to="/blog">Mount Wellington</Link>
+                                    <Link to="/blog">Sightseeing</Link>
                                     <Link to="/blog">Adventure</Link>
-                                    <Link to="/blog">Rent</Link>
-                                    <Link to="/blog">Innovate</Link>
-                                    <Link to="/blog">Hotel</Link>
-                                    <Link to="/blog">Modern</Link>
-                                    <Link to="/blog">Luxury</Link>
-                                    <Link to="/blog">Travel</Link>
+                                    <Link to="/blog">Wildlife</Link>
+                                    <Link to="/blog">Scenic</Link>
+                                    <Link to="/blog">Hobart</Link>
+                                    <Link to="/blog">Tasmania</Link>
                                 </div>
                             </div>
                             <div

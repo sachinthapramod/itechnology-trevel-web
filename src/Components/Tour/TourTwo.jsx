@@ -28,7 +28,7 @@ const TourItem = ({ image, title, link, rating, price, duration, bookLink }) => 
             </h4>
             <div className="tour-action">
                 <span>
-                    <i className="fa-light fa-clock" /> {duration} {duration === 1 ? 'Day' : 'Days'}
+                    <i className="fa-light fa-clock" /> {duration}
                 </span>
                 <Link to={bookLink} className="th-btn style4 th-icon">
                     Book Now
@@ -117,8 +117,8 @@ function TourTwo() {
                                         title="Bruny Island Group Tour Package"
                                         link="/tour-details"
                                         rating={5.0}
-                                        price={980}
-                                        duration={1}
+                                        price={190}
+                                        duration="9 Hours"
                                         bookLink="/contact"
                                     />
                                 </SwiperSlide>
@@ -128,8 +128,8 @@ function TourTwo() {
                                         title="Bruny Island Private Tour Package"
                                         link="/tour-details"
                                         rating={5.0}
-                                        price={980}
-                                        duration={1}
+                                        price={190}
+                                        duration="9 Hours"
                                         bookLink="/contact"
                                     />
                                 </SwiperSlide>
@@ -139,8 +139,8 @@ function TourTwo() {
                                         title="Mount Wellington Group Tour"
                                         link="/tour-details"
                                         rating={5.0}
-                                        price={980}
-                                        duration={1}
+                                        price={120}
+                                        duration="9 Hours"
                                         bookLink="/contact"
                                     />
                                 </SwiperSlide>
@@ -150,8 +150,8 @@ function TourTwo() {
                                         title="Mount Wellington Private Tour"
                                         link="/tour-details"
                                         rating={5.0}
-                                        price={980}
-                                        duration={1}
+                                        price={120}
+                                        duration="9 Hours"
                                         bookLink="/contact"
                                     />
                                 </SwiperSlide>

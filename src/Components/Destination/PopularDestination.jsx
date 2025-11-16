@@ -8,74 +8,38 @@ import { Link } from "react-router-dom";
 const destinations = [
     {
         id: 1,
-        title: "Bruny island private Tour",
+        title: "Bruny Island Group Tour Package",
         image: "/assets/img/tour/tour_2_1.jpg",
         rating: 4.8,
         price: 980,
-        duration: "1 Days",
+        duration: "1 Day",
         link: "/tour-details",
     },
     {
         id: 2,
-        title: "Mount Wellington privateTour",
+        title: "Bruny Island Private Tour Package",
         image: "/assets/img/tour/tour_2_2.jpg",
         rating: 4.8,
         price: 980,
-        duration: "1 Days",
+        duration: "1 Day",
         link: "/tour-details",
     },
     {
         id: 3,
-        title: " Bruny island group Tour",
+        title: "Mount Wellington Group Tour",
         image: "/assets/img/tour/tour_2_3.jpg",
         rating: 4.8,
         price: 980,
-        duration: "1 Days",
+        duration: "1 Day",
         link: "/tour-details",
     },
     {
         id: 4,
-        title: "Mount Wellington groupTour",
+        title: "Mount Wellington Private Tour",
         image: "/assets/img/tour/tour_2_4.jpg",
         rating: 4.8,
         price: 980,
-        duration: "1 Days",
-        link: "/tour-details",
-    },
-    {
-        id: 5,
-        title: "Bruny island private Tour",
-        image: "/assets/img/tour/tour_2_1.jpg",
-        rating: 4.8,
-        price: 980,
-        duration: "1 Days",
-        link: "/tour-details",
-    },
-    {
-        id: 6,
-        title: "Mount Wellington privateTour",
-        image: "/assets/img/tour/tour_2_2.jpg",
-        rating: 4.8,
-        price: 980,
-        duration: "1 Days",
-        link: "/tour-details",
-    },
-    {
-        id: 7,
-        title: "Bruny island group Tour",
-        image: "/assets/img/tour/tour_2_3.jpg",
-        rating: 4.8,
-        price: 980,
-        duration: "1 Days",
-        link: "/tour-details",
-    },
-    {
-        id: 8,
-        title: "Mount Wellington groupTour",
-        image: "/assets/img/tour/tour_2_4.jpg",
-        rating: 4.8,
-        price: 980,
-        duration: "1 Days",
+        duration: "1 Day",
         link: "/tour-details",
     },
 
@@ -99,11 +63,10 @@ function PopularDestination() {
         >
             <div className="container">
                 <div className="title-area mb-15 text-center">
-                    <span className="sub-title">Best Recommended Places</span>
-                    <h2 className="sec-title">Popular Destination We Offer For All</h2>
+                    <span className="sub-title">Discover Tasmania</span>
+                    <h2 className="sec-title">Popular Destinations: Bruny Island & Mount Wellington</h2>
                     <p className="tour-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
+                        Experience the stunning natural beauty of Tasmania with our one-day tours to Bruny Island and Mount Wellington. Choose from group or private tours, all departing from Hobart.
                     </p>
                 </div>
 

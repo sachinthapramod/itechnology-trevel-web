@@ -59,11 +59,11 @@ function TourOne() {
                     </Link>
                   </div>
                   <h4 className="tour-box_price">
-                    <span className="currency">$980.00</span>/Person
+                    <span className="currency">$190.00</span>/Person
                   </h4>
                   <div className="tour-action">
                     <span>
-                      <i className="fa-light fa-clock" />1 Day
+                      <i className="fa-light fa-clock" />9 Hours
                     </span>
                     <Link to="/contact" className="th-btn style4 th-icon">
                       Book Now
@@ -93,11 +93,11 @@ function TourOne() {
                     </Link>
                   </div>
                   <h4 className="tour-box_price">
-                    <span className="currency">$980.00</span>/Person
+                    <span className="currency">$190.00</span>/Person
                   </h4>
                   <div className="tour-action">
                     <span>
-                      <i className="fa-light fa-clock" />1 Day
+                      <i className="fa-light fa-clock" />9 Hours
                     </span>
                     <Link to="/contact" className="th-btn style4 th-icon">
                       Book Now
@@ -127,11 +127,11 @@ function TourOne() {
                     </Link>
                   </div>
                   <h4 className="tour-box_price">
-                    <span className="currency">$980.00</span>/Person
+                    <span className="currency">$120.00</span>/Person
                   </h4>
                   <div className="tour-action">
                     <span>
-                      <i className="fa-light fa-clock" />1 Day
+                      <i className="fa-light fa-clock" />9 Hours
                     </span>
                     <Link to="/contact" className="th-btn style4 th-icon">
                       Book Now
@@ -161,11 +161,11 @@ function TourOne() {
                     </Link>
                   </div>
                   <h4 className="tour-box_price">
-                    <span className="currency">$980.00</span>/Person
+                    <span className="currency">$120.00</span>/Person
                   </h4>
                   <div className="tour-action">
                     <span>
-                      <i className="fa-light fa-clock" />1 Day
+                      <i className="fa-light fa-clock" />9 Hours
                     </span>
                     <Link to="/contact" className="th-btn style4 th-icon">
                       Book Now

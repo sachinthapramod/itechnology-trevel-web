@@ -8,51 +8,51 @@ import "swiper/css/pagination";
 const blogPosts = [
   {
     id: 1,
-    date: "July 05 2024",
+    date: "January 15 2025",
     readTime: "6 min read",
-    title: "10 Reasons why you should visit New Jersey",
+    title: "Discovering Bruny Island: A Complete Guide to Tasmania's Island Paradise",
     image: "/assets/img/blog/blog_1_1.jpg",
     detailsLink: "/blog/1",
   },
   {
     id: 2,
-    date: "July 06 2024",
+    date: "January 18 2025",
     readTime: "7 min read",
-    title: "The best time to visit Japan & enjoy the cherry blossoms",
+    title: "Mount Wellington Summit: Your Ultimate Guide to Hobart's Iconic Peak",
     image: "/assets/img/blog/blog_1_2.jpg",
-    detailsLink: "/blog/1",
+    detailsLink: "/blog/2",
   },
   {
     id: 3,
-    date: "July 07 2024",
+    date: "January 22 2025",
     readTime: "8 min read",
-    title: "The 7 amazing destinations for adventure seekers",
+    title: "Richmond Village: Exploring Tasmania's Historic Georgian Architecture",
     image: "/assets/img/blog/blog_1_3.jpg",
-    detailsLink: "/blog/1",
+    detailsLink: "/blog/3",
   },
   {
     id: 4,
-    date: "July 09 2024",
+    date: "January 25 2025",
     readTime: "9 min read",
-    title: "10 Reasons why you should visit New Jersey",
+    title: "Group vs Private Tours: Which Tasmania Tour Experience is Right for You?",
     image: "/assets/img/blog/blog_1_1.jpg",
-    detailsLink: "/blog/1",
+    detailsLink: "/blog/4",
   },
   {
     id: 5,
-    date: "July 10 2024",
+    date: "January 28 2025",
     readTime: "10 min read",
-    title: "The best time to visit Japan & enjoy the cherry blossoms",
+    title: "Wildlife Encounters on Bruny Island: Spotting White Wallabies and Sea Eagles",
     image: "/assets/img/blog/blog_1_2.jpg",
     detailsLink: "/blog/1",
   },
   {
     id: 6,
-    date: "July 12 2024",
+    date: "February 01 2025",
     readTime: "11 min read",
-    title: "The 7 amazing destinations for adventure seekers",
+    title: "Tasmania's Gourmet Delights: Cheese, Oysters, and Chocolate Tastings",
     image: "/assets/img/blog/blog_1_3.jpg",
-    detailsLink: "/blog/1",
+    detailsLink: "/blog/2",
   },
 ];
 
@@ -64,8 +64,8 @@ function BlogOne() {
           <div className="row align-items-center justify-content-between">
             <div className="col-md-7">
               <div className="title-area mb-md-0">
-                <span className="sub-title">About Us Restaurant</span>
-                <h2 className="sec-title">News & Articles From Tourm</h2>
+                <span className="sub-title">Travel Tips & Guides</span>
+                <h2 className="sec-title">News & Articles From Safe Travel and Tour Services</h2>
               </div>
             </div>
             <div className="col-md-auto">
