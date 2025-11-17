@@ -55,8 +55,9 @@ function FooterFour() {
                                         </Link>
                                     </div>
                                     <p className="about-text">
-                                        Rapidiously myocardinate cross-platform intellectual capital
-                                        model. Appropriately create interactive infrastructures
+                                        Safe Travel and Tour Services creates meaningful Tasmania
+                                        adventures with trusted guides, thoughtful planning, and
+                                        personalised service for every guest.
                                     </p>
                                     <div className="th-social">
                                         <Link to="https://www.facebook.com/">
@@ -248,8 +249,7 @@ function FooterFour() {
                     <div className="row justify-content-between align-items-center">
                         <div className="col-md-6">
                             <p className="copyright-text">
-                                Copyright 2025 <Link to="/">Tourm</Link>. All Rights
-                                Reserved.
+                                Copyright 2025 Safetravels. All Rights Reserved.
                             </p>
                         </div>
                         <div className="col-md-6 text-end d-none d-md-block">
