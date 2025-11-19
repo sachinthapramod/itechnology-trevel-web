@@ -10,7 +10,7 @@ function DestinationCardTwo(props) {
             </div>
             <div className="tour-content">
                 <h3 className="box-title">
-                    <Link to={`/destination/${destinationID}`}>{destinationTitle ? destinationTitle : 'Dubai'}</Link>
+                    <Link to={`/destination/${destinationID}`}>{destinationTitle ? destinationTitle : 'Bruny Island'}</Link>
                 </h3>
                 <div className="tour-rating">
                     <div

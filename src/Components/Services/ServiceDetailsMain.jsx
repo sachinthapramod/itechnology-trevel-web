@@ -489,7 +489,6 @@ function ServiceDetailsMain() {
                                     <Link to="/blog">Adventure</Link>
                                     <Link to="/blog">Rent</Link>
                                     <Link to="/blog">Innovate</Link>
-                                    <Link to="/blog">Hotel</Link>
                                     <Link to="/blog">Modern</Link>
                                     <Link to="/blog">Luxury</Link>
                                     <Link to="/blog">Travel</Link>
