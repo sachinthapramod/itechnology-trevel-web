@@ -73,49 +73,42 @@ function ActivitiesInner() {
                                 </form>
                             </div>
                             <div className="widget widget_categories  ">
-                                <h3 className="widget_title">Activity Type</h3>
+                                <h3 className="widget_title">Activity Themes</h3>
                                 <ul>
                                     <li>
-                                        <Link to="/blog">
+                                        <Link to="/activities">
                                             <i className="fa-light fa-square-check" />
-                                            Sightseeing
-                                        </Link>
-                                        <span>(4)</span>
-                                    </li>
-                                    <li>
-                                        <Link to="/blog">
-                                            <i className="fa-light fa-square-check" />
-                                            Adventure
-                                        </Link>
-                                        <span>(4)</span>
-                                    </li>
-                                    <li>
-                                        <Link to="/blog">
-                                            <i className="fa-light fa-square-check" />
-                                            Wildlife Viewing
+                                            Bruny Island Scenic Walks
                                         </Link>
                                         <span>(2)</span>
                                     </li>
                                     <li>
-                                        <Link to="/blog">
+                                        <Link to="/activities">
                                             <i className="fa-light fa-square-check" />
-                                            Nature and Outdoors
+                                            Wildlife & Lookouts
                                         </Link>
-                                        <span>(4)</span>
+                                        <span>(2)</span>
                                     </li>
                                     <li>
-                                        <Link to="/blog">
+                                        <Link to="/activities">
                                             <i className="fa-light fa-square-check" />
-                                            Photography
+                                            Chocolate & Cheese Tastings
                                         </Link>
-                                        <span>(4)</span>
+                                        <span>(2)</span>
                                     </li>
                                     <li>
-                                        <Link to="/blog">
+                                        <Link to="/activities">
                                             <i className="fa-light fa-square-check" />
-                                            Scenic Views
+                                            Mount Wellington Viewpoints
                                         </Link>
-                                        <span>(4)</span>
+                                        <span>(2)</span>
+                                    </li>
+                                    <li>
+                                        <Link to="/activities">
+                                            <i className="fa-light fa-square-check" />
+                                            Gourmet & Honey Trails
+                                        </Link>
+                                        <span>(2)</span>
                                     </li>
                                 </ul>
                             </div>
@@ -163,37 +156,37 @@ function ActivitiesInner() {
                                 <h3 className="widget_title">Duration</h3>
                                 <ul>
                                     <li>
-                                        <Link to="/blog">
+                                        <Link to="/activities">
                                             <i className="fa-light fa-square-check" />
-                                            1 Day Tour
+                                            Half-Day Tastings (4-5 hrs)
                                         </Link>
-                                        <span>(4)</span>
+                                        <span>(3)</span>
                                     </li>
                                     <li>
-                                        <Link to="/blog">
+                                        <Link to="/activities">
                                             <i className="fa-light fa-square-check" />
-                                            Full Day (8-10 hours)
+                                            Full Day Explorations (8-9 hrs)
                                         </Link>
-                                        <span>(4)</span>
+                                        <span>(5)</span>
                                     </li>
                                 </ul>
                             </div>
                             <div className="widget widget_categories  ">
-                                <h3 className="widget_title">Tour Type</h3>
+                                <h3 className="widget_title">Tour Format</h3>
                                 <ul>
                                     <li>
-                                        <Link to="/blog">
+                                        <Link to="/activities">
                                             <i className="fa-light fa-square-check" />
-                                            Group Tour
+                                            Small Group Hosted
                                         </Link>
-                                        <span>(2)</span>
+                                        <span>(4)</span>
                                     </li>
                                     <li>
-                                        <Link to="/blog">
+                                        <Link to="/activities">
                                             <i className="fa-light fa-square-check" />
-                                            Private Tour
+                                            Private & Custom
                                         </Link>
-                                        <span>(2)</span>
+                                        <span>(4)</span>
                                     </li>
                                 </ul>
                             </div>

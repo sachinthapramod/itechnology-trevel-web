@@ -14,11 +14,16 @@ function TourGuiderDetailsMain() {
         return <div>Post not found!</div>;
     }
 
+    const guideName = guidePost.name || guidePost.title;
+    const guideRole = guidePost.role || "Tasmania Tour Specialist";
+    const phoneNumber = guidePost.phone || "+61 3 6248 8200";
+    const emailAddress = guidePost.email || "Info@safetravelandtourservices.com.au";
+
     const counters = [
-        { value: 2, suffix: "K+", title: "Total Guide" },
-        { value: 65, suffix: "+", title: "Total Services" },
-        { value: 79, suffix: "+", title: "Award Won" },
-        { value: 120, suffix: "+", title: "Total Event" }
+        { value: guidePost.experienceYears || 5, suffix: "+", title: "Years Guiding" },
+        { value: guidePost.guestsHosted || 1200, suffix: "+", title: "Guests Hosted" },
+        { value: guidePost.fiveStarReviews || 200, suffix: "+", title: "5-Star Reviews" },
+        { value: (guidePost.signatureTours && guidePost.signatureTours.length) || 2, suffix: "+", title: "Signature Tours" }
     ];
 
     return (
@@ -37,9 +42,14 @@ function TourGuiderDetailsMain() {
                                 <div className="team-content">
                                     <div className="media-body">
                                         <h3 className="box-title">
-                                            <Link to="#">{guidePost.title}</Link>
+                                            <Link to="#">{guideName}</Link>
                                         </h3>
-                                        <span className="team-desig">Tourist Guide</span>
+                                        <span className="team-desig">{guideRole}</span>
+                                        {guidePost.focus && (
+                                            <p className="team-focus mt-10">
+                                                <i className="fa-light fa-location-dot" /> {guidePost.focus}
+                                            </p>
+                                        )}
                                         <div className="th-social">
                                             <Link target="_blank" to="https://facebook.com/">
                                                 <i className="fab fa-facebook-f" />
@@ -65,28 +75,62 @@ function TourGuiderDetailsMain() {
                             <div className="team-about">
                                 <h2 className="team-about_title">About Me</h2>
                                 <p className="team-about_text mb-25">
-                                    Venenatis purus egestas lorem aenean enim bibendum. Ac pharetra
-                                    egestas eget gravida turpis senectus. Sed blandit ipsum orci odio
-                                    egestas egestas sed bibendum. Rhoncus est proin euismod
-                                    condimentum eget a tristique integer viverra. Enim sed nunc magna
-                                    consequat consectetur vestibulum odio posuere. Mattis nisl aenean
-                                    auctor morbi suspendisse diam adipiscing. Tellus egestas amet
-                                    tellus phasellus.
+                                    {guidePost.bio || "Our guides live and breathe Tasmania. They balance genuine storytelling with thoughtful hosting so every traveller feels at ease."}
                                 </p>
                                 <p className="team-about_text mb-25">
-                                    {" "}
-                                    Ornare aliquam ac a pellentesque ante. Morbi maecenas odio integer
-                                    adipiscing ridiculus mauris. Ornare in sit et tortor orci massa eu
-                                    ultricies. Sit fermentum faucibu.
+                                    {guidePost.approach || "We customise each day around the weather, tide charts, and our guests’ interests—whether that’s an extra tasting stop or more time at a scenic lookout."}
                                 </p>
-                                <h5 className="box-title">5 Years of Experiences</h5>
+                                {guidePost.experienceYears && (
+                                    <h5 className="box-title">{guidePost.experienceYears}+ Years of Guiding Tasmania</h5>
+                                )}
                                 <p className="team-about_text mb-25">
-                                    {" "}
-                                    Venenatis purus egestas lorem aenean enim bibendum. Ac pharetra
-                                    egestas eget gravida turpis senectus. Sed blandit ipsum orci odio
-                                    egestas egestas sed bibendum. Rhoncus est proin euismod
-                                    condimentum eget a tristique integer viverra.
+                                    {guidePost.highlight || "From ferry crossings to summit lookouts, our team keeps every moment safe, smooth, and story-rich."}
                                 </p>
+                                {(guidePost.focus || guidePost.languages || guidePost.specialties) && (
+                                    <div className="team-details-info mb-30">
+                                        <ul>
+                                            {guidePost.focus && (
+                                                <li>
+                                                    <strong>Guiding Focus:</strong> {guidePost.focus}
+                                                </li>
+                                            )}
+                                            {guidePost.languages && guidePost.languages.length > 0 && (
+                                                <li>
+                                                    <strong>Languages:</strong> {guidePost.languages.join(', ')}
+                                                </li>
+                                            )}
+                                            {guidePost.specialties && guidePost.specialties.length > 0 && (
+                                                <li>
+                                                    <strong>Specialties:</strong> {guidePost.specialties.join(' • ')}
+                                                </li>
+                                            )}
+                                        </ul>
+                                    </div>
+                                )}
+                                {guidePost.signatureTours && guidePost.signatureTours.length > 0 && (
+                                    <>
+                                        <h4 className="box-title">Signature Tours</h4>
+                                        <div className="checklist mb-25">
+                                            <ul>
+                                                {guidePost.signatureTours.map((tour, idx) => (
+                                                    <li key={idx}>{tour}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    </>
+                                )}
+                                {guidePost.certifications && guidePost.certifications.length > 0 && (
+                                    <>
+                                        <h4 className="box-title">Credentials & Training</h4>
+                                        <div className="checklist mb-25">
+                                            <ul>
+                                                {guidePost.certifications.map((cert, idx) => (
+                                                    <li key={idx}>{cert}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    </>
+                                )}
                                 <div ref={ref} className="counter-box-wrap">
                                     {counters.map((counter, index) => (
                                         <div key={index} className="counter-box">
@@ -132,10 +176,7 @@ function TourGuiderDetailsMain() {
                                 <div className="about-contact-details">
                                     <h6 className="box-title">Phone Number</h6>
                                     <p className="about-contact-details-text">
-                                        <Link to="tel:01234567890">+01 234 567 890</Link>
-                                    </p>
-                                    <p className="about-contact-details-text">
-                                        <Link to="tel:01234567890">+09 876 543 210</Link>
+                                        <Link to={`tel:${phoneNumber.replace(/\\s+/g, '')}`}>{phoneNumber}</Link>
                                     </p>
                                 </div>
                             </div>
@@ -148,7 +189,7 @@ function TourGuiderDetailsMain() {
                                 <div className="about-contact-details">
                                     <h6 className="box-title">Email Address</h6>
                                     <p className="about-contact-details-text">
-                                        <Link to="mailto:Info@safetravelandtourservices.com.au">Info@safetravelandtourservices.com.au</Link>
+                                        <Link to={`mailto:${emailAddress}`}>{emailAddress}</Link>
                                     </p>
                                 </div>
                             </div>

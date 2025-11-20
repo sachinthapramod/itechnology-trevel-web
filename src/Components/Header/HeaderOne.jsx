@@ -144,11 +144,6 @@ function HeaderOne() {
                                                         <Link to="/tour-guide">Tour Guider</Link>
                                                     </li>
                                                     <li>
-                                                        <Link to="/tour-guide/1">
-                                                            Tour Guider Details
-                                                        </Link>
-                                                    </li>
-                                                    <li>
                                                         <Link to="/faq">Faq Page</Link>
                                                     </li>
                                                     <li>
@@ -182,7 +177,7 @@ function HeaderOne() {
                                 </div>
                                 <div className="col-auto d-none d-xl-block">
                                     <div className="header-button">
-                                        <Link to="/contact" className="th-btn style3 th-icon">
+                                        <Link to="/tour" className="th-btn style3 th-icon">
                                             Book Now
                                         </Link>
                                     </div>

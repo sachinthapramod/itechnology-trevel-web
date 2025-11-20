@@ -110,7 +110,6 @@ function MobileMenu({ isOpen, onClose }) {
                                 <li><Link to="/tour">Our Tour</Link></li>
                                 <li><Link to="/tour-details">Tour Details</Link></li>
                                 <li><Link to="/tour-guide">Tour Guide</Link></li>
-                                <li><Link to="/tour-guide/1">Tour Guider Details</Link></li>
                                 <li><Link to="/faq">Faq Page</Link></li>
                                 <li><Link to="/error">Error Page</Link></li>
                             </ul>

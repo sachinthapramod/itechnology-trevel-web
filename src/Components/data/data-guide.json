@@ -4,41 +4,202 @@
         "thumb": "team_img_1.jpg",
         "image": "team_1_1.jpg",
         "bannerImg": "team_1_1.jpg",
-        "title": "Michel Smith"
+        "name": "Olivia Bennett",
+        "role": "Lead Bruny Island Guide",
+        "focus": "Gourmet tastings & wildlife encounters across Bruny Island",
+        "experienceYears": 12,
+        "guestsHosted": 4200,
+        "fiveStarReviews": 980,
+        "specialties": [
+            "Cheese, oyster & chocolate trails",
+            "White wallaby spotting at Adventure Bay",
+            "Storytelling at Cape Bruny Lighthouse"
+        ],
+        "signatureTours": [
+            "Bruny Island Group Tour Package",
+            "Bruny Island Private Tour Package"
+        ],
+        "languages": [
+            "English",
+            "Mandarin"
+        ],
+        "certifications": [
+            "Tasmania Commercial Passenger Driver Accreditation",
+            "St John Remote Area First Aid"
+        ],
+        "bio": "Olivia grew up on Tasmania's south-east coast and knows every curve of the D'Entrecasteaux Channel. She curates relaxed but detailed days that balance coastal walks, gourmet tastings, and wildlife moments.",
+        "approach": "She keeps itineraries flexible, adding spontaneous tasting stops or scenic detours whenever guests show interest. Her goal is to make every Bruny Island visit feel like a local friend is hosting you.",
+        "highlight": "When guests spot dolphins from the ferry or climb The Neck for sunset, Olivia is the first to cheer and grab the best photo angle.",
+        "phone": "+61 3 6248 8201",
+        "email": "olivia@safetravelandtourservices.com.au"
     },
     {
         "id": 2,
         "thumb": "team_img_2.jpg",
         "image": "team_1_2.jpg",
         "bannerImg": "team_1_2.jpg",
-        "title": "Janny Willson"
+        "name": "Ethan MacGregor",
+        "role": "Mount Wellington Expedition Leader",
+        "focus": "Summit sunrises, alpine walks & Richmond heritage stories",
+        "experienceYears": 15,
+        "guestsHosted": 5100,
+        "fiveStarReviews": 1100,
+        "specialties": [
+            "Weather interpretation & safe summit access",
+            "Historic walking tours through Richmond Village",
+            "Photography coaching at the Pinnacle"
+        ],
+        "signatureTours": [
+            "Mount Wellington Group Tour",
+            "Mount Wellington Private Tour"
+        ],
+        "languages": [
+            "English",
+            "German"
+        ],
+        "certifications": [
+            "Wilderness First Responder",
+            "Tourism Tasmania Sustainable Guiding pledge"
+        ],
+        "bio": "Ethan is a former outdoor education teacher who now spends his days sharing kunanyi/Mount Wellington. Guests love his ability to explain geology, weather patterns, and convict-era tales in a warm, engaging way.",
+        "approach": "He monitors conditions in real time, ensuring every summit visit feels effortless and safe. On the way down he weaves in Richmond's colonial history and the best bakery recommendations.",
+        "highlight": "Ethan always brings a thermos of locally roasted coffee for chilly summit mornings—one sip while overlooking Hobart makes the early start worth it.",
+        "phone": "+61 3 6248 8202",
+        "email": "ethan@safetravelandtourservices.com.au"
     },
     {
         "id": 3,
         "thumb": "team_img_3.jpg",
         "image": "team_1_3.jpg",
         "bannerImg": "team_1_3.jpg",
-        "title": "Jacob Jones"
+        "name": "Sienna Clarke",
+        "role": "Private Experience Designer",
+        "focus": "Tailor-made one-day charters across Bruny Island & Hobart",
+        "experienceYears": 9,
+        "guestsHosted": 2900,
+        "fiveStarReviews": 620,
+        "specialties": [
+            "Designing family-friendly itineraries",
+            "Coordinating dietary-friendly tastings",
+            "Capturing candid guest moments"
+        ],
+        "signatureTours": [
+            "Bruny Island Private Tour Package",
+            "Custom Tasman Peninsula day trips"
+        ],
+        "languages": [
+            "English",
+            "Hindi"
+        ],
+        "certifications": [
+            "Certified Tour Director (CTD)",
+            "Responsible Driver Training – Tasmania"
+        ],
+        "bio": "Sienna listens closely to every group before they travel, then crafts a schedule that feels effortless yet rich in detail. She knows every producer on Bruny Island by name and reserves tables before the crowds arrive.",
+        "approach": "Her van is stocked with picnic blankets, phone chargers, child seats, and locally sourced snacks so guests can simply relax.",
+        "highlight": "Sienna’s favourite moment is when private charter guests realise they managed to see wildlife, taste gourmet treats, and still be back in Hobart stress-free.",
+        "phone": "+61 3 6248 8203",
+        "email": "sienna@safetravelandtourservices.com.au"
     },
     {
         "id": 4,
         "thumb": "team_img_4.jpg",
         "image": "team_1_4.jpg",
         "bannerImg": "team_1_4.jpg",
-        "title": "Maria Prova"
+        "name": "Noah Williams",
+        "role": "Wildlife & Cruise Host",
+        "focus": "Bruny Island coastlines, Neck Lookout walks & ferry hosting",
+        "experienceYears": 11,
+        "guestsHosted": 3600,
+        "fiveStarReviews": 750,
+        "specialties": [
+            "Wildlife interpretation (seabirds, seals, dolphins)",
+            "Guided walks at The Neck & Adventure Bay",
+            "Providing accessible options for all guests"
+        ],
+        "signatureTours": [
+            "Bruny Island Group Tour Package",
+            "Seafood & Sightseeing add-on experiences"
+        ],
+        "languages": [
+            "English"
+        ],
+        "certifications": [
+            "Marine Mammal Watching Permit",
+            "Disability Awareness Training"
+        ],
+        "bio": "Noah grew up fishing with his grandfather around the Channel, so he reads the water like a book. Guests count on him to spot wedge-tailed eagles before anyone else notices.",
+        "approach": "He keeps binoculars at the ready and shares gentle guidance so everyone can photograph wildlife respectfully.",
+        "highlight": "Hearing guests gasp when penguins surface near the ferry never gets old for Noah.",
+        "phone": "+61 3 6248 8204",
+        "email": "noah@safetravelandtourservices.com.au"
     },
     {
         "id": 5,
         "thumb": "team_img_5.jpg",
         "image": "team_1_5.jpg",
         "bannerImg": "team_1_5.jpg",
-        "title": "Rebeka Maliha"
+        "name": "Harper Nguyen",
+        "role": "Cultural Storyteller",
+        "focus": "Richmond Village, Hobart heritage lanes & foodie stops",
+        "experienceYears": 8,
+        "guestsHosted": 2500,
+        "fiveStarReviews": 540,
+        "specialties": [
+            "Convict-era storytelling at Richmond Gaol",
+            "Guided tastings in Hobart’s Salamanca precinct",
+            "Photography walks for architecture lovers"
+        ],
+        "signatureTours": [
+            "Mount Wellington Group Tour",
+            "Richmond Heritage add-on"
+        ],
+        "languages": [
+            "English",
+            "Vietnamese"
+        ],
+        "certifications": [
+            "Tasmanian Heritage Interpretation Course",
+            "Senior First Aid"
+        ],
+        "bio": "Harper combines history with genuine local tips. Travellers say her calm style makes them feel instantly at home in Tasmania.",
+        "approach": "She carries archival photos to bring stories to life and always adds time for guests to sample pastries or artisan chocolate.",
+        "highlight": "Watching guests walk the Richmond Bridge after hearing its convict stories is Harper’s proudest guiding moment.",
+        "phone": "+61 3 6248 8205",
+        "email": "harper@safetravelandtourservices.com.au"
     },
     {
         "id": 6,
         "thumb": "team_img_6.jpg",
         "image": "team_1_6.jpg",
         "bannerImg": "team_1_6.jpg",
-        "title": "Alif Mahmud"
+        "name": "Luca Fernandez",
+        "role": "Driver-Guide & Operations Lead",
+        "focus": "Logistics, accessibility & seamless multi-stop days",
+        "experienceYears": 13,
+        "guestsHosted": 4800,
+        "fiveStarReviews": 860,
+        "specialties": [
+            "Route planning during peak season",
+            "Ensuring accessible boarding on ferries and vehicles",
+            "Supporting adventure add-ons like short hikes"
+        ],
+        "signatureTours": [
+            "Mount Wellington Private Tour",
+            "Bruny Island Private Tour Package"
+        ],
+        "languages": [
+            "English",
+            "Spanish"
+        ],
+        "certifications": [
+            "Advanced Defensive Driving",
+            "Chain Fitting & Alpine Safety"
+        ],
+        "bio": "Luca is the calm presence behind our smooth operations. He coordinates pickup windows, communicates with local producers, and keeps guests comfortable between stops.",
+        "approach": "He double-checks every detail—from chilled bottled water to spare jackets—so travellers can simply focus on the view.",
+        "highlight": "Guests often mention Luca’s playlists and gentle humour as the soundtrack to their Tasmanian memories.",
+        "phone": "+61 3 6248 8206",
+        "email": "luca@safetravelandtourservices.com.au"
     }
 ]

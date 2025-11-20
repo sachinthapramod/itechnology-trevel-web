@@ -7,11 +7,11 @@ function ActivitiesCard(props) {
         <>
             <div className="tour-box th-ani">
                 <div className="tour-box_img global-img">
-                    <img src={`/assets/img/tour/${activitiesImage}`} alt="" loading="lazy" />
+                    <img src={`/assets/img/tour/${activitiesImage}`} alt={activitiesTitle || 'Tasmania Activity'} loading="lazy" />
                 </div>
                 <div className="tour-content">
                     <h3 className="box-title">
-                        <Link to="/activities-details">{activitiesTitle ? activitiesTitle : 'Paragliding'}</Link>
+                        <Link to="/activities-details">{activitiesTitle ? activitiesTitle : 'Bruny Island Activity'}</Link>
                     </h3>
                     <div className="tour-rating">
                         <div
@@ -34,11 +34,11 @@ function ActivitiesCard(props) {
                         </Link>
                     </div>
                     <h4 className="tour-box_price">
-                        <span className="currency">{activitiesPrice ? activitiesPrice : '$980.00'}$980.00</span>/Person
+                        <span className="currency">{activitiesPrice ? activitiesPrice : '$95.00'}</span>/Guest
                     </h4>
                     <div className="tour-action">
                         <span>
-                            <i className="fa-light fa-clock" />7 Days
+                            <i className="fa-light fa-clock" />9 Hours (approx.)
                         </span>
                         <Link to="/activities-details" className="th-btn style4">
                             Detail View

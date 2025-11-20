@@ -14,14 +14,16 @@ function TourGuideInner() {
     return (
         <section className="space" id="team-sec">
             <div className="container">
-                <div className="row gy-4 gx-30">
-                    {currentPosts.map((data, index) => (
+                <div className="row gx-30" style={{ rowGap: '110px' }}>
+                    {currentPosts.map((data) => (
                         <div key={data.id} className="col-xl-4 col-md-6">
                             <TourguideCard
                                 guideID={data.id}
                                 guideThumb={`${data.thumb}`}
                                 guideImage={`${data.image}`}
-                                guideTitle={data.title}
+                                guideName={data.name || data.title}
+                                guideRole={data.role}
+                                guideFocus={data.focus}
                             />
                         </div>
                     ))}
