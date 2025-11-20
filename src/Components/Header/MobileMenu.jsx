@@ -117,16 +117,8 @@ function MobileMenu({ isOpen, onClose }) {
 
 
                         {/* Blog */}
-                        <li className={`menu-item-has-children th-item-has-children ${activeMenu === 7 ? "th-active" : ""}`}>
-                            <Link to="#" onClick={() => toggleMenu(7)}>Blog</Link>
-                            <ul
-                                ref={(el) => (menuRefs.current[7] = el)}
-                                className="th-submenu"
-                                style={{ height: "0px", overflow: "hidden", transition: "height 0.3s ease-in-out" }}
-                            >
-                                <li><Link to="/blog">Blog</Link></li>
-                                <li><Link to="/blog/1">Blog Details</Link></li>
-                            </ul>
+                        <li>
+                            <Link to="/blog">Blog</Link>
                         </li>
 
                         {/* Contact */}

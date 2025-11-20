@@ -119,14 +119,14 @@ function BlogInner() {
                                             <Link to="/blog/1">
                                                 <img
                                                     src="/assets/img/blog/recent-post-1-1.jpg"
-                                                    alt="Blog"
+                                                    alt="Bruny Island coastline"
                                                 />
                                             </Link>
                                         </div>
                                         <div className="media-body">
                                             <h4 className="post-title">
                                                 <Link className="text-inherit" to="/blog/1">
-                                                    Exploring The Green Spaces Of the island maldives
+                                                    Bruny Island: Coastlines, Wildlife & Tastings
                                                 </Link>
                                             </h4>
                                             <div className="recent-post-meta">
@@ -139,17 +139,17 @@ function BlogInner() {
                                     </div>
                                     <div className="recent-post">
                                         <div className="media-img">
-                                            <Link to="/blog/1">
+                                            <Link to="/blog/2">
                                                 <img
                                                     src="/assets/img/blog/recent-post-1-2.jpg"
-                                                    alt="Blog"
+                                                    alt="Mount Wellington summit"
                                                 />
                                             </Link>
                                         </div>
                                         <div className="media-body">
                                             <h4 className="post-title">
-                                                <Link className="text-inherit" to="/blog/1">
-                                                    Harmony With Nature Of Belgium Tour and travle
+                                                <Link className="text-inherit" to="/blog/2">
+                                                    Mount Wellington: Summit Views & Richmond Stories
                                                 </Link>
                                             </h4>
                                             <div className="recent-post-meta">
@@ -162,17 +162,17 @@ function BlogInner() {
                                     </div>
                                     <div className="recent-post">
                                         <div className="media-img">
-                                            <Link to="/blog/1">
+                                            <Link to="/blog/3">
                                                 <img
                                                     src="/assets/img/blog/recent-post-1-3.jpg"
-                                                    alt="Blog"
+                                                    alt="Hobart day tour"
                                                 />
                                             </Link>
                                         </div>
                                         <div className="media-body">
                                             <h4 className="post-title">
-                                                <Link className="text-inherit" to="/blog/1">
-                                                    Exploring The Green Spaces Of Realar Residence
+                                                <Link className="text-inherit" to="/blog/3">
+                                                    One-Day Tours from Hobart: Safe Travel Highlights
                                                 </Link>
                                             </h4>
                                             <div className="recent-post-meta">
