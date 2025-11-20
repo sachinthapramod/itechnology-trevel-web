@@ -17,68 +17,232 @@ function BlogDetailsMain() {
             date: "January 15, 2025",
             location: "Bruny Island",
             title: "Discovering Bruny Island: A Complete Guide to Tasmania's Island Paradise",
-            intro: "Just a short drive and ferry ride from Hobart, Bruny Island offers breathtaking landscapes, abundant wildlife, and some of the best local food in Tasmania. This all-inclusive experience blends nature, culture, and gourmet indulgence into one unforgettable day.",
-            paragraph1: "Your journey to Bruny Island begins with a scenic ferry ride across the D'Entrecasteaux Channel from Kettering. As you approach the island, you'll immediately notice the dramatic coastline and pristine beaches that make this destination so special. The island is divided into North and South Bruny, connected by a narrow isthmus known as 'The Neck' - one of the most photographed locations in Tasmania.",
-            paragraph2: "One of the highlights of any Bruny Island tour is climbing The Neck Lookout, which provides spectacular 360-degree views of both North and South Bruny Island. This elevated vantage point offers panoramic vistas of the surrounding waters, beaches, and rugged coastline. It's the perfect spot for photography enthusiasts and nature lovers alike.",
-            blockquote: "Bruny Island is more than just a destination - it's an experience that connects you with Tasmania's natural beauty, wildlife, and culinary excellence. From spotting white wallabies to sampling award-winning cheese and fresh oysters, every moment on the island is a discovery.",
-            blockquoteAuthor: "Local Guide, Safe Travel and Tour Services",
-            paragraph3: "Adventure Bay is another must-visit location on Bruny Island. This pristine beach offers opportunities for wildlife spotting, including the unique white wallabies that are native to the island. Keep your eyes peeled for sea eagles soaring overhead and seals basking on the rocks. The bay's calm waters and white sand beaches make it perfect for a relaxing stroll or a refreshing dip.",
-            paragraph4: "No visit to Bruny Island would be complete without experiencing the local gourmet offerings. The island is renowned for its artisanal food producers, including award-winning cheese makers, oyster farms, chocolate artisans, and honey producers. Our tours include tastings at several of these establishments, giving you the opportunity to sample some of Tasmania's finest produce.",
+            intro: "Just a short drive and ferry ride from Hobart, Bruny Island offers dramatic coastlines, gourmet indulgence, and unforgettable wildlife moments. This guide covers everything you need to plan the perfect one-day tour with Safe Travel and Tour Services.",
+            paragraph1: "Your Bruny Island adventure begins at Brooke Street Pier where your guide shares the day’s plan before we travel to Kettering for the ferry. The 20-minute crossing across the D'Entrecasteaux Channel sets the tone with sweeping views of Oyster Cove, fishing boats, and seabirds. Keep your camera ready—dolphins frequently surf the bow wave.",
+            paragraph2: "Once ashore we explore North and South Bruny, linked by the slender isthmus called The Neck. A short climb up the timber boardwalk rewards you with one of Tasmania’s best photo opportunities: 360-degree views of sandy beaches, turquoise water, and rolling hills. Interpretive signs explain the history of Truganini Lookout and the island’s unique formation.",
+            blockquote: "Bruny Island combines Tasmanian wilderness with artisan flavours. Expect rugged sea cliffs, white wallabies at Adventure Bay, and the freshest cheese and oysters you’ll taste anywhere in Australia.",
+            blockquoteAuthor: "Olivia Bennett, Lead Guide",
+            paragraph3: "Adventure Bay is your base for wildlife and beach walks. Our guides know the best spots to find the famous white wallabies, wedge-tailed eagles, and seasonal penguin burrows. Depending on the conditions we may walk to Grass Point, visit the Bligh Museum, or simply relax on the beach with a locally roasted coffee.",
+            paragraph4: "Bruny is equally renowned for its food. Safe Travel tours include curated tastings from cheesemakers, oyster farmers, chocolatiers, and honey producers. We pre-book tastings to avoid queues and make sure dietary preferences are catered for. There is always enough free time to purchase extra treats or a platter for lunch.",
             heading: "What to Expect on Your Bruny Island Tour",
-            paragraph5: "Our full-day Bruny Island tours depart from Hobart at 7:30 AM and return approximately at 5:00 PM. The tour includes hotel pickup and drop-off in Hobart CBD, ferry transfers, comfortable air-conditioned transport, National Park entry fees, and gourmet tastings. Your expert local guide will share insights into the island's history, wildlife, and natural features throughout the day.",
-            paragraph6: "Whether you choose a group tour or a private charter, you'll experience the best of Bruny Island in a safe, comfortable, and memorable way. Our tours are designed to showcase the island's stunning landscapes, abundant wildlife, and exceptional local food culture, all while providing genuine care and personalized service.",
-            tags: ["Bruny Island", "Wildlife", "Tasmania", "Tours"]
+            paragraph5: "Our full-day experiences depart Hobart at 7:30 AM and return around 5:00 PM. The itinerary balances lookouts, beach walks, tastings, and wildlife encounters with regular comfort stops. Transport is in modern, air-conditioned vehicles with charging ports, cold water, and sunscreen supplied.",
+            paragraph6: "We intentionally keep group sizes small so guides can tailor commentary to your interests—photography, geology, birdlife, or gourmet producers. Private charters follow the same structure but allow additional time at Luggaboine Circuit, Cape Bruny Lighthouse, or premium dining venues.",
+            keyHighlights: [
+                "Scenic ferry ride across the D'Entrecasteaux Channel",
+                "Panoramic vistas from The Neck Lookout and Truganini steps",
+                "Wildlife encounters with white wallabies, seals, and sea eagles",
+                "Curated tastings of cheese, oysters, chocolate, and honey",
+                "Guided walks at Adventure Bay and quiet southern beaches",
+                "Locally hosted commentary covering history, geology, and culture"
+            ],
+            itinerary: [
+                { time: "7:30 AM", detail: "Depart Hobart, hotel pickups finalised, travel to Kettering." },
+                { time: "8:30 AM", detail: "Ferry crossing with commentary and photo opportunities." },
+                { time: "9:00 AM", detail: "Arrive North Bruny, visit The Neck Lookout and penguin rookery boardwalk." },
+                { time: "10:30 AM", detail: "Adventure Bay walk, wildlife spotting, and local coffee stop." },
+                { time: "12:00 PM", detail: "Cheese, oyster, chocolate, and honey tastings with time for lunch." },
+                { time: "2:00 PM", detail: "South Bruny scenic drive, optional lighthouse or beach visits." },
+                { time: "4:30 PM", detail: "Return ferry and scenic drive back to Hobart." }
+            ],
+            tips: [
+                "Wear layered clothing—coastal breezes can be cool even in summer.",
+                "Bring a reusable water bottle; refills are available throughout the day.",
+                "Pack reef-safe sunscreen and comfortable walking shoes for boardwalks.",
+                "Pre-book during peak months (Dec–Mar) as departures sell out quickly.",
+                "Advise dietary needs when booking so tastings can be customised."
+            ],
+            faqs: [
+                {
+                    question: "Do I need to book the Bruny Island ferry separately?",
+                    answer: "No. Ferry tickets, National Park passes, tastings, and transport are all included in Safe Travel tour packages."
+                },
+                {
+                    question: "Can you accommodate vegetarians or gluten-free travellers?",
+                    answer: "Absolutely. We partner with producers who provide alternative platters—just let us know your requirements at the time of booking."
+                },
+                {
+                    question: "Is the tour suitable for children?",
+                    answer: "Yes. Our guides include shorter walks and wildlife moments to keep younger travellers engaged. Child seats can be arranged on request."
+                }
+            ],
+            cta: {
+                text: "Ready to experience Bruny Island with Safe Travel?",
+                description: "See available departure dates, compare group or private options, and secure your seat online.",
+                button: "View Bruny Island Tours",
+                link: "/tour?destination=Bruny%20Island"
+            },
+            tags: ["Bruny Island", "Tasmania Tours", "Wildlife", "Gourmet Travel"]
         },
         2: {
             author: "James Wilson",
             date: "January 18, 2025",
             location: "Mount Wellington",
             title: "Mount Wellington Summit: Your Ultimate Guide to Hobart's Iconic Peak",
-            intro: "Standing 1,271 metres above sea level, Mount Wellington (Kunanyi) offers some of the most spectacular views in Tasmania. This iconic peak provides sweeping panoramas over Hobart, the Derwent River, and the Tasman Peninsula, making it a must-visit destination for anyone exploring Southern Tasmania.",
-            paragraph1: "Mount Wellington, known to the local Aboriginal people as Kunanyi, dominates the Hobart skyline and offers visitors an incredible perspective of Tasmania's capital city and surrounding region. The drive to the summit takes you through diverse landscapes, from eucalyptus forests to alpine heathland, with the temperature dropping noticeably as you ascend.",
-            paragraph2: "At the summit, you'll find viewing platforms and walking tracks that allow you to take in the breathtaking 360-degree views. On a clear day, you can see across the Derwent River, over Hobart, and as far as the Tasman Peninsula. The crisp mountain air and panoramic vistas make this one of Tasmania's most memorable experiences.",
-            blockquote: "Mount Wellington offers a unique perspective on Hobart and Southern Tasmania. The views from the summit are simply breathtaking, and the journey up the mountain is an adventure in itself. It's a must-see for anyone visiting the region.",
-            blockquoteAuthor: "Tour Guide, Safe Travel and Tour Services",
-            paragraph3: "After visiting the summit, our Mount Wellington tours continue to Richmond Historic Village, one of Tasmania's most picturesque heritage towns. Here, you'll wander through cobblestone streets lined with Georgian architecture, visit the iconic Richmond Bridge (Australia's oldest bridge), and explore Richmond Gaol to learn about the area's convict-era history.",
-            paragraph4: "Richmond offers plenty of opportunities for shopping, with boutique shops selling local crafts, art, and souvenirs. The village is also home to several excellent cafes and bakeries where you can sample local treats and enjoy lunch at your own expense. The combination of mountain views and historic charm makes this tour a perfect introduction to Tasmania's natural and cultural heritage.",
+            intro: "Standing 1,271 metres above sea level, kunanyi / Mount Wellington frames the Hobart skyline and offers one of Australia’s most accessible alpine experiences. Use this guide to plan a stress-free summit visit plus Richmond Village add-on.",
+            paragraph1: "Mount Wellington’s microclimates change rapidly, so travelling with a Safe Travel guide means you get real-time weather updates and flexible timing. As we ascend, the landscape shifts from temperate rainforest to snow gum forest and finally to alpine boulder fields carved by ancient glaciers.",
+            paragraph2: "Summit boardwalks and lookouts sit above the Organ Pipes cliffs, revealing uninterrupted views across Hobart, the Derwent River, and out to the Tasman Peninsula. On clear days you can see Bruny Island to the south and the Hazards mountain range on the east coast.",
+            blockquote: "Mount Wellington delivers big-mountain drama without requiring technical hiking skills. Our guides bring spare jackets, hot drinks, and the storytelling that brings kunanyi’s cultural significance to life.",
+            blockquoteAuthor: "Ethan MacGregor, Expedition Leader",
+            paragraph3: "After the summit, we descend to Richmond Historic Village—a perfect contrast to the alpine environment. Established in the 1820s, Richmond is home to Australia’s oldest convict-built bridge. Guests can wander boutique shops, visit Richmond Gaol, or enjoy wood-fired bakery treats.",
+            paragraph4: "We design enough free time for lunch, photography, and shopping before returning to Hobart in the late afternoon. If the weather closes in on the summit, we adjust the schedule to visit secret lower-level lookouts, waterfalls, or Coal River Valley wineries instead.",
             heading: "Planning Your Mount Wellington Visit",
-            paragraph5: "Our Mount Wellington tours are 9-hour experiences that include comfortable air-conditioned transport, expert local guide commentary, and visits to both the summit and Richmond Village. Tours depart from Brooke Street Pier in Hobart, with complimentary hotel pick-up available on request for Hobart CBD accommodations.",
-            paragraph6: "It's important to note that Mount Wellington can be cold even in summer, so we recommend bringing warm clothing, comfortable walking shoes, a camera, and a water bottle. Tours may be altered or cancelled due to adverse weather conditions on the mountain, as safety is our top priority.",
-            tags: ["Mount Wellington", "Hobart", "Tasmania", "Scenic Views"]
+            paragraph5: "Our Mount Wellington tours are nine-hour experiences departing from Brooke Street Pier with CBD hotel pickups available. Vehicles carry cold-weather gear, binoculars, Wi-Fi, and charging cables so you can share summit photos instantly.",
+            paragraph6: "Each guide is trained in alpine safety and monitors conditions via Parks Tasmania updates. If winds exceed safe limits, we pivot to sheltered sites while still delivering the Richmond component, ensuring you get maximum value from the day.",
+            keyHighlights: [
+                "Guided summit visit with historical and geological interpretation",
+                "Complimentary warm drinks and spare jackets on chilly days",
+                "Photo stops at the Organ Pipes, Chalet, and Fern Tree",
+                "Richmond Village exploration with time for cafes and galleries",
+                "Flexible itineraries designed around the day’s weather patterns",
+                "Small-group format for personalised commentary"
+            ],
+            itinerary: [
+                { time: "8:00 AM", detail: "Depart Hobart, brief on weather conditions, drive through Fern Tree forests." },
+                { time: "9:00 AM", detail: "Summit boardwalks, viewing shelters, and panoramas across southern Tasmania." },
+                { time: "11:00 AM", detail: "Optional short walk to the Organ Pipes lookout or Cascade Gardens." },
+                { time: "12:30 PM", detail: "Arrive in Richmond Village for curated history walk and lunch break." },
+                { time: "2:30 PM", detail: "Free time for shops, galleries, or the gaol; optional wine tasting add-on." },
+                { time: "4:30 PM", detail: "Return to Hobart via Coal River Valley scenic route." }
+            ],
+            tips: [
+                "Pack a windproof jacket—even in summer the summit can feel like winter.",
+                "Charge your phone or bring a power bank for photos; we also provide USB charging.",
+                "Wear comfortable shoes for uneven boardwalks and village cobblestones.",
+                "Let us know if you want to add a vineyard stop or custom pickup location.",
+                "Check forecast but trust your guide—conditions can change within minutes."
+            ],
+            faqs: [
+                {
+                    question: "What happens if the summit is closed?",
+                    answer: "Safety comes first. If the pinnacle road closes, we access mid-mountain lookouts, Wellington Falls trails, or extend time in Richmond and the Coal River Valley."
+                },
+                {
+                    question: "Is the tour suitable for mobility-impaired travellers?",
+                    answer: "Yes. Boardwalks are largely accessible, and we can tailor the day with shorter walks or additional Richmond time. Please advise mobility requirements when booking."
+                },
+                {
+                    question: "Can we combine Mount Wellington with another destination?",
+                    answer: "Private charters can add Bonorong Wildlife Sanctuary, MONA, or local wineries. Ask our team for bespoke itineraries."
+                }
+            ],
+            cta: {
+                text: "Secure Your Mount Wellington Experience",
+                description: "Choose between our small-group departures or a fully private summit charter with Richmond add-ons.",
+                button: "Plan Mount Wellington Tour",
+                link: "/tour?destination=Mount%20Wellington"
+            },
+            tags: ["Mount Wellington", "Hobart Day Tours", "Richmond Village", "Tasmania Travel"]
         },
         3: {
             author: "Emma Thompson",
             date: "January 22, 2025",
             location: "Richmond",
             title: "Richmond Village: Exploring Tasmania's Historic Georgian Architecture",
-            intro: "Richmond is one of Tasmania's most charming historic villages, offering visitors a glimpse into Australia's colonial past. With its well-preserved Georgian architecture, iconic Richmond Bridge, and fascinating convict history, Richmond is a must-visit destination on any Southern Tasmania tour.",
-            paragraph1: "Richmond Village, located just 25 minutes from Hobart, is home to Australia's oldest bridge still in use. The Richmond Bridge, built by convicts in 1825, is a stunning example of colonial engineering and architecture. This historic structure spans the Coal River and provides a beautiful backdrop for photographs and a tangible connection to Tasmania's convict heritage.",
-            paragraph2: "The village itself is a treasure trove of Georgian architecture, with many buildings dating back to the 1820s and 1830s. As you wander through the cobblestone streets, you'll see beautifully preserved cottages, churches, and public buildings that tell the story of early European settlement in Tasmania. The village has maintained its historic character while welcoming modern visitors with boutique shops, galleries, cafes, and restaurants.",
-            blockquote: "Richmond is like stepping back in time. The Georgian architecture, the historic bridge, and the stories of convict-era Tasmania create an atmosphere that's both educational and enchanting. It's a perfect complement to the natural beauty of Mount Wellington.",
-            blockquoteAuthor: "Local Historian",
-            paragraph3: "Richmond Gaol is another significant historical site in the village. Built in 1825, it's one of Australia's oldest penal institutions and offers visitors a fascinating insight into the harsh realities of convict life in colonial Tasmania. The gaol's well-preserved cells, exercise yards, and administrative buildings provide a sobering but important perspective on Australia's history.",
-            paragraph4: "Today, Richmond is a vibrant village that combines its rich history with modern amenities. Visitors can browse boutique shops selling local crafts, art, and souvenirs, sample delicious treats at cafes and bakeries, and enjoy lunch at one of the village's excellent restaurants. The combination of historic charm and contemporary hospitality makes Richmond a delightful destination for all ages.",
+            intro: "Richmond Village offers one of the best-preserved snapshots of colonial Tasmania. Use this guide to uncover the must-see landmarks, foodie stops, and photography angles in this charming Georgian township.",
+            paragraph1: "Located just 25 minutes from Hobart, Richmond is home to Australia’s oldest convict-built bridge (1825). The sandstone arches glow golden at sunrise and sunset, making it a favourite stop for photographers and history lovers alike.",
+            paragraph2: "The village streets are lined with 1820s-era cottages that now house galleries, antique stores, and providores. As you stroll along Bridge Street, listen to your guide share stories of early settlers, military barracks, and the thriving Coal River Valley farming community.",
+            blockquote: "Richmond is where Tasmania’s convict history meets artisan makers. You can visit the gaol, taste local pinot, and still be back in Hobart for dinner.",
+            blockquoteAuthor: "Harper Nguyen, Cultural Storyteller",
+            paragraph3: "Richmond Gaol is a highlight for many guests. Built the same year as the bridge, it offers an immersive look into convict-era punishment, with solitary cells, chain gang yards, and displays of original artefacts. Safe Travel guides provide context so the experience feels informative rather than confronting.",
+            paragraph4: "Beyond history, Richmond is a foodie hub. You can sample Coal River Farm chocolate, visit Puddleduck Vineyard, or enjoy a classic Tasmanian pie at the bakery. We plan enough free time for lunch, wine tastings, or shopping for handcrafted souvenirs.",
             heading: "What to See and Do in Richmond",
-            paragraph5: "A typical visit to Richmond includes exploring the historic streets, photographing the iconic bridge, visiting Richmond Gaol, and enjoying free time for shopping and dining. The village is compact and easily walkable, making it perfect for a relaxed half-day visit. Many visitors combine a Richmond visit with a Mount Wellington summit tour, creating a full-day experience that showcases both Tasmania's natural beauty and historic heritage.",
-            paragraph6: "Whether you're interested in history, architecture, shopping, or simply enjoying the charm of a well-preserved historic village, Richmond offers something for everyone. Our tours provide expert commentary on the village's history and significance, ensuring you get the most out of your visit.",
-            tags: ["Richmond", "History", "Architecture", "Tasmania"]
+            paragraph5: "Our tours pair Richmond with Mount Wellington or Bonorong Wildlife Sanctuary, creating a full-day story arc of nature, wildlife, and heritage. The village itself is compact and walkable, making it ideal for travellers of all ages.",
+            paragraph6: "Travelling with Safe Travel means your guide manages parking, shares local introductions, and knows which cafes have available tables. You can relax into the experience without worrying about logistics.",
+            keyHighlights: [
+                "Historic Richmond Bridge, gaol, and St John’s Church (Australia’s oldest Catholic church)",
+                "Boutique shopping for Tasmanian crafts, ceramics, and jewellery",
+                "Local wine and cheese tastings in the Coal River Valley",
+                "Photography tips for sunrise, sunset, and night-sky shoots",
+                "Family-friendly walks along the Coal River",
+                "Flexible itineraries when paired with Mount Wellington or Bonorong"
+            ],
+            itinerary: [
+                { time: "11:30 AM", detail: "Arrive in Richmond after Mount Wellington or Bonorong visit." },
+                { time: "11:45 AM", detail: "Guided walk covering the bridge, gaol, and key heritage buildings." },
+                { time: "12:30 PM", detail: "Free time for lunch at local cafes or farm-gate platters." },
+                { time: "1:30 PM", detail: "Optional wine tasting, chocolate sampling, or shopping." },
+                { time: "2:30 PM", detail: "Regroup for stories at St John’s Church before returning to Hobart." }
+            ],
+            tips: [
+                "Bring a hat and sunscreen—Richmond can be warmer than the summit.",
+                "Have a small budget for tastings or artisan goods; many makers operate boutique stalls.",
+                "Ask your guide for the best angles of the bridge to avoid crowds.",
+                "Combine Richmond with Bonorong if you want a wildlife element.",
+                "Visit mid-week for quieter streets and shorter waits at cafes."
+            ],
+            faqs: [
+                {
+                    question: "How much walking is involved?",
+                    answer: "The village loop is less than 2 km on mostly flat terrain, with plenty of benches and shaded spots for rests."
+                },
+                {
+                    question: "Can I visit Richmond independently after the tour?",
+                    answer: "Absolutely. We’re happy to drop you off in the village and arrange a later shuttle back to Hobart (additional cost applies)."
+                },
+                {
+                    question: "Are there vegetarian or gluten-free dining options?",
+                    answer: "Yes. Richmond’s cafes and bakeries offer plant-based and gluten-free menus—your guide can recommend the best spots."
+                }
+            ],
+            cta: {
+                text: "Add Richmond Village to Your Tasmania Itinerary",
+                description: "Join a combined Mount Wellington + Richmond tour or request a private heritage charter tailored to your interests.",
+                button: "Explore Richmond Tours",
+                link: "/tour?destination=Richmond"
+            },
+            tags: ["Richmond Village", "Tasmania History", "Coal River Valley", "Heritage Travel"]
         },
         4: {
             author: "Michael Brown",
             date: "January 25, 2025",
             location: "Tasmania",
             title: "Group vs Private Tours: Which Tasmania Tour Experience is Right for You?",
-            intro: "When planning your Tasmania adventure, one of the first decisions you'll make is whether to join a group tour or book a private charter. Both options offer unique advantages, and the right choice depends on your preferences, budget, and travel style. Let's explore the differences to help you make the best decision for your Tasmanian journey.",
-            paragraph1: "Group tours are perfect for travelers who enjoy meeting new people, sharing experiences, and getting great value for money. Our group tours to Bruny Island and Mount Wellington typically accommodate small groups, ensuring personalized attention while keeping costs affordable. You'll benefit from the camaraderie of fellow travelers, shared excitement at wildlife sightings, and the opportunity to make new friends from around the world.",
-            paragraph2: "Private tours, on the other hand, offer complete flexibility and customization. With a private charter, you can adjust the itinerary to match your interests, spend more time at locations that captivate you, and enjoy the undivided attention of your guide. Private tours are ideal for families, couples seeking a romantic experience, or groups of friends who want to travel together exclusively.",
-            blockquote: "The best tour is the one that matches your travel style. Group tours offer great value and social interaction, while private tours provide flexibility and personalization. Both showcase Tasmania's beauty beautifully.",
-            blockquoteAuthor: "Tour Coordinator, Safe Travel and Tour Services",
-            paragraph3: "Group tours follow a carefully planned itinerary designed to showcase the best of each destination. For Bruny Island, this includes the ferry crossing, The Neck Lookout, Adventure Bay, wildlife spotting, and gourmet tastings. For Mount Wellington tours, the itinerary covers the summit visit and Richmond Village exploration. The structured approach ensures you see all the highlights while staying on schedule.",
-            paragraph4: "Private tours allow you to customize your experience. Want to spend extra time photographing wildlife? Interested in visiting additional locations? Prefer a later start time? With a private tour, these preferences can be accommodated. Your guide can also provide more in-depth commentary tailored to your interests, whether you're passionate about history, wildlife, photography, or local food culture.",
+            intro: "Should you explore Tasmania with a small group or book a private charter? This guide compares inclusions, pricing, flexibility, and guest profiles to help you choose the tour style that suits your travel goals.",
+            paragraph1: "Group tours are ideal for sociable travellers who want value, structure, and the chance to meet like-minded explorers. Safe Travel limits group sizes to keep commentary personal while ensuring departures run daily—even during shoulder seasons.",
+            paragraph2: "Private tours are perfect for families, photographers, or travellers with specific interests such as gourmet dining or in-depth history. You control the pace, start time, and stops. Guides adapt commentary to your passions and can even build itineraries around special occasions.",
+            blockquote: "Both formats showcase Tasmania’s beauty. The right choice depends on how you like to travel, not what you might miss.",
+            blockquoteAuthor: "Sienna Clarke, Experience Designer",
+            paragraph3: "Group itineraries cover the Bruny Island essentials—The Neck, Adventure Bay, wildlife, and tastings—or the Mount Wellington + Richmond circuit. Schedules are optimised for daylight, ferry slots, and producer availability, so you can relax knowing everything is taken care of.",
+            paragraph4: "Private charters allow extras such as sunrise lighthouse visits, vineyard lunches, or bonus wildlife sanctuaries. You can linger longer at photo stops, request detours, or end the tour at the airport if you’re flying out that evening.",
             heading: "Making Your Decision",
-            paragraph5: "Consider your budget, travel companions, and personal preferences when choosing between group and private tours. Group tours offer excellent value at $190 for Bruny Island and $120 for Mount Wellington, making them accessible to a wide range of travelers. Private tours provide premium experiences with complete flexibility, perfect for special occasions or travelers with specific interests.",
-            paragraph6: "Both tour types include expert local guides, comfortable air-conditioned transport, and all the essential inclusions. Whether you choose group or private, you'll experience the same high standards of safety, comfort, and genuine hospitality that define Safe Travel and Tour Services. The choice is yours - and either way, you're guaranteed an unforgettable Tasmanian adventure.",
-            tags: ["Tours", "Travel Tips", "Tasmania", "Planning"]
+            paragraph5: "Budget is a factor: group tours start at $120–$190 per person, while private charters are priced per vehicle. Consider who you’re travelling with, how much flexibility you crave, and whether you want exclusive tasting sessions or time-sensitive photo projects.",
+            paragraph6: "Regardless of format, every Safe Travel guest receives professional guiding, premium vehicles, National Park passes, and access to our concierge team for pre-trip advice.",
+            keyHighlights: [
+                "Group tours = value, fixed itineraries, guaranteed departures",
+                "Private tours = flexibility, custom pacing, bespoke inclusions",
+                "Both include hotel pickups, ferry tickets (if required), and gourmet tastings",
+                "Guides share the same local expertise and safety focus across all formats",
+                "Private groups can request multilingual guides or special occasion touches",
+                "Group travellers benefit from meeting people who share their interests"
+            ],
+            tips: [
+                "Travelling during peak season? Book early regardless of format to secure ferry and tasting slots.",
+                "If you’re a photographer or foodie, list your non-negotiables so we can recommend the best fit.",
+                "Families with young children often prefer private charters for nap-friendly pacing.",
+                "Solo travellers love group tours for instant travel companions.",
+                "Consider a hybrid approach: join a group for Bruny Island and book a private Mount Wellington sunset charter."
+            ],
+            faqs: [
+                {
+                    question: "Can we upgrade a group booking to private?",
+                    answer: "Yes, subject to availability. Contact us at least 48 hours before departure to discuss upgrade options."
+                },
+                {
+                    question: "What vehicles do you use for private tours?",
+                    answer: "We operate premium SUVs and mini-coaches equipped with leather seating, climate control, and phone charging."
+                },
+                {
+                    question: "Do private tours include tastings and ferry tickets?",
+                    answer: "All essential inclusions (tastings, ferry fares, National Park fees) mirror the group offerings unless you request something bespoke."
+                }
+            ],
+            cta: {
+                text: "Need Help Choosing?",
+                description: "Speak with our Hobart-based team to compare itineraries, request a quote, or design a hybrid itinerary.",
+                button: "Chat With Our Tour Specialists",
+                link: "/contact"
+            },
+            tags: ["Tasmania Tours", "Private Tours", "Group Travel", "Trip Planning"]
         }
     };
 
@@ -141,7 +305,7 @@ function BlogDetailsMain() {
                                             <img
                                                 className="w-100"
                                                 src="/assets/img/blog/blog_inner_1.jpg"
-                                                alt="Blog"
+                                                alt={content.title}
                                             />
                                         </div>
                                     </div>
@@ -152,6 +316,65 @@ function BlogDetailsMain() {
                                 <p>
                                     {content.paragraph6}
                                 </p>
+                                {content.keyHighlights && content.keyHighlights.length > 0 && (
+                                    <>
+                                        <h3 className="mt-4">Key Highlights</h3>
+                                        <div className="checklist mb-30">
+                                            <ul>
+                                                {content.keyHighlights.map((item, idx) => (
+                                                    <li key={idx}>{item}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    </>
+                                )}
+                                {content.itinerary && content.itinerary.length > 0 && (
+                                    <>
+                                        <h3 className="mt-4">Sample One-Day Itinerary</h3>
+                                        <ol className="itinerary-list mb-30">
+                                            {content.itinerary.map((item, idx) => (
+                                                <li key={idx}>
+                                                    <strong>{item.time}</strong> — {item.detail}
+                                                </li>
+                                            ))}
+                                        </ol>
+                                    </>
+                                )}
+                                {content.tips && content.tips.length > 0 && (
+                                    <>
+                                        <h3 className="mt-4">Travel Tips</h3>
+                                        <ul className="list-unstyled mb-30">
+                                            {content.tips.map((tip, idx) => (
+                                                <li key={idx}>
+                                                    <i className="fa-solid fa-circle-check me-2 text-primary" />
+                                                    {tip}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </>
+                                )}
+                                {content.faqs && content.faqs.length > 0 && (
+                                    <div className="mt-4 mb-40">
+                                        <h3>Frequently Asked Questions</h3>
+                                        <div className="faq-accordion">
+                                            {content.faqs.map((faq, idx) => (
+                                                <div className="faq-item" key={idx}>
+                                                    <h4 className="faq-title">{faq.question}</h4>
+                                                    <p className="faq-text">{faq.answer}</p>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
+                                {content.cta && (
+                                    <div className="tour-cta-box">
+                                        <h4>{content.cta.text}</h4>
+                                        <p>{content.cta.description}</p>
+                                        <Link to={content.cta.link} className="th-btn style3 mt-2">
+                                            {content.cta.button}
+                                        </Link>
+                                    </div>
+                                )}
                                 <div className="share-links clearfix ">
                                     <div className="row justify-content-between">
                                         <div className="col-md-auto">
@@ -352,44 +575,44 @@ function BlogDetailsMain() {
                                     <li>
                                         <Link to="/blog">
                                             <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            City Tour
+                                            Bruny Island Guides
                                         </Link>
-                                        <span>(8)</span>
+                                        <span>(4)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
                                             <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            Beach Tours
+                                            Mount Wellington Tips
                                         </Link>
-                                        <span>(6)</span>
+                                        <span>(3)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
                                             <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            Wildlife Tours
+                                            Richmond Heritage
                                         </Link>
                                         <span>(2)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
                                             <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            News &amp; Tips
+                                            Travel Planning
                                         </Link>
-                                        <span>(7)</span>
+                                        <span>(5)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
                                             <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            Adventure Tours
+                                            Group vs Private Tours
                                         </Link>
-                                        <span>(9)</span>
+                                        <span>(2)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
                                             <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            Mountain Tours
+                                            Tasmania Inspiration
                                         </Link>
-                                        <span>(10)</span>
+                                        <span>(6)</span>
                                     </li>
                                 </ul>
                             </div>
@@ -473,11 +696,11 @@ function BlogDetailsMain() {
                                     <Link to="/blog">Tasmania</Link>
                                     <Link to="/blog">Bruny Island</Link>
                                     <Link to="/blog">Mount Wellington</Link>
-                                    <Link to="/blog">Tours</Link>
+                                    <Link to="/blog">Richmond</Link>
+                                    <Link to="/blog">Gourmet</Link>
                                     <Link to="/blog">Wildlife</Link>
-                                    <Link to="/blog">Adventure</Link>
-                                    <Link to="/blog">Hobart</Link>
-                                    <Link to="/blog">Travel</Link>
+                                    <Link to="/blog">Private Tours</Link>
+                                    <Link to="/blog">Group Travel</Link>
                                 </div>
                             </div>
                             <div
@@ -490,16 +713,16 @@ function BlogDetailsMain() {
                                             Need Help? We Are Here To Help You
                                         </h6>
                                         <div className="banner-logo">
-                                            <img src="/assets/img/logo2.svg" alt="Tourm" />
+                                            <img src="/assets/img/logo2.svg" alt="Safe Travel and Tour Services" />
                                         </div>
                                         <div className="offer">
                                             <h6 className="offer-title">You Get Online support</h6>
-                                            <Link className="offter-num" to={+256214203215}>
-                                                +256 214 203 215
+                                            <Link className="offter-num" to="tel:+61362488200">
+                                                +61 3 6248 8200
                                             </Link>
                                         </div>
                                         <Link to="/contact" className="th-btn style2 th-icon">
-                                            Read More
+                                            Contact Our Team
                                         </Link>
                                     </div>
                                 </div>
