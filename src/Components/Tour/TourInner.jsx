@@ -3,6 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom'
 import TourCard from './TourCard';
 import posts from '../data/data-tour.json';
 import TourCardTwo from './TourCardTwo';
+import { ROUTES } from '../../config/constants';
 
 function TourInner() {
     const [searchParams] = useSearchParams();
@@ -172,12 +173,12 @@ function TourInner() {
                     <div className="row justify-content-between align-items-center">
                         <div className="col-md-4">
                             <div className="search-form-area">
-                                <form className="search-form">
-                                    <input type="text" placeholder="Search" />
-                                    <button type="submit">
-                                        <i className="fa-light fa-magnifying-glass" />
-                                    </button>
-                                </form>
+                                <div className="tour-intro">
+                                    <h2 className="h5 mb-1">Tasmania tours departing Hobart daily</h2>
+                                    <p className="mb-0 text-muted">
+                                        Filter Safe Travel and Tour Services itineraries covering Bruny Island tastings, Mount Wellington summit drives, and Hobart-based private charters.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <div className="col-md-auto">
@@ -211,22 +212,11 @@ function TourInner() {
                                         <i className="fa-solid fa-list" />
                                     </Link>
                                 </div>
-                                <form className="woocommerce-ordering" method="get">
-                                    <select
-                                        name="orderby"
-                                        className="orderby"
-                                        aria-label="destination order"
-                                    >
-                                        <option value="menu_order" >
-                                            Default Sorting
-                                        </option>
-                                        <option value="popularity">Sort by popularity</option>
-                                        <option value="rating">Sort by average rating</option>
-                                        <option value="date">Sort by latest</option>
-                                        <option value="price">Sort by price: low to high</option>
-                                        <option value="price-desc">Sort by price: high to low</option>
-                                    </select>
-                                </form>
+                                <div className="tour-intro-text ms-3">
+                                    <p className="mb-0 text-muted">
+                                        Need help deciding between our four Tasmania packages? Use the filters above or contact our Hobart team for bespoke itineraries that combine Bruny Island, Mount Wellington, Richmond, and Bonorong Wildlife Sanctuary in one seamless schedule.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>

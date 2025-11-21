@@ -27,7 +27,11 @@ function DestinationDetailsMain() {
                     <div className="col-xxl-8 col-lg-7">
                         <div className="page-single">
                             <div className="service-img">
-                                <img src={`/assets/img/destination/${destinationPost.bannerImg}`} alt="" />
+                                <img 
+                                    src={`/assets/img/destination/${destinationPost.bannerImg}`} 
+                                    alt={`${destinationPost.title} - Safe Travel Tasmania Tours`} 
+                                    loading="lazy"
+                                />
                             </div>
                             <div className="page-content d-block">
                                 <div className="page-meta mt-50 mb-45">
@@ -97,7 +101,8 @@ function DestinationDetailsMain() {
                                 <div className="service-inner-img mb-40">
                                     <img
                                         src="/assets/img/destination/destination-inner-1.jpg"
-                                        alt=""
+                                        alt="Bruny Island and Mount Wellington Tasmania tour highlights"
+                                        loading="lazy"
                                     />
                                 </div>
                                 <h2 className="box-title">Highlights</h2>
@@ -121,7 +126,8 @@ function DestinationDetailsMain() {
                                             <div className="gallery-img global-img">
                                                 <img
                                                     src="/assets/img/gallery/gallery_6_1.jpg"
-                                                    alt="gallery"
+                                                    alt="Bruny Island and Mount Wellington Tasmania tour gallery"
+                                                    loading="lazy"
                                                     onClick={(e) => openModal('/assets/img/gallery/gallery_6_1.jpg', e)}
                                                 />
                                                 <Link
@@ -139,7 +145,8 @@ function DestinationDetailsMain() {
                                             <div className="gallery-img global-img">
                                                 <img
                                                     src="/assets/img/gallery/gallery_6_2.jpg"
-                                                    alt="gallery"
+                                                    alt="Tasmania tour destination gallery - Bruny Island and Mount Wellington"
+                                                    loading="lazy"
                                                     onClick={(e) => openModal('/assets/img/gallery/gallery_6_2.jpg', e)}
                                                 />
                                                 <Link
@@ -157,7 +164,8 @@ function DestinationDetailsMain() {
                                             <div className="gallery-img global-img">
                                                 <img
                                                     src="/assets/img/gallery/gallery_6_3.jpg"
-                                                    alt="gallery"
+                                                    alt="Tasmania tour destination gallery - Bruny Island and Mount Wellington"
+                                                    loading="lazy"
                                                     onClick={(e) => openModal('/assets/img/gallery/gallery_6_3.jpg', e)}
                                                 />
                                                 <Link
@@ -175,7 +183,8 @@ function DestinationDetailsMain() {
                                             <div className="gallery-img global-img">
                                                 <img
                                                     src="/assets/img/gallery/gallery_6_4.jpg"
-                                                    alt="gallery"
+                                                    alt="Tasmania tour destination gallery - Bruny Island and Mount Wellington"
+                                                    loading="lazy"
                                                     onClick={(e) => openModal('/assets/img/gallery/gallery_6_4.jpg', e)}
                                                 />
                                                 <Link

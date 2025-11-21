@@ -1,18 +1,51 @@
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import DestinationCard from './DestinationCard';
 import posts from '../data/data-destination.json';
 import DestinationCardTwo from './DestinationCardTwo';
 
+const seoFilters = [
+    { label: 'All Experiences', value: 'all', description: 'Browse every Tasmania destination' },
+    { label: 'Bruny Island', value: 'Bruny Island', description: 'Gourmet & wildlife tours' },
+    { label: 'Mount Wellington', value: 'Mount Wellington', description: 'Summit & Richmond day trips' },
+];
+
+const seoHighlights = [
+    {
+        title: 'Bruny Island Highlights',
+        bullets: [
+            'Scenic ferry across the D’Entrecasteaux Channel',
+            'The Neck Lookout & Truganini steps',
+            'Adventure Bay walks and white wallaby spotting',
+            'Curated tastings: cheese, oysters, chocolate, honey',
+        ],
+    },
+    {
+        title: 'Mount Wellington & Richmond Highlights',
+        bullets: [
+            'kunanyi/Mount Wellington summit boardwalks',
+            'Optional Organ Pipes and fern tree forest stops',
+            'Richmond Village heritage strolls and cafes',
+            'Complimentary warm drinks and flexible weather plans',
+        ],
+    },
+];
+
 function DestinationInner() {
     const [activeTab, setActiveTab] = useState('tab-grid');
     const [currentPage, setCurrentPage] = useState(1);
+    const [activeFilter, setActiveFilter] = useState('all');
     const postsPerPage = 9;
 
-    const totalPages = Math.ceil(posts.length / postsPerPage);
+    const filteredPosts = useMemo(() => {
+        if (activeFilter === 'all') return posts;
+        return posts.filter((post) => post.title?.includes(activeFilter));
+    }, [activeFilter]);
+
+    const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
-    const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+    const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
 
     const handlePageChange = (page) => {
         setCurrentPage(page);
@@ -24,12 +57,29 @@ function DestinationInner() {
                     <div className="row justify-content-between align-items-center">
                         <div className="col-md-4">
                             <div className="search-form-area">
-                                <form className="search-form">
-                                    <input type="text" placeholder="Search" />
-                                    <button type="submit">
-                                        <i className="fa-light fa-magnifying-glass" />
-                                    </button>
-                                </form>
+                                <div className="destination-filter">
+                                    <label htmlFor="destinationFilter" className="text-uppercase fw-bold small mb-1">
+                                        Filter by Tasmania destination
+                                    </label>
+                                    <select
+                                        id="destinationFilter"
+                                        className="form-select"
+                                        value={activeFilter}
+                                        onChange={(e) => {
+                                            setActiveFilter(e.target.value);
+                                            setCurrentPage(1);
+                                        }}
+                                    >
+                                        {seoFilters.map((filter) => (
+                                            <option key={filter.value} value={filter.value}>
+                                                {filter.label}
+                                            </option>
+                                        ))}
+                                    </select>
+                                    <p className="filter-description mt-2 small text-muted">
+                                        {seoFilters.find((filter) => filter.value === activeFilter)?.description}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <div className="col-md-auto">
@@ -63,25 +113,37 @@ function DestinationInner() {
                                         <i className="fa-solid fa-list" />
                                     </Link>
                                 </div>
-                                <form className="woocommerce-ordering" method="get">
-                                    <select
-                                        name="orderby"
-                                        className="orderby"
-                                        aria-label="destination order"
-                                    >
-                                        <option value="menu_order" >
-                                            Default Sorting
-                                        </option>
-                                        <option value="popularity">Sort by popularity</option>
-                                        <option value="rating">Sort by average rating</option>
-                                        <option value="date">Sort by latest</option>
-                                        <option value="price">Sort by price: low to high</option>
-                                        <option value="price-desc">Sort by price: high to low</option>
-                                    </select>
-                                </form>
+                                <div className="destination-intro seo-copy ms-3">
+                                    <h2 className="h5 mb-1">Tasmania destinations curated by a Hobart travel agency</h2>
+                                    <p className="mb-0 text-muted">
+                                        Compare Bruny Island wildlife tours, Mount Wellington summit drives, and Richmond Village add-ons. Every itinerary departs from Hobart with Safe Travel and Tour Services.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="row gy-4 align-items-start my-4">
+                    {seoHighlights.map((highlight) => (
+                        <div key={highlight.title} className="col-md-6">
+                            <div className="destination-highlight card h-100 shadow-sm">
+                                <div className="card-body">
+                                    <h3 className="h5 mb-3">{highlight.title}</h3>
+                                    <ul className="list-unstyled mb-3">
+                                        {highlight.bullets.map((bullet) => (
+                                            <li key={bullet} className="d-flex align-items-start mb-2">
+                                                <i className="fa-solid fa-check text-primary me-2 mt-1" aria-hidden="true" />
+                                                <span>{bullet}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <Link to="/tour" className="th-btn style4 th-icon">
+                                        View Itineraries
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
                 </div>
                 <div className="row">
                     <div className="col-xxl-9 col-lg-8">
@@ -304,6 +366,15 @@ function DestinationInner() {
                         </aside>
                     </div>
                 </div>
+            </div>
+            <div className="destination-cta text-center mt-5">
+                <h3 className="h4 mb-3">Need help choosing the right Tasmania destination?</h3>
+                <p className="mb-4 text-muted">
+                    Speak with our Hobart-based travel planners to compare Bruny Island departures, Mount Wellington add-ons, and private charter upgrades tailored to your group.
+                </p>
+                <Link to="/contact" className="th-btn style3 th-icon">
+                    Chat with Safe Travel Experts
+                </Link>
             </div>
         </section>
 

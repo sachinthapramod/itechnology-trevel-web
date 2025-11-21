@@ -13,7 +13,7 @@ function GetInTouch() {
                     <div className="col-xl-4 col-lg-6">
                         <div className="about-contact-grid style2">
                             <div className="about-contact-icon">
-                                <img src="/assets/img/icon/location-dot2.svg" alt="" />
+                                <img src="/assets/img/icon/location-dot2.svg" alt="Safe Travel Tasmania address location" />
                             </div>
                             <div className="about-contact-details">
                                 <h6 className="box-title">Our Address</h6>
@@ -27,7 +27,7 @@ function GetInTouch() {
                     <div className="col-xl-4 col-lg-6">
                         <div className="about-contact-grid">
                             <div className="about-contact-icon">
-                                <img src="/assets/img/icon/call.svg" alt="" />
+                                <img src="/assets/img/icon/call.svg" alt="Safe Travel Tasmania phone contact" />
                             </div>
                             <div className="about-contact-details">
                                 <h6 className="box-title">Phone Number</h6>
@@ -43,7 +43,7 @@ function GetInTouch() {
                     <div className="col-xl-4 col-lg-6">
                         <div className="about-contact-grid">
                             <div className="about-contact-icon">
-                                <img src="/assets/img/icon/mail.svg" alt="" />
+                                <img src="/assets/img/icon/mail.svg" alt="Safe Travel Tasmania email contact" />
                             </div>
                             <div className="about-contact-details">
                                 <h6 className="box-title">Email Address</h6>

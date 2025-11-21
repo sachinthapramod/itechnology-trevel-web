@@ -34,10 +34,10 @@ function TourGuiderDetailsMain() {
                         <div className="col-xl-4">
                             <div className="th-team team-grid">
                                 <div className="team-img">
-                                    <img src={`/assets/img/team/${guidePost.thumb}`} alt="Team" />
+                                    <img src={`/assets/img/team/${guidePost.thumb}`} alt={`${guideName} portrait`} />
                                 </div>
                                 <div className="team-img2">
-                                    <img src={`/assets/img/team/${guidePost.bannerImg}`} alt="Team" />
+                                    <img src={`/assets/img/team/${guidePost.bannerImg}`} alt={`${guideName} hosting Tasmania tour`} />
                                 </div>
                                 <div className="team-content">
                                     <div className="media-body">
@@ -73,7 +73,7 @@ function TourGuiderDetailsMain() {
                         </div>
                         <div className="col-xl-8 ps-3 ps-xl-5 pe-xl-4">
                             <div className="team-about">
-                                <h2 className="team-about_title">About Me</h2>
+                                <h2 className="team-about_title">About {guideName}</h2>
                                 <p className="team-about_text mb-25">
                                     {guidePost.bio || "Our guides live and breathe Tasmania. They balance genuine storytelling with thoughtful hosting so every traveller feels at ease."}
                                 </p>

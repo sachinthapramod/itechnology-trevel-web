@@ -225,7 +225,11 @@ function ServiceDetailsMain() {
                     <div className="col-xxl-8 col-lg-7">
                         <div className="page-single">
                             <div className="service-img">
-                                <img src={`/assets/img/destination/${servicePost.bannerImg}`} alt={serviceContent.title} loading="lazy" />
+                                <img 
+                                    src={`/assets/img/destination/${servicePost.bannerImg}`} 
+                                    alt={`${serviceContent.title} - Safe Travel and Tour Services Tasmania`} 
+                                    loading="lazy" 
+                                />
                             </div>
                             <div className="page-content d-block">
                                 <div className="page-meta mt-50 mb-45">
@@ -252,7 +256,7 @@ function ServiceDetailsMain() {
                                 <div className="service-inner-img mb-40">
                                     <img
                                         src="/assets/img/destination/destination-inner-1.jpg"
-                                        alt={serviceContent.galleryAlt}
+                                        alt={`${serviceContent.galleryAlt} - ${serviceContent.title} by Safe Travel Tasmania`}
                                         loading="lazy"
                                     />
                                 </div>
@@ -290,7 +294,7 @@ function ServiceDetailsMain() {
                                                 <div className="gallery-img global-img">
                                                     <img
                                                         src={imgSrc}
-                                                        alt={serviceContent.galleryAlt}
+                                                        alt={`${serviceContent.galleryAlt} - ${index + 1} from ${serviceContent.title}`}
                                                         loading="lazy"
                                                     />
                                                     <Link
@@ -315,7 +319,7 @@ function ServiceDetailsMain() {
                                                 <div className="comment-avater">
                                                     <img
                                                         src={`/assets/img/blog/comment-author-${(index % 3) + 1}.jpg`}
-                                                        alt="Guest"
+                                                        alt={`${review.name} - Guest review for ${serviceContent.title}`}
                                                         loading="lazy"
                                                     />
                                                 </div>
@@ -394,7 +398,7 @@ function ServiceDetailsMain() {
                                     <div className="col-12 form-group mb-0">
                                         <button className="th-btn">
                                             Send Message
-                                            <img src="/assets/img/icon/plane2.svg" alt="" />
+                                            <img src="/assets/img/icon/plane2.svg" alt="Send message icon" />
                                         </button>
                                     </div>
                                 </div>
@@ -416,35 +420,35 @@ function ServiceDetailsMain() {
                                 <ul>
                                     <li>
                                         <Link to="/tour">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            <img src="/assets/img/theme-img/map.svg" alt="Bruny Island Tours Tasmania" />
                                             Bruny Island Tours
                                         </Link>
                                         <span>(2)</span>
                                     </li>
                                     <li>
                                         <Link to="/tour">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            <img src="/assets/img/theme-img/map.svg" alt="Mount Wellington Tours Hobart" />
                                             Mount Wellington Tours
                                         </Link>
                                         <span>(2)</span>
                                     </li>
                                     <li>
                                         <Link to="/tour">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            <img src="/assets/img/theme-img/map.svg" alt="Sightseeing and Scenic Tours Tasmania" />
                                             Sightseeing & Scenic
                                         </Link>
                                         <span>(4)</span>
                                     </li>
                                     <li>
                                         <Link to="/tour">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            <img src="/assets/img/theme-img/map.svg" alt="Gourmet Food Tours Tasmania" />
                                             Gourmet Experiences
                                         </Link>
                                         <span>(3)</span>
                                     </li>
                                     <li>
                                         <Link to="/tour">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            <img src="/assets/img/theme-img/map.svg" alt="Wildlife and Adventure Tours Tasmania" />
                                             Wildlife & Adventure
                                         </Link>
                                         <span>(3)</span>

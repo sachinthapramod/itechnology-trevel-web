@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Thumbs, EffectFade } from "swiper/modules";
+import { ROUTES } from '../../config/constants';
 
 function TourDetailsMain() {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -16,9 +17,9 @@ function TourDetailsMain() {
         "/assets/img/tour/tour_inner_1.jpg",
         "/assets/img/tour/tour_inner_2.jpg",
         "/assets/img/tour/tour_inner_3.jpg",
-        "/assets/img/tour/tour_inner_1.jpg",
-        "/assets/img/tour/tour_inner_2.jpg",
-        "/assets/img/tour/tour_inner_3.jpg",
+        "/assets/img/tour/tour_inner_4.jpg",
+        "/assets/img/tour/tour_inner_5.jpg",
+        "/assets/img/tour/tour_inner_6.jpg",
     ];
     const tabContent = {
         "day-tab1": [
@@ -113,69 +114,62 @@ function TourDetailsMain() {
                             <div className="page-content">
                                 <div className="page-meta mb-45">
                                     <Link className="page-tag mr-5" to="/tour">
-                                        Featured
+                                        Bruny Island & Mount Wellington
                                     </Link>
                                     <span className="ratting">
-                                        <i className="fa-sharp fa-solid fa-star" />
-                                        <span>4.8</span>
+                                        <i className="fa-sharp fa-solid fa-star" aria-hidden="true" />
+                                        <span>Rated 4.9/5 by Australian travellers</span>
                                     </span>
                                 </div>
-                                <h2 className="box-title">
-                                    Experience the Highlights of Southern Tasmania
-                                </h2>
+                                <h1 className="box-title">
+                                    Signature Tasmania Tour: Mount Wellington Summit & Bruny Island Gourmet Adventure
+                                </h1>
                                 <h4 className="tour-price">
-                                    <span className="currency">From AUD $120.00</span>/Person
+                                    <span className="currency">From AUD $120.00</span>/Person (group) · Private charters available
                                 </h4>
                                 <p className="box-text mb-30">
-                                    Experience the highlights of Southern Tasmania on this full-day guided tour. Begin your adventure with a scenic drive to the summit of Mount Wellington, standing 1,271 metres above sea level. Take in sweeping views over Hobart, the Derwent River, and the Tasman Peninsula. Enjoy photo stops and crisp mountain air before heading down to explore one of Tasmania's most picturesque heritage towns.
+                                    Safe Travel and Tour Services designs this nine-hour Tasmania experience for visitors who want both mountain panoramas and coastal tastings. Departing Hobart daily, your accredited local guide takes you to Mount Wellington/kunanyi for sweeping views, Richmond Village for Georgian architecture, and Bruny Island for gourmet cheese, oyster, chocolate, and honey samplers.
                                 </p>
                                 <p className="box-text mb-50">
-                                    At Richmond Village, wander through cobblestone streets lined with Georgian architecture, visit the iconic Richmond Bridge (Australia's oldest), browse boutique shops, and sample local treats at cafes and bakeries. Your friendly local guide shares insights into Tasmania's natural beauty and convict-era history, making this a memorable and relaxed day out.
+                                    Our Hobart-based travel agency manages ferry crossings, National Park permits, hotel pickups, and dietary-friendly tastings, so you can focus on photography, wildlife sightings, and cultural insights. Whether you book a shared departure or upgrade to a private charter, every itinerary balances comfort, safety, and genuine Tasmanian hospitality.
                                 </p>
                                 <h2 className="box-title">Tour Highlights</h2>
                                 <p className="box-text mb-30">
-                                    Discover the best of Southern Tasmania with our carefully curated tour highlights:
+                                    Explore Tasmania’s top destinations with curated stops and hosted tastings:
                                 </p>
                                 <div className="checklist mb-50">
                                     <ul>
-                                        <li>Visit Mount Wellington summit (Kunanyi) - 1,271 metres above sea level</li>
-                                        <li>Explore Richmond Historic Village with Georgian architecture</li>
-                                        <li>Stop at Richmond Bridge and Richmond Gaol</li>
-                                        <li>Free time for shopping and lunch (own expense)</li>
-                                        <li>Small group experience with local guide</li>
-                                        <li>Air-conditioned transport</li>
-                                        <li>Scenic ferry ride across the D'Entrecasteaux Channel (Bruny Island tours)</li>
-                                        <li>Climb The Neck Lookout for 360° views (Bruny Island tours)</li>
-                                        <li>Visit Adventure Bay and pristine beaches (Bruny Island tours)</li>
-                                        <li>Spot wildlife like white wallabies and sea eagles (Bruny Island tours)</li>
-                                        <li>Local gourmet tastings: cheese, oysters, chocolate, honey (Bruny Island tours)</li>
+                                        <li>Mount Wellington / kunanyi summit boardwalks with panoramic views over Hobart and the Derwent River</li>
+                                        <li>Richmond Village heritage walking tour including the historic bridge and convict-built gaol</li>
+                                        <li>Bruny Island ferry crossing through the D’Entrecasteaux Channel</li>
+                                        <li>The Neck Lookout climb for 360-degree coastal vistas</li>
+                                        <li>Adventure Bay beach walks and white wallaby spotting with local guides</li>
+                                        <li>Cheese, oyster, chocolate, and honey tastings showcasing Tasmanian producers</li>
+                                        <li>Air-conditioned coach transport with Hobart CBD hotel pickups and cruise ship transfers on request</li>
                                     </ul>
                                 </div>
-                                <h2 className="box-title">Basic Information</h2>
-                                <p className="blog-text mb-35">
-                                    Essential information for your tour booking and preparation:
-                                </p>
+                                <h2 className="box-title">Tour Snapshot</h2>
                                 <div className="destination-checklist mb-50">
                                     <div className="checklist style2">
                                         <ul>
                                             <li>Duration</li>
-                                            <li>Departure Location</li>
-                                            <li>Return Location</li>
-                                            <li>Departure Time</li>
-                                            <li>Return Time</li>
-                                            <li>Days of Operation</li>
+                                            <li>Tour Type</li>
+                                            <li>Departure</li>
+                                            <li>Return</li>
+                                            <li>Group Size</li>
                                             <li>Language</li>
+                                            <li>Inclusions</li>
                                         </ul>
                                     </div>
                                     <div className="checklist style2">
                                         <ul>
-                                            <li>9 Hours (approx.)</li>
-                                            <li>Brooke Street Pier, Hobart</li>
-                                            <li>Same as departure point</li>
-                                            <li>7:30 AM (Bruny Island) / Morning (Mount Wellington)</li>
-                                            <li>Approximately 5:00 PM</li>
-                                            <li>Daily</li>
-                                            <li>English</li>
+                                            <li>9 hours (approx.)</li>
+                                            <li>Small group or private charter</li>
+                                            <li>Brooke Street Pier, Hobart (hotel pickups available)</li>
+                                            <li>Same as departure point, approx. 5:00 PM</li>
+                                            <li>Max 20 guests (group) or custom private</li>
+                                            <li>English (multilingual guides on request)</li>
+                                            <li>Coach transport, ferry tickets, tastings, National Park fees, local guide</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -282,138 +276,48 @@ function TourDetailsMain() {
                                     </button>
                                 </form>
                             </div>
-                            <div className="widget widget_categories  ">
-                                <h3 className="widget_title">Categories</h3>
+                            <div className="widget widget_categories">
+                                <h3 className="widget_title">Tasmania Tour Types</h3>
                                 <ul>
                                     <li>
-                                        <Link to="/blog">
+                                        <Link to={ROUTES.tour}>
                                             <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            City Tour
-                                        </Link>
-                                        <span>(8)</span>
-                                    </li>
-                                    <li>
-                                        <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            Beach Tours
-                                        </Link>
-                                        <span>(6)</span>
-                                    </li>
-                                    <li>
-                                        <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            Wildlife Tours
+                                            Bruny Island Gourmet Tours
                                         </Link>
                                         <span>(2)</span>
                                     </li>
                                     <li>
-                                        <Link to="/blog">
+                                        <Link to={ROUTES.tour}>
                                             <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            News &amp; Tips
+                                            Mount Wellington Summit Trips
                                         </Link>
-                                        <span>(7)</span>
+                                        <span>(2)</span>
                                     </li>
                                     <li>
-                                        <Link to="/blog">
+                                        <Link to={ROUTES.tour}>
                                             <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            Adventure Tours
+                                            Richmond & Heritage Walks
                                         </Link>
-                                        <span>(9)</span>
+                                        <span>(2)</span>
                                     </li>
                                     <li>
-                                        <Link to="/blog">
+                                        <Link to={ROUTES.tour}>
                                             <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            Mountain Tours
+                                            Private Charters & Shore Excursions
                                         </Link>
-                                        <span>(10)</span>
+                                        <span>(2)</span>
                                     </li>
                                 </ul>
                             </div>
-                            <div className="widget  ">
-                                <h3 className="widget_title">Recent Posts</h3>
-                                <div className="recent-post-wrap">
-                                    <div className="recent-post">
-                                        <div className="media-img">
-                                            <Link to="/blog/1">
-                                                <img
-                                                    src="/assets/img/blog/recent-post-1-1.jpg"
-                                                    alt="Blog"
-                                                />
-                                            </Link>
-                                        </div>
-                                        <div className="media-body">
-                                            <h4 className="post-title">
-                                                <Link className="text-inherit" to="/blog/1">
-                                                    Exploring The Green Spaces Of the island maldives
-                                                </Link>
-                                            </h4>
-                                            <div className="recent-post-meta">
-                                                <Link to="/blog">
-                                                    <i className="fa-regular fa-calendar" />
-                                                    22/6/ 2025
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="recent-post">
-                                        <div className="media-img">
-                                            <Link to="/blog/1">
-                                                <img
-                                                    src="/assets/img/blog/recent-post-1-2.jpg"
-                                                    alt="Blog"
-                                                />
-                                            </Link>
-                                        </div>
-                                        <div className="media-body">
-                                            <h4 className="post-title">
-                                                <Link className="text-inherit" to="/blog/1">
-                                                    Harmony With Nature Of Belgium Tour and travle
-                                                </Link>
-                                            </h4>
-                                            <div className="recent-post-meta">
-                                                <Link to="/blog">
-                                                    <i className="fa-regular fa-calendar" />
-                                                    25/6/ 2025
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="recent-post">
-                                        <div className="media-img">
-                                            <Link to="/blog/1">
-                                                <img
-                                                    src="/assets/img/blog/recent-post-1-3.jpg"
-                                                    alt="Blog"
-                                                />
-                                            </Link>
-                                        </div>
-                                        <div className="media-body">
-                                            <h4 className="post-title">
-                                                <Link className="text-inherit" to="/blog/1">
-                                                    Exploring The Green Spaces Of Realar Residence
-                                                </Link>
-                                            </h4>
-                                            <div className="recent-post-meta">
-                                                <Link to="/blog">
-                                                    <i className="fa-regular fa-calendar" />
-                                                    27/6/ 2025
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="widget widget_tag_cloud  ">
-                                <h3 className="widget_title">Popular Tags</h3>
+                            <div className="widget widget_tag_cloud">
+                                <h3 className="widget_title">Popular Keywords</h3>
                                 <div className="tagcloud">
-                                    <Link to="/blog">Tour</Link>
-                                    <Link to="/blog">Adventure</Link>
-                                    <Link to="/blog">Rent</Link>
-                                    <Link to="/blog">Innovate</Link>
-                                    <Link to="/blog">Hotel</Link>
-                                    <Link to="/blog">Modern</Link>
-                                    <Link to="/blog">Luxury</Link>
-                                    <Link to="/blog">Travel</Link>
+                                    <Link to={ROUTES.tour}>Bruny Island</Link>
+                                    <Link to={ROUTES.tour}>Mount Wellington</Link>
+                                    <Link to={ROUTES.tour}>Hobart Departures</Link>
+                                    <Link to={ROUTES.tour}>Richmond Village</Link>
+                                    <Link to={ROUTES.tour}>Gourmet Tastings</Link>
+                                    <Link to={ROUTES.tour}>Private Tours</Link>
                                 </div>
                             </div>
                             <div

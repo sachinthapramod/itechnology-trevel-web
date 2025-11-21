@@ -78,15 +78,22 @@ function BannerOne() {
                                         data-ani="slideinup"
                                         data-ani-delay="0.2s"
                                     >
-                                        Discover the natural wonders of Tasmania
+                                        Tasmania’s trusted travel agency
                                     </span>
                                     <h1
                                         className="hero-title"
                                         data-ani="slideinup"
                                         data-ani-delay="0.4s"
                                     >
-                                        Explore Tasmania's Pristine Wilderness{" "}
+                                        Award-Winning Tasmania Tours & Private Charters{" "}
                                     </h1>
+                                    <p
+                                        className="hero-text"
+                                        data-ani="slideinup"
+                                        data-ani-delay="0.5s"
+                                    >
+                                        Safe Travel and Tour Services plans premium Bruny Island and Mount Wellington day tours from Hobart with accredited local guides, modern vehicles, and genuine Australian hospitality.
+                                    </p>
                                     <div
                                         className="btn-group"
                                         data-ani="slideinup"
@@ -120,7 +127,7 @@ function BannerOne() {
                                         data-ani="slideinup"
                                         data-ani-delay="0.2s"
                                     >
-                                        Your gateway to Tasmania's hidden gems
+                                        Hobart departures for iconic destinations
                                     </span>
                                     <h1
                                         className="hero-title"
@@ -129,6 +136,13 @@ function BannerOne() {
                                     >
                                         Group & Private Tours Across Tasmania{" "}
                                     </h1>
+                                    <p
+                                        className="hero-text"
+                                        data-ani="slideinup"
+                                        data-ani-delay="0.5s"
+                                    >
+                                        Book curated itineraries that cover Bruny Island tastings, Mount Wellington lookouts, Richmond heritage walks, and wildlife-rich coastal routes with a fully licensed Tasmanian tour agency.
+                                    </p>
                                     <div
                                         className="btn-group"
                                         data-ani="slideinup"
@@ -162,15 +176,22 @@ function BannerOne() {
                                         data-ani="slideinup"
                                         data-ani-delay="0.2s"
                                     >
-                                        Experience Australia's island state
+                                        Experience Australia’s island state
                                     </span>
                                     <h1
                                         className="hero-title"
                                         data-ani="slideinup"
                                         data-ani-delay="0.4s"
                                     >
-                                        Unforgettable Adventures in Tasmania{" "}
+                                        Tailored Adventures with Safe Travel{" "}
                                     </h1>
+                                    <p
+                                        className="hero-text"
+                                        data-ani="slideinup"
+                                        data-ani-delay="0.5s"
+                                    >
+                                        From cruise ship shore excursions to family-friendly expeditions, our Hobart-based travel agency designs SEO-optimised itineraries that highlight Tasmania’s landscapes, culture, and seasonal events.
+                                    </p>
                                     <div
                                         className="btn-group"
                                         data-ani="slideinup"

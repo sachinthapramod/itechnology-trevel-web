@@ -47,7 +47,7 @@ function BlogInner() {
                                 {currentPage < totalPages && (
                                     <li>
                                         <Link className="next-page" to="#" onClick={() => handlePageChange(currentPage + 1)}>
-                                            Next <img src="/assets/img/icon/arrow-right4.svg" alt="" />
+                                            Next <img src="/assets/img/icon/arrow-right4.svg" alt="Next page" />
                                         </Link>
                                     </li>
                                 )}
@@ -69,45 +69,45 @@ function BlogInner() {
                                 <ul>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            City Tour
+                                            <img src="/assets/img/theme-img/map.svg" alt="Bruny Island Tours Tasmania" />
+                                            Bruny Island Tours
                                         </Link>
-                                        <span>(8)</span>
+                                        <span>(2)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            Beach Tours
+                                            <img src="/assets/img/theme-img/map.svg" alt="Mount Wellington Tours Hobart" />
+                                            Mount Wellington Tours
                                         </Link>
-                                        <span>(6)</span>
+                                        <span>(2)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            <img src="/assets/img/theme-img/map.svg" alt="Wildlife Tours Tasmania" />
                                             Wildlife Tours
                                         </Link>
                                         <span>(2)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            News &amp; Tips
+                                            <img src="/assets/img/theme-img/map.svg" alt="Tasmania Travel Tips" />
+                                            Travel Tips &amp; Guides
                                         </Link>
-                                        <span>(7)</span>
+                                        <span>(3)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            <img src="/assets/img/theme-img/map.svg" alt="Adventure Tours Tasmania" />
                                             Adventure Tours
                                         </Link>
-                                        <span>(9)</span>
+                                        <span>(2)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            Mountain Tours
+                                            <img src="/assets/img/theme-img/map.svg" alt="Scenic Tours Hobart" />
+                                            Scenic &amp; Sightseeing
                                         </Link>
-                                        <span>(10)</span>
+                                        <span>(3)</span>
                                     </li>
                                 </ul>
                             </div>
@@ -188,14 +188,16 @@ function BlogInner() {
                             <div className="widget widget_tag_cloud  ">
                                 <h3 className="widget_title">Popular Tags</h3>
                                 <div className="tagcloud">
-                                    <Link to="/blog">Tour</Link>
+                                    <Link to="/blog">Bruny Island</Link>
+                                    <Link to="/blog">Mount Wellington</Link>
+                                    <Link to="/blog">Hobart</Link>
+                                    <Link to="/blog">Tasmania</Link>
+                                    <Link to="/blog">Wildlife</Link>
+                                    <Link to="/blog">Gourmet</Link>
                                     <Link to="/blog">Adventure</Link>
-                                    <Link to="/blog">Rent</Link>
-                                    <Link to="/blog">Innovate</Link>
-                                    <Link to="/blog">Hotel</Link>
-                                    <Link to="/blog">Modern</Link>
-                                    <Link to="/blog">Luxury</Link>
-                                    <Link to="/blog">Travel</Link>
+                                    <Link to="/blog">Sightseeing</Link>
+                                    <Link to="/blog">Group Tours</Link>
+                                    <Link to="/blog">Private Tours</Link>
                                 </div>
                             </div>
                         </aside>

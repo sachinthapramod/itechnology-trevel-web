@@ -1,23 +1,51 @@
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import posts from '../data/data-activities.json';
 import ActivitiesCard from './ActivitiesCard';
 
-function ActivitiesInner() {
-    const [value, setValue] = useState(30);
-    const handleSliderChange = (e) => {
-        setValue(e.target.value);
-    };
-    const priceFrom = ((value / 100) * 1000).toFixed(2);
-    const priceTo = 1000;
+const activityFilters = [
+    { label: 'All Activities', value: 'all' },
+    { label: 'Bruny Island', value: 'Bruny Island' },
+    { label: 'Mount Wellington', value: 'Mount Wellington' },
+    { label: 'Richmond', value: 'Richmond' },
+];
 
+const sidebarHighlights = [
+    {
+        title: 'Top Tasmania activity categories',
+        items: [
+            'Bruny Island scenic walks and tastings',
+            'Mount Wellington summit viewpoints',
+            'Richmond Village heritage and honey trails',
+            'Wildlife encounters: white wallabies, seals, sea eagles',
+            'Chocolate, cheese, and oyster tastings',
+        ],
+    },
+    {
+        title: 'Hobart-based travel tips',
+        items: [
+            'Depart from Brooke Street Pier with confirmed pickups',
+            'Pack layers for summit breezes and coastal walks',
+            'Advise dietary needs for tastings during booking',
+            'Choose private charters for photographers and families',
+        ],
+    },
+];
+
+function ActivitiesInner() {
     const [currentPage, setCurrentPage] = useState(1);
+    const [activeFilter, setActiveFilter] = useState('all');
     const postsPerPage = 8;
 
-    const totalPages = Math.ceil(posts.length / postsPerPage);
+    const filteredPosts = useMemo(() => {
+        if (activeFilter === 'all') return posts;
+        return posts.filter((post) => post.title.includes(activeFilter));
+    }, [activeFilter]);
+
+    const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
-    const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+    const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
 
     const handlePageChange = (page) => {
         setCurrentPage(page);
@@ -27,6 +55,26 @@ function ActivitiesInner() {
             <div className="container">
                 <div className="row">
                     <div className="col-xxl-8 col-lg-7">
+                        <div className="destination-filter d-flex align-items-center mb-4">
+                            <label htmlFor="activityFilter" className="text-uppercase fw-bold small me-3">
+                                Filter by region
+                            </label>
+                            <select
+                                id="activityFilter"
+                                className="form-select w-auto"
+                                value={activeFilter}
+                                onChange={(e) => {
+                                    setActiveFilter(e.target.value)
+                                    setCurrentPage(1)
+                                }}
+                            >
+                                {activityFilters.map((filter) => (
+                                    <option key={filter.value} value={filter.value}>
+                                        {filter.label}
+                                    </option>
+                                ))}
+                            </select>
+                        </div>
                         <div className="row gy-24 gx-24">
                             {currentPosts.map((data, index) => (
                                 <div key={index} className="col-md-6">
@@ -64,14 +112,6 @@ function ActivitiesInner() {
                     </div>
                     <div className="col-xxl-4 col-lg-5">
                         <aside className="sidebar-area">
-                            <div className="widget widget_search  ">
-                                <form className="search-form">
-                                    <input type="text" placeholder="Search" />
-                                    <button type="submit">
-                                        <i className="far fa-search" />
-                                    </button>
-                                </form>
-                            </div>
                             <div className="widget widget_categories  ">
                                 <h3 className="widget_title">Activity Themes</h3>
                                 <ul>
@@ -112,46 +152,6 @@ function ActivitiesInner() {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="widget widget_price_filter  ">
-                                <h4 className="widget_title">Filter By Price</h4>
-                                <div className="price_slider_wrapper">
-                                    <div className="price_label">
-                                        Price: <span className="from">${priceFrom} </span> — <span className="to">${priceTo}</span>
-                                    </div>
-                                    <div className="price_slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
-                                        {/* Slider Range */}
-                                        <div
-                                            className="ui-slider-range ui-corner-all ui-widget-header"
-                                            style={{ left: '0%', width: `${value}%` }}
-                                        ></div>
-
-                                        {/* First Handle */}
-                                        <span
-                                            tabIndex="0"
-                                            className="ui-slider-handle ui-corner-all ui-state-default"
-                                            style={{ left: '0%' }}
-                                        ></span>
-
-                                        {/* Second Handle */}
-                                        <span
-                                            tabIndex="0"
-                                            className="ui-slider-handle ui-corner-all ui-state-default"
-                                            style={{ left: `${value}%` }}
-                                        ></span>
-
-                                        {/* Hidden Input range to control the slider */}
-                                        <input
-                                            type="range"
-                                            min="0"
-                                            max="100"
-                                            value={value}
-                                            onChange={handleSliderChange}
-                                            className="slider-input"
-                                            style={{ opacity: 0, position: 'absolute', zIndex: '1', top: '-22px', padding: '0', cursor:'pointer' }}  // Hides the input
-                                        />
-                                    </div>
-                                </div>
-                            </div>
                             <div className="widget widget_categories  ">
                                 <h3 className="widget_title">Duration</h3>
                                 <ul>
@@ -171,25 +171,19 @@ function ActivitiesInner() {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="widget widget_categories  ">
-                                <h3 className="widget_title">Tour Format</h3>
-                                <ul>
-                                    <li>
-                                        <Link to="/activities">
-                                            <i className="fa-light fa-square-check" />
-                                            Small Group Hosted
-                                        </Link>
-                                        <span>(4)</span>
-                                    </li>
-                                    <li>
-                                        <Link to="/activities">
-                                            <i className="fa-light fa-square-check" />
-                                            Private & Custom
-                                        </Link>
-                                        <span>(4)</span>
-                                    </li>
-                                </ul>
-                            </div>
+                            {sidebarHighlights.map((highlight) => (
+                                <div key={highlight.title} className="widget widget_categories">
+                                    <h3 className="widget_title">{highlight.title}</h3>
+                                    <ul>
+                                        {highlight.items.map((item) => (
+                                            <li key={item}>
+                                                <i className="fa-light fa-square-check" />
+                                                {item}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
                         </aside>
                     </div>
                 </div>

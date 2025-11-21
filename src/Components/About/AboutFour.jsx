@@ -27,13 +27,13 @@ function AboutFour() {
                         </h2>
                      </div>
                      <p className="pe-xl-5">
-                        Safe Travel and Tour Services is a proudly Australian-owned and family-operated tour company based in Hobart. We specialise in one-day tours, private charters, and group adventures, offering travellers safe, comfortable, and memorable journeys.
+                        Safe Travel and Tour Services is a proudly Australian-owned and family-operated Hobart travel agency specialising in Bruny Island adventures, Mount Wellington summit trips, and curated Tasmania day tours. Every itinerary blends safety, storytelling, and premium comfort.
                      </p>
                      <p className="pe-xl-5">
-                        Starting our journey in Tasmania, we are expanding our services across Australia — sharing the beauty, culture, and hidden gems of this incredible country with visitors from around the world.
+                        Starting our journey in southern Tasmania, we now partner with regional producers, wildlife sanctuaries, and coastal communities across Australia to highlight hidden beaches, Richmond heritage lanes, Coal River Valley tasting rooms, and UNESCO wilderness.
                      </p>
                      <p className="mb-30 pe-xl-5">
-                        Our goal is simple: to make every trip enjoyable, informative, and stress-free, with genuine care and personalised service at every step.
+                        Our goal is simple: deliver SEO-friendly, guest-ready experiences that feel personal and stress-free—from Hobart hotel pickups and cruise ship transfers to family-friendly charters, incentive groups, and bespoke private departures.
                      </p>
                      <div className="mb-40 pe-xl-5">
                         <h3 className="sec-title mb-15" style={{ fontSize: '24px' }}>Vision Statement</h3>
@@ -42,7 +42,7 @@ function AboutFour() {
                         </p>
                         <h3 className="sec-title mb-15" style={{ fontSize: '24px' }}>Mission Statement</h3>
                         <p className="mb-30">
-                           Our mission is to provide exceptional tour experiences through safety, comfort, and genuine hospitality. We aim to create meaningful travel moments for every guest — showcasing Australia's stunning landscapes, diverse culture, and friendly spirit, all while maintaining the warmth and reliability of a family business.
+                           Our mission is to provide exceptional tour experiences through safety, comfort, and genuine hospitality. We showcase Tasmania’s Bruny Island cliffs, Mount Wellington lookouts, wildlife-rich peninsulas, and seasonal events while maintaining the warmth and reliability of a family business.
                         </p>
                      </div>
                      <div className="about-item-wrap">
@@ -53,7 +53,7 @@ function AboutFour() {
                            <div className="about-item_centent">
                               <h5 className="box-title">One-Day Tours & Private Charters</h5>
                               <p className="about-item_text">
-                                 We specialise in one-day tours, private charters, and group adventures, offering safe, comfortable, and memorable journeys.
+                                 We specialise in Hobart departures, one-day tours, private charters, and group adventures that cover Bruny Island tastings, Mount Wellington panoramas, and Richmond Village walks.
                               </p>
                            </div>
                         </div>
@@ -64,7 +64,7 @@ function AboutFour() {
                            <div className="about-item_centent">
                               <h5 className="box-title">Safety & Comfort</h5>
                               <p className="about-item_text">
-                                 We provide exceptional tour experiences through safety, comfort, and genuine hospitality, ensuring every journey is safe and memorable.
+                                 Accredited guides, modern vehicles, and carefully timed itineraries keep every Tasmania travel experience safe, comfortable, and memorable year-round.
                               </p>
                            </div>
                         </div>
@@ -75,7 +75,7 @@ function AboutFour() {
                            <div className="about-item_centent">
                               <h5 className="box-title">Family Business Values</h5>
                               <p className="about-item_text">
-                                 As a family-operated business, we maintain the warmth and reliability that comes with genuine care and personalised service at every step.
+                                 As a family-operated Australian tour company, we maintain the warmth and reliability that comes with genuine care, personalised service, and local knowledge at every step.
                               </p>
                            </div>
                         </div>
