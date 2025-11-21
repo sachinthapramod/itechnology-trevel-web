@@ -5,10 +5,10 @@ import { Navigation, Thumbs, EffectFade } from "swiper/modules";
 
 function ActivitiesDetailsMain() {
     const images = [
-        "/assets/img/tour/tour_inner_2_1.jpg",
-        "/assets/img/tour/tour_inner_2_2.jpg",
-        "/assets/img/tour/tour_inner_2_3.jpg",
-        "/assets/img/tour/tour_inner_2_4.jpg",
+        "https://res.cloudinary.com/dmfkweete/image/upload/v1763689001/tour_inner_2_sv6fty.jpg",
+        "https://res.cloudinary.com/dmfkweete/image/upload/v1763698402/tour_inner_2_2_njp6bk.jpg",
+        "https://res.cloudinary.com/dmfkweete/image/upload/v1763698403/tour_inner_2_3_qtmrun.jpg",
+        "https://res.cloudinary.com/dmfkweete/image/upload/v1763698404/tour_inner_2_4_m37mxg.jpg",
     ];
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -62,10 +62,10 @@ function ActivitiesDetailsMain() {
 
                                 {/* Navigation Buttons */}
                                 <button className="slider-arrow style3 slider-prev">
-                                    <img src="/assets/img/icon/hero-arrow-left.svg" alt="Prev" />
+                                    <img src="https://res.cloudinary.com/dmfkweete/image/upload/v1763686500/hero-arrow-left_rfpcoy.svg" alt="Prev" />
                                 </button>
                                 <button className="slider-arrow style3 slider-next">
-                                    <img src="/assets/img/icon/hero-arrow-right.svg" alt="Next" />
+                                    <img src="https://res.cloudinary.com/dmfkweete/image/upload/v1763686500/hero-arrow-right_scinas.svg" alt="Next" />
                                 </button>
                             </div>
                             <div className="page-content">
@@ -99,7 +99,7 @@ function ActivitiesDetailsMain() {
                                         </div>
                                         <div className="tour-snap">
                                             <div className="icon">
-                                                <img src="/assets/img/icon/guide2.svg" alt="" />
+                                                <img src="https://res.cloudinary.com/dmfkweete/image/upload/v1763686500/guide2_wqnq5v.svg" alt="" />
                                             </div>
                                             <div className="content">
                                                 <span className="title">Tour Type:</span>
@@ -108,7 +108,7 @@ function ActivitiesDetailsMain() {
                                         </div>
                                         <div className="tour-snap">
                                             <div className="icon">
-                                                <img src="/assets/img/icon/ship.svg" alt="" />
+                                                <img src="https://res.cloudinary.com/dmfkweete/image/upload/v1763686667/ship_rtec5d.svg" alt="" />
                                             </div>
                                             <div className="content">
                                                 <span className="title">Pick-up Location</span>
@@ -117,7 +117,7 @@ function ActivitiesDetailsMain() {
                                         </div>
                                         <div className="tour-snap">
                                             <div className="icon">
-                                                <img src="/assets/img/icon/01.svg" alt="" />
+                                                <img src="https://res.cloudinary.com/dmfkweete/image/upload/v1763686337/01_iy4zkk.svg" alt="" />
                                             </div>
                                             <div className="content">
                                                 <span className="title">Free Cancellation</span>
@@ -214,7 +214,7 @@ function ActivitiesDetailsMain() {
                                         title="Activity Location Map - Hobart, Tasmania"
                                     />
                                     <div className="contact-icon">
-                                        <img src="/assets/img/icon/location-dot3.svg" alt="" />
+                                        <img src="https://res.cloudinary.com/dmfkweete/image/upload/v1763686547/location-dot3_svb0oz.svg" alt="location" />
                                     </div>
                                 </div>
                             </div>
@@ -225,7 +225,7 @@ function ActivitiesDetailsMain() {
                                         <div className="th-post-comment">
                                             <div className="comment-avater">
                                                 <img
-                                                    src="/assets/img/blog/comment-author-1.jpg"
+                                                    src="https://res.cloudinary.com/dmfkweete/image/upload/v1763686079/comment-author-1_msftre.png"
                                                     alt="Comment Author"
                                                 />
                                             </div>
@@ -257,7 +257,7 @@ function ActivitiesDetailsMain() {
                                                 <div className="th-post-comment">
                                                     <div className="comment-avater">
                                                         <img
-                                                            src="/assets/img/blog/comment-author-4.jpg"
+                                                            src="https://res.cloudinary.com/dmfkweete/image/upload/v1763686080/comment-author-4_uilb3l.png"
                                                             alt="Comment Author"
                                                         />
                                                     </div>
@@ -292,7 +292,7 @@ function ActivitiesDetailsMain() {
                                         <div className="th-post-comment">
                                             <div className="comment-avater">
                                                 <img
-                                                    src="/assets/img/blog/comment-author-5.jpg"
+                                                    src="https://res.cloudinary.com/dmfkweete/image/upload/v1763686080/comment-author-5_izy2tc.png"
                                                     alt="Comment Author"
                                                 />
                                             </div>
@@ -377,7 +377,7 @@ function ActivitiesDetailsMain() {
                                     <div className="col-12 form-group mb-0">
                                         <button className="th-btn">
                                             Send Message
-                                            <img src="/assets/img/icon/plane2.svg" alt="" />
+                                            <img src="https://res.cloudinary.com/dmfkweete/image/upload/v1763686587/plane2_zjnanz.svg" alt="plane2.svg icon" />
                                         </button>
                                     </div>
                                 </div>
@@ -399,42 +399,42 @@ function ActivitiesDetailsMain() {
                                 <ul>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            <img src="https://res.cloudinary.com/dmfkweete/image/upload/v1763688691/map_waotf6.svg" alt="bruny island map" />
                                             Bruny Island Tours
                                         </Link>
                                         <span>(2)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            <img src="https://res.cloudinary.com/dmfkweete/image/upload/v1763688691/map_waotf6.svg" alt="safe ravels map" />
                                             Mount Wellington Tours
                                         </Link>
                                         <span>(2)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            <img src="https://res.cloudinary.com/dmfkweete/image/upload/v1763688691/map_waotf6.svg" alt="safe travels map" />
                                             Sightseeing Tours
                                         </Link>
                                         <span>(4)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            <img src="https://res.cloudinary.com/dmfkweete/image/upload/v1763688691/map_waotf6.svg" alt="safe travels map" />
                                             Adventure Tours
                                         </Link>
                                         <span>(4)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            <img src="https://res.cloudinary.com/dmfkweete/image/upload/v1763688691/map_waotf6.svg" alt="safe travels map" />
                                             Wildlife Tours
                                         </Link>
                                         <span>(2)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            <img src="https://res.cloudinary.com/dmfkweete/image/upload/v1763688691/map_waotf6.svg" alt="safe travels map" />
                                             Scenic Tours
                                         </Link>
                                         <span>(4)</span>
@@ -443,7 +443,7 @@ function ActivitiesDetailsMain() {
                             </div>
                             <div className="widget tour-booking  ">
                                 <p className="widget_subtitle">
-                                    From <span className="widget_price">$75.00</span>
+                                    From <span className="widget_price">$120.00</span>
                                 </p>
                                 <div className="info-list">
                                     <ul>
@@ -479,7 +479,7 @@ function ActivitiesDetailsMain() {
                                 </div>
                             </div>
                             <div
-                                className="widget widget_offer" style={{ background: 'url(/assets/img/bg/widget_bg_1.jpg)' }}
+                                className="widget widget_offer" style={{ background: 'url(https://res.cloudinary.com/dmfkweete/image/upload/v1763686073/widget_bg_1_vgyfbb.jpg)' }}
                             >
                                 <div className="offer-banner">
                                     <div className="offer">
@@ -487,7 +487,7 @@ function ActivitiesDetailsMain() {
                                             Need Help? We Are Here To Help You
                                         </h6>
                                         <div className="banner-logo">
-                                            <img src="/assets/img/logo2.svg" alt="Tourm" />
+                                            <img src="https://res.cloudinary.com/dmfkweete/image/upload/v1763686733/logo2_unvnos.svg" alt="safe travels and tour services" />
                                         </div>
                                         <div className="offer">
                                             <h6 className="offer-title">You Get Online support</h6>

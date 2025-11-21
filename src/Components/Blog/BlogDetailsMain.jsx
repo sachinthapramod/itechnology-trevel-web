@@ -1,14 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom';
 import Posts from '../data/data-post.json';
 
 function BlogDetailsMain() {
     const { id } = useParams();
     const blogPost = Posts.find(post => post.id === parseInt(id));
-
-    if (!blogPost) {
-        return <div>Post not found!</div>;
-    }
 
     // Blog content based on post ID
     const blogContents = {
@@ -248,6 +244,124 @@ function BlogDetailsMain() {
 
     const content = blogContents[parseInt(id)] || blogContents[1];
 
+    // SEO Optimization: Dynamic meta tags and structured data
+    useEffect(() => {
+        if (!blogPost || !content) return;
+        // Update document title
+        const pageTitle = `${content.title} | Safe Travel and Tour Services`;
+        document.title = pageTitle;
+
+        // Create or update meta description
+        const metaDescription = content.intro || `${content.title} - Expert guide to ${content.location} tours with Safe Travel and Tour Services.`;
+        let metaDesc = document.querySelector('meta[name="description"]');
+        if (!metaDesc) {
+            metaDesc = document.createElement('meta');
+            metaDesc.setAttribute('name', 'description');
+            document.head.appendChild(metaDesc);
+        }
+        metaDesc.setAttribute('content', metaDescription.substring(0, 160));
+
+        // Open Graph tags for social sharing
+        const ogTags = {
+            'og:title': content.title,
+            'og:description': metaDescription.substring(0, 200),
+            'og:image': `${window.location.origin}/assets/img/blog/${blogPost.bannerImg}`,
+            'og:url': window.location.href,
+            'og:type': 'article',
+            'article:author': content.author,
+            'article:published_time': new Date(content.date).toISOString(),
+        };
+
+        Object.entries(ogTags).forEach(([property, value]) => {
+            let tag = document.querySelector(`meta[property="${property}"]`);
+            if (!tag) {
+                tag = document.createElement('meta');
+                tag.setAttribute('property', property);
+                document.head.appendChild(tag);
+            }
+            tag.setAttribute('content', value);
+        });
+
+        // Twitter Card tags
+        const twitterTags = {
+            'twitter:card': 'summary_large_image',
+            'twitter:title': content.title,
+            'twitter:description': metaDescription.substring(0, 200),
+            'twitter:image': `${window.location.origin}/assets/img/blog/${blogPost.bannerImg}`,
+        };
+
+        Object.entries(twitterTags).forEach(([name, value]) => {
+            let tag = document.querySelector(`meta[name="${name}"]`);
+            if (!tag) {
+                tag = document.createElement('meta');
+                tag.setAttribute('name', name);
+                document.head.appendChild(tag);
+            }
+            tag.setAttribute('content', value);
+        });
+
+        // JSON-LD Structured Data (BlogPosting schema)
+        const structuredData = {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": content.title,
+            "description": metaDescription,
+            "image": `${window.location.origin}/assets/img/blog/${blogPost.bannerImg}`,
+            "datePublished": new Date(content.date).toISOString(),
+            "dateModified": new Date(content.date).toISOString(),
+            "author": {
+                "@type": "Person",
+                "name": content.author
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Safe Travel and Tour Services",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": `${window.location.origin}/assets/img/logo.svg`
+                }
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": window.location.href
+            },
+            "keywords": content.tags.join(', '),
+            "articleSection": "Travel Guides",
+            "inLanguage": "en-AU",
+            "about": {
+                "@type": "Place",
+                "name": content.location,
+                "containedIn": {
+                    "@type": "State",
+                    "name": "Tasmania"
+                }
+            }
+        };
+
+        // Remove existing structured data script if present
+        const existingScript = document.querySelector('script[type="application/ld+json"][data-blog-schema]');
+        if (existingScript) {
+            existingScript.remove();
+        }
+
+        // Add new structured data script
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.setAttribute('data-blog-schema', 'true');
+        script.textContent = JSON.stringify(structuredData);
+        document.head.appendChild(script);
+
+        // Cleanup function
+        return () => {
+            // Reset title on unmount
+            document.title = "Safe Travel and Tour Services | Tasmania Group & Private Tours";
+        };
+    }, [id, content, blogPost]);
+
+    if (!blogPost) {
+        return <div>Post not found!</div>;
+    }
+
     return (
         <section className="th-blog-wrapper blog-details space-top space-extra-bottom">
             <div className="container shape-mockup-wrap">
@@ -255,7 +369,11 @@ function BlogDetailsMain() {
                     <div className="col-xxl-8 col-lg-7">
                         <div className="th-blog blog-single">
                             <div className="blog-img">
-                                <img src={`/assets/img/blog/${blogPost.bannerImg}`} alt="Blog" />
+                                <img 
+                                    src={`/assets/img/blog/${blogPost.bannerImg}`} 
+                                    alt={`${content.title} - ${content.location} tour guide by Safe Travel and Tour Services`}
+                                    loading="lazy"
+                                />
                             </div>
                             <div className="blog-content">
                                 <div className="blog-meta">
@@ -574,45 +692,45 @@ function BlogDetailsMain() {
                                 <ul>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            Bruny Island Guides
+                                            <img src="/assets/img/theme-img/map.svg" alt="Bruny Island Tours" />
+                                            Bruny Island Tours
                                         </Link>
-                                        <span>(4)</span>
+                                        <span>(2)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
-                                            Mount Wellington Tips
+                                            <img src="/assets/img/theme-img/map.svg" alt="Mount Wellington Tours" />
+                                            Mount Wellington Tours
                                         </Link>
-                                        <span>(3)</span>
+                                        <span>(2)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            <img src="/assets/img/theme-img/map.svg" alt="Richmond Village Tours" />
                                             Richmond Heritage
                                         </Link>
-                                        <span>(2)</span>
+                                        <span>(1)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            <img src="/assets/img/theme-img/map.svg" alt="Tasmania Travel Tips" />
                                             Travel Planning
                                         </Link>
-                                        <span>(5)</span>
+                                        <span>(1)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            <img src="/assets/img/theme-img/map.svg" alt="Group vs Private Tours Tasmania" />
                                             Group vs Private Tours
                                         </Link>
-                                        <span>(2)</span>
+                                        <span>(1)</span>
                                     </li>
                                     <li>
                                         <Link to="/blog">
-                                            <img src="/assets/img/theme-img/map.svg" alt="" />
+                                            <img src="/assets/img/theme-img/map.svg" alt="Tasmania Travel Inspiration" />
                                             Tasmania Inspiration
                                         </Link>
-                                        <span>(6)</span>
+                                        <span>(4)</span>
                                     </li>
                                 </ul>
                             </div>
